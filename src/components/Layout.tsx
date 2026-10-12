@@ -58,6 +58,10 @@ function Layout() {
           page.
         </p>
         <p>
+          The revision topics, questions and practice problems were written with AI and have not been checked by a
+          teacher. Check them against your class notes and the official SEC and NCCA material.
+        </p>
+        <p>
           Testing the app? Share ideas and problems in the{' '}
           <a href="https://t.me/+_Cf8xQ0d6rxjYzRi" target="_blank" rel="noopener noreferrer">
             feedback chat on Telegram

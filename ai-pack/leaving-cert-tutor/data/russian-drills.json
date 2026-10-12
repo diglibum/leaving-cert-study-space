@@ -1,0 +1,359 @@
+{
+  "note": "Gap-fill, translation and culture quiz items. `items[].answers` lists every accepted answer; the first is the model answer. Compare ignoring case, stress marks, final punctuation and the difference between the two letters for e.",
+  "pools": {
+    "ru-cases-nouns": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Put the word in brackets into the case the sentence needs. Type only that word.",
+      "items": [
+        {"prompt":"Я живу в ___ (Москва).","answers":["Москве"],"note":"Place after в: prepositional case. Feminine -а becomes -е."},
+        {"prompt":"Я читаю ___ (книга).","answers":["книгу"],"note":"Direct object: accusative. Feminine -а becomes -у."},
+        {"prompt":"У меня нет ___ (сестра).","answers":["сестры"],"note":"нет takes the genitive. Feminine -а becomes -ы."},
+        {"prompt":"Я даю подарок ___ (брат).","answers":["брату"],"note":"The person who receives something: dative."},
+        {"prompt":"Он пишет письмо ___ (ручка).","answers":["ручкой"],"note":"The tool you use: instrumental. Feminine -а becomes -ой."},
+        {"prompt":"Мы идём в ___ (школа).","answers":["школу"],"note":"в + accusative answers \"where to?\". Feminine -а becomes -у."},
+        {"prompt":"Она думает о ___ (мама).","answers":["маме"],"note":"о + prepositional. Feminine -а becomes -е."},
+        {"prompt":"Я говорю с ___ (друг).","answers":["другом"],"note":"с meaning \"with\" takes the instrumental. Masculine adds -ом."},
+        {"prompt":"В классе нет ___ (учитель).","answers":["учителя"],"note":"нет takes the genitive. Masculine -ь becomes -я."},
+        {"prompt":"Я вижу ___ (брат) в парке.","answers":["брата"],"note":"An animate masculine object: the accusative looks like the genitive."},
+        {"prompt":"На столе лежат ___ (книга, plural).","answers":["книги"],"note":"Nominative plural of a feminine noun: -а becomes -ы or -и (-и after к)."},
+        {"prompt":"У нас много ___ (друг, plural).","answers":["друзей"],"note":"много takes the genitive plural. друг has an irregular plural: друзья, друзей."}
+      ]
+    },
+    "ru-verbs-tenses": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Put the verb in brackets into the form the sentence needs. Type only that word.",
+      "items": [
+        {"prompt":"Я ___ (читать) книгу каждый день.","answers":["читаю"],"note":"Present tense, я: читать has the endings -ю, -ешь, -ет, -ем, -ете, -ют."},
+        {"prompt":"Он ___ (жить) в Дублине.","answers":["живёт"],"note":"Present tense, он: жить is irregular, живу, живёшь, живёт."},
+        {"prompt":"Вчера мы ___ (смотреть) фильм.","answers":["смотрели"],"note":"Past tense with мы: the verb takes -ли."},
+        {"prompt":"Она ___ (говорить) по-русски.","answers":["говорит"],"note":"Present tense, она: говорить has the endings -ю, -ишь, -ит, -им, -ите, -ят."},
+        {"prompt":"Завтра я ___ (быть) дома.","answers":["буду"],"note":"Future of быть: буду, будешь, будет, будем, будете, будут."},
+        {"prompt":"Они ___ (писать) письма.","answers":["пишут"],"note":"Present tense, они: писать has the stem пиш-, пишу, пишешь, пишут."},
+        {"prompt":"Вчера она ___ (читать) целый час.","answers":["читала"],"note":"Past tense with она: the verb takes -ла."},
+        {"prompt":"Ты ___ (хотеть) чай?","answers":["хочешь"],"note":"Present tense, ты: хотеть mixes endings, хочу, хочешь, хочет, хотим, хотите, хотят."},
+        {"prompt":"Мы ___ (любить) музыку.","answers":["любим"],"note":"Present tense, мы: любить has the endings -лю, -ишь, -ит, -им, -ите, -ят."},
+        {"prompt":"Я ___ (учиться) в школе.","answers":["учусь"],"note":"Reflexive verbs keep -сь after a vowel and -ся after a consonant: я учусь, он учится."},
+        {"prompt":"Вчера он ___ (учиться) в библиотеке.","answers":["учился"],"note":"Past tense with он: the verb takes -л, and the reflexive part is -ся."},
+        {"prompt":"Вчера они не ___ (мочь) прийти.","answers":["могли"],"note":"Past tense of мочь: мог, могла, могли."}
+      ]
+    },
+    "ru-adjectives-agreement": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Put the word in brackets into the form that agrees with the noun. Type only that word.",
+      "items": [
+        {"prompt":"Это ___ (новый) книга.","answers":["новая"],"note":"Feminine nominative: -ый becomes -ая."},
+        {"prompt":"У меня ___ (старший) сестра.","answers":["старшая"],"note":"Feminine nominative: -ий becomes -ая."},
+        {"prompt":"Мы живём в ___ (большой) городе.","answers":["большом"],"note":"Masculine prepositional: -ой becomes -ом."},
+        {"prompt":"Я читаю ___ (интересный) книгу.","answers":["интересную"],"note":"Feminine accusative: -ый becomes -ую."},
+        {"prompt":"Это ___ (мой) мама.","answers":["моя"],"note":"мой agrees with the noun: мой, моя, моё, мои."},
+        {"prompt":"Это ___ (мой) окно.","answers":["моё"],"note":"Neuter: мой becomes моё."},
+        {"prompt":"Я не люблю ___ (холодный) погоду.","answers":["холодную"],"note":"Feminine accusative: -ый becomes -ую."},
+        {"prompt":"У ___ (красивый) девушки длинные волосы.","answers":["красивой"],"note":"Feminine genitive, after у: -ый becomes -ой."},
+        {"prompt":"Мы говорим о ___ (русский) культуре.","answers":["русской"],"note":"Feminine prepositional: -ий becomes -ой."},
+        {"prompt":"Это ___ (хороший) друзья.","answers":["хорошие"],"note":"Nominative plural: -ий becomes -ие."},
+        {"prompt":"Я иду в гости к ___ (мой) другу.","answers":["моему"],"note":"Masculine dative, after к: мой becomes моему."}
+      ]
+    },
+    "ru-aspect": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Choose the verb that fits and put it in the form the sentence needs. Type only that word.",
+      "items": [
+        {"prompt":"Вчера мы долго ___ (делать / сделать) уроки.","answers":["делали"],"note":"A long process in the past: imperfective."},
+        {"prompt":"Мы наконец ___ (делать / сделать) домашнее задание.","answers":["сделали"],"note":"A finished result: perfective."},
+        {"prompt":"Я каждый день ___ (читать / прочитать) новости.","answers":["читаю"],"note":"A repeated action: imperfective. Perfective verbs have no present tense."},
+        {"prompt":"Завтра я обязательно ___ (звонить / позвонить) маме.","answers":["позвоню"],"note":"One planned action in the future: perfective, future form."},
+        {"prompt":"Он всегда ___ (покупать / купить) хлеб в этом магазине.","answers":["покупает"],"note":"A habit: imperfective."},
+        {"prompt":"Вчера он ___ (покупать / купить) новую куртку.","answers":["купил"],"note":"One completed action with a result: perfective."},
+        {"prompt":"Они ___ (решать / решить) задачу целый час.","answers":["решали"],"note":"A duration, целый час: imperfective."},
+        {"prompt":"Они ___ (решать / решить) задачу и пошли домой.","answers":["решили"],"note":"One action finished before the next: perfective."},
+        {"prompt":"Я буду ___ (учить / выучить) слова весь вечер.","answers":["учить"],"note":"буду takes the imperfective infinitive."},
+        {"prompt":"К пятнице я ___ (учить / выучить) все слова.","answers":["выучу"],"note":"A result by a deadline: perfective, future form."},
+        {"prompt":"Что вы ___ (делать / сделать) вчера вечером?","answers":["делали"],"note":"Asking what was going on: imperfective."},
+        {"prompt":"Она ___ (открывать / открыть) окно, и в комнате стало холодно.","answers":["открыла"],"note":"A single action followed by a result: perfective."}
+      ]
+    },
+    "ru-prepositions": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Type the missing preposition. Type only that word.",
+      "items": [
+        {"prompt":"Я иду ___ школу (to).","answers":["в"],"note":"в + accusative answers \"where to?\" for enclosed places."},
+        {"prompt":"Мы живём ___ Ирландии (in).","answers":["в"],"note":"в + prepositional answers \"where?\" for countries and enclosed places."},
+        {"prompt":"Он работает ___ почте (at).","answers":["на"],"note":"на goes with open places and some buildings: на почте, на работе, на вокзале."},
+        {"prompt":"Я еду ___ автобусе (by).","answers":["на"],"note":"Transport takes на + prepositional: на автобусе, на поезде."},
+        {"prompt":"Он приехал ___ Москвы (from).","answers":["из"],"note":"из + genitive for \"from\" a city or country."},
+        {"prompt":"Книга лежит ___ столом (under).","answers":["под"],"note":"под + instrumental when something is under, под + accusative when it moves there."},
+        {"prompt":"Лампа висит ___ столом (above).","answers":["над"],"note":"над + instrumental means above."},
+        {"prompt":"Я иду в кино ___ друзьями (with).","answers":["с"],"note":"с + instrumental means with."},
+        {"prompt":"Я иду в гости ___ другу (to a person).","answers":["к"],"note":"к + dative for going to a person."},
+        {"prompt":"Я получил письмо ___ мамы (from).","answers":["от"],"note":"от + genitive for \"from\" a person."},
+        {"prompt":"Мы говорим ___ экзамене (about).","answers":["об"],"note":"о becomes об before a vowel: об экзамене."},
+        {"prompt":"___ уроков я иду домой (after).","answers":["после"],"note":"после + genitive means after."},
+        {"prompt":"Мы сидим ___ столом (at).","answers":["за"],"note":"за + instrumental means behind or at: за столом."}
+      ]
+    },
+    "ru-motion-verbs": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Choose the verb that fits and put it in the form the sentence needs. Type only that word.",
+      "items": [
+        {"prompt":"Каждый день я ___ (идти / ходить) в школу пешком.","answers":["хожу"],"note":"A habit: multidirectional ходить. Я хожу, ты ходишь."},
+        {"prompt":"Сейчас я ___ (идти / ходить) в школу.","answers":["иду"],"note":"One journey in one direction right now: unidirectional идти."},
+        {"prompt":"Вчера мы ___ (ехать / ездить) в Корк.","answers":["ездили"],"note":"A round trip, there and back: multidirectional, past tense."},
+        {"prompt":"Завтра мы ___ (ехать / ездить) в Дублин (future).","answers":["поедем"],"note":"One journey in the future: unidirectional ехать with по-: поедем."},
+        {"prompt":"Он часто ___ (бегать / бежать) в парке.","answers":["бегает"],"note":"A habit: multidirectional бегать."},
+        {"prompt":"Смотри, собака ___ (бегать / бежать) за мячом!","answers":["бежит"],"note":"One action happening now: unidirectional бежать. Она бежит."},
+        {"prompt":"Самолёты ___ (летать / лететь) быстро.","answers":["летают"],"note":"General statement: multidirectional летать."},
+        {"prompt":"Летом я люблю ___ (плавать / плыть) в море.","answers":["плавать"],"note":"Liking an activity in general: multidirectional плавать."},
+        {"prompt":"Вчера она ___ (идти / ходить) в театр.","answers":["ходила"],"note":"Went and came back: multidirectional, past tense, feminine."},
+        {"prompt":"Он ___ (войти / выйти) в комнату и сел.","answers":["вошёл"],"note":"в- means in: войти. Past tense masculine: вошёл."},
+        {"prompt":"Она ___ (войти / выйти) из дома и закрыла дверь.","answers":["вышла"],"note":"вы- means out: выйти. Past tense feminine: вышла."},
+        {"prompt":"Мы ___ (ехать / ездить) на велосипеде каждое воскресенье.","answers":["ездим"],"note":"A habit: multidirectional ездить. Мы ездим."},
+        {"prompt":"Каждый день я ___ (нести / носить) в школу тяжёлую сумку.","answers":["ношу"],"note":"A habit, carrying: multidirectional носить. Я ношу, ты носишь."}
+      ]
+    },
+    "ru-numerals-time": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Write the number as a word, in the form the sentence needs. Type only the number.",
+      "items": [
+        {"prompt":"У меня ___ (2) сестры.","answers":["две"],"note":"The feminine form of two is две."},
+        {"prompt":"Мне ___ (17) лет.","answers":["семнадцать"],"note":"Age: Мне ... лет. Семнадцать is 17."},
+        {"prompt":"В классе ___ (21) ученик.","answers":["двадцать один"],"note":"A number ending in 1 is followed by the nominative singular."},
+        {"prompt":"У него ___ (3) брата.","answers":["три"],"note":"Two, three and four are followed by the genitive singular."},
+        {"prompt":"Сейчас ___ (5) часов.","answers":["пять"],"note":"Five and above are followed by the genitive plural: пять часов."},
+        {"prompt":"Урок начинается в ___ (9) часов.","answers":["девять"],"note":"в + the time as a number: в девять часов."},
+        {"prompt":"Мой день рождения ___ января (1st).","answers":["первого"],"note":"Dates use the ordinal in the genitive: первого января."},
+        {"prompt":"У меня ___ (4) книги.","answers":["четыре"],"note":"Four is followed by the genitive singular."},
+        {"prompt":"В неделе ___ (7) дней.","answers":["семь"],"note":"Seven is followed by the genitive plural."},
+        {"prompt":"В году ___ (12) месяцев.","answers":["двенадцать"],"note":"Twelve is followed by the genitive plural."},
+        {"prompt":"Сейчас ___ (2) часа.","answers":["два"],"note":"Masculine два goes with час, часа."},
+        {"prompt":"Это стоит ___ (100) рублей.","answers":["сто"],"note":"Сто is followed by the genitive plural."},
+        {"prompt":"Брату ___ (1) год.","answers":["один"],"note":"Один agrees with the noun год."}
+      ]
+    },
+    "ru-moods-comparison": {
+      "answerLanguage": "ru",
+      "promptLanguage": "ru",
+      "instruction": "Type the missing word in the form the sentence needs. Type only that word.",
+      "items": [
+        {"prompt":"___ (открыть), пожалуйста, окно! (ты)","answers":["открой"],"note":"Imperative, ты: open becomes открой."},
+        {"prompt":"___ (читать) вслух! (ты)","answers":["читай"],"note":"Imperative, ты: читай."},
+        {"prompt":"___ (писать) аккуратно, дети! (вы)","answers":["пишите"],"note":"Imperative, вы: пиши becomes пишите."},
+        {"prompt":"Я бы ___ (пойти) в кино, если бы у меня было время.","answers":["пошёл","пошла"],"note":"Conditional: бы + the past tense. Masculine пошёл, feminine пошла."},
+        {"prompt":"Мой брат ___ (старый) меня.","answers":["старше"],"note":"The comparative of старый is старше."},
+        {"prompt":"Эта книга ___ (интересный), чем та.","answers":["интереснее"],"note":"Short comparative in -ее: интереснее."},
+        {"prompt":"Сегодня ___ (холодный), чем вчера.","answers":["холоднее"],"note":"Short comparative in -ее: холоднее."},
+        {"prompt":"Он бегает ___ (быстро) всех.","answers":["быстрее"],"note":"Comparative: быстрее, and всех means than everyone."},
+        {"prompt":"Она говорит по-русски ___ (хорошо), чем я.","answers":["лучше"],"note":"Irregular comparative of хорошо: лучше."},
+        {"prompt":"Мама хочет, ___ я пришёл рано.","answers":["чтобы"],"note":"хотеть, чтобы + past tense, when the subject changes."},
+        {"prompt":"Давайте ___ (пойти) в парк! (мы)","answers":["пойдём"],"note":"The \"let us\" imperative with давайте uses the мы form: пойдём."},
+        {"prompt":"Мой брат ___ (молодой) меня.","answers":["моложе"],"note":"The comparative of молодой is моложе."}
+      ]
+    },
+    "ru-language-awareness": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Answer each item: give the infinitive of the verb in Russian, or name the case or the part of speech in English. Type only the answer.",
+      "items": [
+        {"prompt":"Infinitive of: пишешь","answers":["писать"],"note":"Drop the personal ending and find the dictionary form: пишешь comes from писать."},
+        {"prompt":"Infinitive of: пошла","answers":["пойти"],"note":"The past tense of пойти is пошёл, пошла, пошли."},
+        {"prompt":"Infinitive of: говорили","answers":["говорить"],"note":"Remove the past tense ending -ли and add -ть."},
+        {"prompt":"Infinitive of: живёт","answers":["жить"],"note":"живу, живёшь, живёт all come from жить."},
+        {"prompt":"Infinitive of: купим","answers":["купить"],"note":"This is the future of the perfective verb купить."},
+        {"prompt":"Infinitive of: хотят","answers":["хотеть"],"note":"хочу, хочешь, хочет, хотим, хотите, хотят come from хотеть."},
+        {"prompt":"Infinitive of: учился","answers":["учиться"],"note":"Reflexive verbs keep -ся in the infinitive."},
+        {"prompt":"Infinitive of: дала","answers":["дать"],"note":"The past tense of дать is дал, дала, дало, дали."},
+        {"prompt":"Infinitive of: могут","answers":["мочь"],"note":"могу, можешь, может, можем, можете, могут come from мочь."},
+        {"prompt":"Infinitive of: прочитаю","answers":["прочитать"],"note":"The future of the perfective verb прочитать."},
+        {"prompt":"Case of «книгу» in: Я читаю книгу.","answers":["accusative","винительный"],"note":"The direct object of a verb takes the accusative; feminine -а becomes -у.","answerLang":"en"},
+        {"prompt":"Case of «школе» in: Мы были в школе.","answers":["prepositional","предложный"],"note":"в with the meaning \"where\" takes the prepositional case.","answerLang":"en"},
+        {"prompt":"Case of «сестры» in: У меня нет сестры.","answers":["genitive","родительный"],"note":"нет takes the genitive.","answerLang":"en"},
+        {"prompt":"Case of «брату» in: Я позвонил брату.","answers":["dative","дательный"],"note":"звонить takes the dative for the person you call.","answerLang":"en"},
+        {"prompt":"Case of «ручкой» in: Он пишет ручкой.","answers":["instrumental","творительный"],"note":"The tool with which you do something: instrumental.","answerLang":"en"},
+        {"prompt":"Part of speech of «на» in: Книга лежит на столе.","answers":["preposition","предлог"],"note":"на links the noun to the verb and takes a case after it.","answerLang":"en"},
+        {"prompt":"Part of speech of «красивый» in: Это красивый город.","answers":["adjective","прилагательное","имя прилагательное"],"note":"It describes the noun город and agrees with it.","answerLang":"en"},
+        {"prompt":"Part of speech of «мы» in: Мы идём домой.","answers":["pronoun","местоимение"],"note":"мы stands in the place of a noun.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «в большом городе» in: Мы живём в большом городе.","answers":["prepositional","предложный"],"note":"в meaning \"where\" takes the prepositional case; the adjective and noun both end in -ом/-е.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «новую книгу» in: Я купила новую книгу.","answers":["accusative","винительный"],"note":"The direct object takes the accusative; the feminine adjective ends in -ую.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «без сестры» in: Я пошёл в кино без сестры.","answers":["genitive","родительный"],"note":"без always takes the genitive.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «с моим другом» in: Я гуляю с моим другом.","answers":["instrumental","творительный"],"note":"с meaning \"with\" takes the instrumental.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «старшему брату» in: Я помогаю старшему брату.","answers":["dative","дательный"],"note":"помогать takes the dative.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «русские города» in: Русские города очень красивы.","answers":["nominative","именительный"],"note":"The subject of the sentence takes the nominative; the plural adjective ends in -ие.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «до вокзала» in: Дойдите до вокзала.","answers":["genitive","родительный"],"note":"до takes the genitive.","answerLang":"en"},
+        {"prompt":"Case of the noun phrase «по улице» in: Мы шли по улице.","answers":["dative","дательный"],"note":"по meaning \"along\" takes the dative.","answerLang":"en"},
+        {"prompt":"Part of speech of «быстро» in: Он быстро бежит.","answers":["adverb","наречие"],"note":"быстро describes the verb and never changes.","answerLang":"en"},
+        {"prompt":"Part of speech of «читает» in: Она читает книгу.","answers":["verb","глагол"],"note":"читает is a verb in the present tense.","answerLang":"en"},
+        {"prompt":"Part of speech of «потому что» in: Я дома, потому что идёт дождь.","answers":["conjunction","союз"],"note":"потому что links two clauses.","answerLang":"en"},
+        {"prompt":"Part of speech of «из» in: Он приехал из Москвы.","answers":["preposition","предлог"],"note":"из takes the genitive.","answerLang":"en"},
+        {"prompt":"Part of speech of «три» in: У меня три брата.","answers":["numeral","числительное"],"note":"три is a number.","answerLang":"en"},
+        {"prompt":"Part of speech of «ей» in: Я дал ей книгу.","answers":["pronoun","местоимение"],"note":"ей is the dative of она.","answerLang":"en"},
+        {"prompt":"Part of speech of «здание» in: Это старое здание.","answers":["noun","существительное"],"note":"здание names a thing; it is a neuter noun.","answerLang":"en"}
+      ]
+    },
+    "ru-vocab-me": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Write each word or phrase in Russian. Type only the Russian.",
+      "items": [
+        {"prompt":"mother","answers":["мама","мать"],"note":"мама (feminine), formally мать."},
+        {"prompt":"father","answers":["папа","отец"],"note":"папа (masculine), formally отец."},
+        {"prompt":"brother","answers":["брат"],"note":"брат (masculine); plural братья."},
+        {"prompt":"sister","answers":["сестра"],"note":"сестра (feminine)."},
+        {"prompt":"grandmother","answers":["бабушка"],"note":"бабушка (feminine)."},
+        {"prompt":"grandfather","answers":["дедушка"],"note":"дедушка (masculine, but with a feminine-looking ending)."},
+        {"prompt":"house","answers":["дом"],"note":"дом (masculine); plural дома."},
+        {"prompt":"flat, apartment","answers":["квартира"],"note":"квартира (feminine)."},
+        {"prompt":"room","answers":["комната"],"note":"комната (feminine)."},
+        {"prompt":"school","answers":["школа"],"note":"школа (feminine)."},
+        {"prompt":"teacher (man)","answers":["учитель"],"note":"учитель (masculine); plural учителя."},
+        {"prompt":"lesson","answers":["урок"],"note":"урок (masculine)."},
+        {"prompt":"friend (boy or man)","answers":["друг"],"note":"друг (masculine); plural друзья."},
+        {"prompt":"free time","answers":["свободное время"],"note":"свободное время (neuter): the adjective ends in -ое."},
+        {"prompt":"homework","answers":["домашнее задание","домашняя работа"],"note":"домашнее задание (neuter) or домашняя работа (feminine): the adjective ends in -ее or -яя."},
+        {"prompt":"breakfast","answers":["завтрак"],"note":"завтрак (masculine)."}
+      ]
+    },
+    "ru-vocab-world": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Write each word or phrase in Russian. Type only the Russian.",
+      "items": [
+        {"prompt":"health","answers":["здоровье"],"note":"здоровье (neuter)."},
+        {"prompt":"doctor","answers":["врач","доктор"],"note":"врач (masculine) is the usual word; a woman is also called врач."},
+        {"prompt":"hospital","answers":["больница"],"note":"больница (feminine)."},
+        {"prompt":"to travel","answers":["путешествовать"],"note":"путешествовать: я путешествую."},
+        {"prompt":"trip, journey","answers":["поездка","путешествие"],"note":"поездка (feminine), a trip; путешествие (neuter), a journey."},
+        {"prompt":"airport","answers":["аэропорт"],"note":"аэропорт (masculine)."},
+        {"prompt":"ticket","answers":["билет"],"note":"билет (masculine)."},
+        {"prompt":"job, work","answers":["работа"],"note":"работа (feminine)."},
+        {"prompt":"the environment","answers":["окружающая среда"],"note":"окружающая среда (feminine): both words are feminine."},
+        {"prompt":"technology","answers":["технология","технологии"],"note":"технология (feminine); often used in the plural, технологии."},
+        {"prompt":"computer","answers":["компьютер"],"note":"компьютер (masculine)."},
+        {"prompt":"weather","answers":["погода"],"note":"погода (feminine)."},
+        {"prompt":"village","answers":["деревня"],"note":"деревня (feminine)."},
+        {"prompt":"pollution","answers":["загрязнение"],"note":"загрязнение (neuter)."},
+        {"prompt":"school holidays","answers":["каникулы"],"note":"каникулы is only used in the plural."},
+        {"prompt":"shop","answers":["магазин"],"note":"магазин (masculine)."}
+      ]
+    },
+    "ru-culture-knowledge": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Answer in Russian with the word or name asked for. Type only that word or name.",
+      "items": [
+        {"prompt":"The capital of Russia","answers":["Москва"],"note":"Moscow is among the twenty largest cities in the world."},
+        {"prompt":"The largest country in the world: what is it called in Russian?","answers":["Россия"],"note":"More than 17 million square kilometres."},
+        {"prompt":"The lake in Russia that is the deepest in the world","answers":["Байкал"],"note":"Lake Baikal in Siberia."},
+        {"prompt":"The longest railway in the world, across Russia: the ___ magistral. Give the adjective (Trans-Siberian).","answers":["Транссибирская"],"note":"Транссибирская магистраль joins Moscow and Vladivostok."},
+        {"prompt":"The official language of Russia","answers":["русский","русский язык"],"note":"Republics may introduce a second official language."},
+        {"prompt":"The mountains that mark the border between Europe and Asia: the ___ mountains. Give the adjective (Ural).","answers":["Уральские"],"note":"Among the oldest mountains on the planet."},
+        {"prompt":"The longest river in Europe, which flows through Russia","answers":["Волга"],"note":"The Volga is the longest river in Europe."},
+        {"prompt":"The Russian word for the traditional pancake eaten at Maslenitsa (plural)","answers":["блины"],"note":"Blini are a symbol of the sun and of spring."},
+        {"prompt":"The Russian word for a traditional hot tea urn","answers":["самовар"],"note":"Tea is an important part of Russian culture."},
+        {"prompt":"The Russian word for a country house where people spend the summer","answers":["дача"],"note":"Spending summer at the dacha is a Russian tradition."},
+        {"prompt":"The letter of the Russian alphabet that appeared only at the end of the eighteenth century","answers":["ё"],"note":"The Russian alphabet today has 33 letters."},
+        {"prompt":"The Russian word for the fortress in the centre of Moscow","answers":["Кремль"],"note":"The Moscow Kremlin is the largest medieval fortress in the world."}
+      ]
+    },
+    "ru-culture-places": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Answer in Russian with the word or name asked for. Type only that word or name.",
+      "items": [
+        {"prompt":"The \"northern capital\" of Russia, founded by Peter the Great","answers":["Санкт-Петербург","Санкт Петербург","Петербург"],"note":"Founded in 1703 on the Neva."},
+        {"prompt":"The famous square in Moscow next to the Kremlin: the ___ Square. Give the adjective (Red).","answers":["Красная"],"note":"Красная площадь."},
+        {"prompt":"The museum in St Petersburg in the former Winter Palace","answers":["Эрмитаж"],"note":"It is famous for its collections and also for its cats."},
+        {"prompt":"The river that flows through St Petersburg","answers":["Нева"],"note":"The Neva flows from Lake Ladoga to the Gulf of Finland."},
+        {"prompt":"Complete the Russian name of the cathedral on Red Square: собор Василия ___.","answers":["Блаженного","Василия Блаженного"],"note":"Собор Василия Блаженного."},
+        {"prompt":"Complete the Russian name of the famous Moscow theatre for ballet and opera: Большой ___.","answers":["театр","Большой театр"],"note":"Большой театр, the Bolshoi."},
+        {"prompt":"The \"Golden Ring\": ___ кольцо. Give the adjective (golden).","answers":["Золотое"],"note":"A route of ancient towns near Moscow, such as Vladimir and Suzdal."},
+        {"prompt":"The city of the 2014 Winter Olympics, on the Black Sea","answers":["Сочи"],"note":"Sochi is a seaside and ski resort."},
+        {"prompt":"The peninsula in the Far East with volcanoes","answers":["Камчатка"],"note":"The Kamchatka peninsula has many active volcanoes."},
+        {"prompt":"The Russian word for \"metro\"","answers":["метро","метрополитен"],"note":"The Moscow metro stations look like palaces; the St Petersburg metro is one of the deepest in the world."},
+        {"prompt":"The largest city of Siberia (hint: starts with Н)","answers":["Новосибирск"],"note":"Novosibirsk has a population of over a million."},
+        {"prompt":"The Russian word for \"sight\" or \"attraction\" (singular)","answers":["достопримечательность"],"note":"Туристы любят осматривать достопримечательности."}
+      ]
+    },
+    "ru-culture-nature": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Answer in Russian with the word or name asked for. Type only that word or name.",
+      "items": [
+        {"prompt":"A large brown animal of the Russian taiga","answers":["медведь","бурый медведь"],"note":"Бурый медведь lives in the taiga."},
+        {"prompt":"The big striped cat of the Far East","answers":["тигр","амурский тигр","уссурийский тигр"],"note":"The Amur (Ussuri) tiger lives in the Far East."},
+        {"prompt":"A large animal with antlers that lives in forests (elk)","answers":["лось"],"note":"Moose live in the European and Siberian forests."},
+        {"prompt":"An Arctic fox","answers":["песец"],"note":"Песец lives in the tundra."},
+        {"prompt":"A walrus","answers":["морж"],"note":"Walruses live in Arctic waters."},
+        {"prompt":"A reindeer","answers":["северный олень","олень"],"note":"Дикий северный олень lives in the tundra and taiga."},
+        {"prompt":"The Russian word for a polar bear (white bear)","answers":["белый медведь"],"note":"White bears and walruses are typical Arctic animals."},
+        {"prompt":"The Russian word for \"squirrel\"","answers":["белка"],"note":"Squirrels live in the taiga."},
+        {"prompt":"A wolf","answers":["волк"],"note":"Wolves live in European Russia and in Siberia."},
+        {"prompt":"The Russian word for a lynx","answers":["рысь"],"note":"Рысь is a large wild cat."},
+        {"prompt":"The huge forest of Siberia: the Siberian ___.","answers":["тайга"],"note":"The Siberian taiga is the largest forest area in the world."},
+        {"prompt":"The treeless Arctic plain in the north, in Russian","answers":["тундра"],"note":"Typical animals: reindeer and the Arctic fox."}
+      ]
+    },
+    "ru-culture-people": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Answer in Russian with the word or name asked for. Type only that word or name.",
+      "items": [
+        {"prompt":"The great Russian poet, author of «Евгений Онегин» (surname)","answers":["Пушкин"],"note":"Alexander Pushkin (1799–1837) is the founder of modern Russian literature."},
+        {"prompt":"The author of «Война и мир» and «Анна Каренина» (surname)","answers":["Толстой"],"note":"Leo Tolstoy."},
+        {"prompt":"The author of «Преступление и наказание» (surname)","answers":["Достоевский"],"note":"Fyodor Dostoevsky."},
+        {"prompt":"The author of the play «Вишнёвый сад» (surname)","answers":["Чехов"],"note":"Anton Chekhov wrote short stories and plays."},
+        {"prompt":"The composer of the ballet «Лебединое озеро» (surname)","answers":["Чайковский"],"note":"Pyotr Tchaikovsky also wrote «Щелкунчик» and «Спящая красавица»."},
+        {"prompt":"The Russian composer of «Петя и волк» (surname)","answers":["Прокофьев"],"note":"Sergei Prokofiev wrote a musical tale for children."},
+        {"prompt":"The author of «Мастер и Маргарита» (surname)","answers":["Булгаков"],"note":"Mikhail Bulgakov."},
+        {"prompt":"The author of «Мёртвые души» (surname)","answers":["Гоголь"],"note":"Nikolai Gogol wrote «Мёртвые души» and «Ревизор»."},
+        {"prompt":"The Russian painter of «Бурлаки на Волге» (surname)","answers":["Репин"],"note":"Ilya Repin."},
+        {"prompt":"The first human in space (surname)","answers":["Гагарин"],"note":"Yuri Gagarin became the first human in space in 1961."},
+        {"prompt":"The famous Russian poet who wrote «Дядя Стёпа» for children (surname)","answers":["Михалков"],"note":"Sergei Mikhalkov, also author of the lyrics of the national anthem."},
+        {"prompt":"The Russian scientist who created the periodic table of elements (surname)","answers":["Менделеев"],"note":"Dmitri Mendeleev."}
+      ]
+    },
+    "ru-culture-society": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Answer in Russian with the word or name asked for. Type only that word or name.",
+      "items": [
+        {"prompt":"The Russian word for \"education\"","answers":["образование"],"note":"Russia has a high level of education."},
+        {"prompt":"The Russian word for a school-leaver, graduate","answers":["выпускник"],"note":"The Last Bell ceremony marks the end of school."},
+        {"prompt":"The date on which the Russian school year starts, in words (day and month)","answers":["первого сентября","первое сентября","1 сентября"],"note":"The first of September is the Day of Knowledge."},
+        {"prompt":"ЕГЭ is the unified ___ exam taken at the end of school. Give the adjective (state).","answers":["государственный"],"note":"ЕГЭ is the unified state exam."},
+        {"prompt":"The Russian word for \"ice hockey\" (one word, as people usually say it)","answers":["хоккей"],"note":"Ice hockey is very popular in Russia."},
+        {"prompt":"The Russian word for the sport \"football\"","answers":["футбол"],"note":"Russia hosted the football World Cup in 2018."},
+        {"prompt":"The missing word in зимние ___ спорта (kinds of winter sport)","answers":["виды"],"note":"Зимние виды спорта: хоккей, лыжи, биатлон, фигурное катание."},
+        {"prompt":"The Russian word for \"figure skating\"","answers":["фигурное катание"],"note":"Russian figure skaters are among the best in the world."},
+        {"prompt":"The Russian word for \"family\"","answers":["семья"],"note":"Typically several generations meet on holidays."},
+        {"prompt":"The Russian word for \"flat/apartment\"","answers":["квартира"],"note":"Most Russians in cities live in flats in blocks."},
+        {"prompt":"The Russian word for \"the Russian bath\"","answers":["баня"],"note":"Баня is popular, especially in winter."},
+        {"prompt":"The Russian adjective meaning \"multinational\"","answers":["многонациональный","многонациональная","многонациональное"],"note":"Russia is a multinational country with more than 190 peoples."}
+      ]
+    },
+    "ru-culture-traditions": {
+      "answerLanguage": "ru",
+      "promptLanguage": "en",
+      "instruction": "Answer in Russian with the word or name asked for. Type only that word or name.",
+      "items": [
+        {"prompt":"The Russian \"Father Frost\"","answers":["Дед Мороз"],"note":"Ded Moroz brings gifts at New Year, with his granddaughter Snegurochka."},
+        {"prompt":"His granddaughter, the Snow Maiden","answers":["Снегурочка"],"note":"Снегурочка."},
+        {"prompt":"The holiday celebrated on 8 March","answers":["Международный женский день","8 Марта","восьмое марта"],"note":"On 8 March men give women flowers and gifts."},
+        {"prompt":"The week of pancakes before Lent: ___","answers":["Масленица"],"note":"Масленица ends with burning a straw figure of winter."},
+        {"prompt":"The Russian soup made from beetroot","answers":["борщ"],"note":"Борщ is served with sour cream."},
+        {"prompt":"The Russian dumplings with meat","answers":["пельмени"],"note":"Пельмени are associated with the Urals and Siberia."},
+        {"prompt":"The Russian word for \"fairy tale\"","answers":["сказка"],"note":"Русская народная сказка."},
+        {"prompt":"The witch who lives in a hut on chicken legs: Баба ___","answers":["Яга"],"note":"Баба Яга is a character in Russian fairy tales."},
+        {"prompt":"The hero of a tale who catches a firebird, Ivan the ___ (prince)","answers":["царевич"],"note":"Иван-царевич and the Grey Wolf."},
+        {"prompt":"The \"firebird\"","answers":["жар-птица","жар птица"],"note":"Жар-птица appears in many Russian fairy tales."},
+        {"prompt":"The immortal evil old man in fairy tales: Кощей ___","answers":["Бессмертный"],"note":"Кощей Бессмертный."},
+        {"prompt":"The Russian word for the New Year decorated tree","answers":["ёлка","елка","новогодняя ёлка"],"note":"A decorated ёлка stands in the home at New Year."}
+      ]
+    }
+  }
+}

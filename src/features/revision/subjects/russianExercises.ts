@@ -1,0 +1,231 @@
+import type { LanguagePool } from '../problems/types'
+
+/*
+ * Russian exercises. This is the one file allowed to contain Cyrillic (see
+ * AGENTS.md): the learner types Russian answers, so the exercises have to be
+ * Russian. Everything around them (instructions, notes, UI) stays English.
+ *
+ * The sentences are original drills written for this app. They are not taken
+ * from, or adapted from, any exam paper or textbook. Answers are compared
+ * ignoring case, stress marks, final punctuation and the difference between
+ * ё and е. Where more than one preposition or form would be correct, the
+ * prompt carries an English hint.
+ */
+
+const gaps = (instruction: string, items: LanguagePool['items']): LanguagePool => ({
+  lang: 'ru',
+  promptLang: 'ru',
+  instruction,
+  items,
+})
+
+const translate = (instruction: string, items: LanguagePool['items']): LanguagePool => ({
+  lang: 'ru',
+  promptLang: 'en',
+  instruction,
+  items,
+})
+
+export const russianPools: Readonly<Record<string, LanguagePool>> = {
+  'ru-cases-nouns': gaps('Put the word in brackets into the case the sentence needs. Type only that word.', [
+    { prompt: 'Я живу в ___ (Москва).', answers: ['Москве'], note: 'Place after в: prepositional case. Feminine -а becomes -е.' },
+    { prompt: 'Я читаю ___ (книга).', answers: ['книгу'], note: 'Direct object: accusative. Feminine -а becomes -у.' },
+    { prompt: 'У меня нет ___ (сестра).', answers: ['сестры'], note: 'нет takes the genitive. Feminine -а becomes -ы.' },
+    { prompt: 'Я даю подарок ___ (брат).', answers: ['брату'], note: 'The person who receives something: dative.' },
+    { prompt: 'Он пишет письмо ___ (ручка).', answers: ['ручкой'], note: 'The tool you use: instrumental. Feminine -а becomes -ой.' },
+    { prompt: 'Мы идём в ___ (школа).', answers: ['школу'], note: 'в + accusative answers "where to?". Feminine -а becomes -у.' },
+    { prompt: 'Она думает о ___ (мама).', answers: ['маме'], note: 'о + prepositional. Feminine -а becomes -е.' },
+    { prompt: 'Я говорю с ___ (друг).', answers: ['другом'], note: 'с meaning "with" takes the instrumental. Masculine adds -ом.' },
+    { prompt: 'В классе нет ___ (учитель).', answers: ['учителя'], note: 'нет takes the genitive. Masculine -ь becomes -я.' },
+    { prompt: 'Я вижу ___ (брат) в парке.', answers: ['брата'], note: 'An animate masculine object: the accusative looks like the genitive.' },
+    { prompt: 'На столе лежат ___ (книга, plural).', answers: ['книги'], note: 'Nominative plural of a feminine noun: -а becomes -ы or -и (-и after к).' },
+    { prompt: 'У нас много ___ (друг, plural).', answers: ['друзей'], note: 'много takes the genitive plural. друг has an irregular plural: друзья, друзей.' },
+  ]),
+
+  'ru-verbs-tenses': gaps('Put the verb in brackets into the form the sentence needs. Type only that word.', [
+    { prompt: 'Я ___ (читать) книгу каждый день.', answers: ['читаю'], note: 'Present tense, я: читать has the endings -ю, -ешь, -ет, -ем, -ете, -ют.' },
+    { prompt: 'Он ___ (жить) в Дублине.', answers: ['живёт'], note: 'Present tense, он: жить is irregular, живу, живёшь, живёт.' },
+    { prompt: 'Вчера мы ___ (смотреть) фильм.', answers: ['смотрели'], note: 'Past tense with мы: the verb takes -ли.' },
+    { prompt: 'Она ___ (говорить) по-русски.', answers: ['говорит'], note: 'Present tense, она: говорить has the endings -ю, -ишь, -ит, -им, -ите, -ят.' },
+    { prompt: 'Завтра я ___ (быть) дома.', answers: ['буду'], note: 'Future of быть: буду, будешь, будет, будем, будете, будут.' },
+    { prompt: 'Они ___ (писать) письма.', answers: ['пишут'], note: 'Present tense, они: писать has the stem пиш-, пишу, пишешь, пишут.' },
+    { prompt: 'Вчера она ___ (читать) целый час.', answers: ['читала'], note: 'Past tense with она: the verb takes -ла.' },
+    { prompt: 'Ты ___ (хотеть) чай?', answers: ['хочешь'], note: 'Present tense, ты: хотеть mixes endings, хочу, хочешь, хочет, хотим, хотите, хотят.' },
+    { prompt: 'Мы ___ (любить) музыку.', answers: ['любим'], note: 'Present tense, мы: любить has the endings -лю, -ишь, -ит, -им, -ите, -ят.' },
+    { prompt: 'Я ___ (учиться) в школе.', answers: ['учусь'], note: 'Reflexive verbs keep -сь after a vowel and -ся after a consonant: я учусь, он учится.' },
+    { prompt: 'Вчера он ___ (учиться) в библиотеке.', answers: ['учился'], note: 'Past tense with он: the verb takes -л, and the reflexive part is -ся.' },
+    { prompt: 'Вчера они не ___ (мочь) прийти.', answers: ['могли'], note: 'Past tense of мочь: мог, могла, могли.' },
+  ]),
+
+  'ru-adjectives-agreement': gaps('Put the word in brackets into the form that agrees with the noun. Type only that word.', [
+    { prompt: 'Это ___ (новый) книга.', answers: ['новая'], note: 'Feminine nominative: -ый becomes -ая.' },
+    { prompt: 'У меня ___ (старший) сестра.', answers: ['старшая'], note: 'Feminine nominative: -ий becomes -ая.' },
+    { prompt: 'Мы живём в ___ (большой) городе.', answers: ['большом'], note: 'Masculine prepositional: -ой becomes -ом.' },
+    { prompt: 'Я читаю ___ (интересный) книгу.', answers: ['интересную'], note: 'Feminine accusative: -ый becomes -ую.' },
+    { prompt: 'Это ___ (мой) мама.', answers: ['моя'], note: 'мой agrees with the noun: мой, моя, моё, мои.' },
+    { prompt: 'Это ___ (мой) окно.', answers: ['моё'], note: 'Neuter: мой becomes моё.' },
+    { prompt: 'Я не люблю ___ (холодный) погоду.', answers: ['холодную'], note: 'Feminine accusative: -ый becomes -ую.' },
+    { prompt: 'У ___ (красивый) девушки длинные волосы.', answers: ['красивой'], note: 'Feminine genitive, after у: -ый becomes -ой.' },
+    { prompt: 'Мы говорим о ___ (русский) культуре.', answers: ['русской'], note: 'Feminine prepositional: -ий becomes -ой.' },
+    { prompt: 'Это ___ (хороший) друзья.', answers: ['хорошие'], note: 'Nominative plural: -ий becomes -ие.' },
+    { prompt: 'Я иду в гости к ___ (мой) другу.', answers: ['моему'], note: 'Masculine dative, after к: мой becomes моему.' },
+  ]),
+
+  'ru-aspect': gaps('Choose the verb that fits and put it in the form the sentence needs. Type only that word.', [
+    { prompt: 'Вчера мы долго ___ (делать / сделать) уроки.', answers: ['делали'], note: 'A long process in the past: imperfective.' },
+    { prompt: 'Мы наконец ___ (делать / сделать) домашнее задание.', answers: ['сделали'], note: 'A finished result: perfective.' },
+    { prompt: 'Я каждый день ___ (читать / прочитать) новости.', answers: ['читаю'], note: 'A repeated action: imperfective. Perfective verbs have no present tense.' },
+    { prompt: 'Завтра я обязательно ___ (звонить / позвонить) маме.', answers: ['позвоню'], note: 'One planned action in the future: perfective, future form.' },
+    { prompt: 'Он всегда ___ (покупать / купить) хлеб в этом магазине.', answers: ['покупает'], note: 'A habit: imperfective.' },
+    { prompt: 'Вчера он ___ (покупать / купить) новую куртку.', answers: ['купил'], note: 'One completed action with a result: perfective.' },
+    { prompt: 'Они ___ (решать / решить) задачу целый час.', answers: ['решали'], note: 'A duration, целый час: imperfective.' },
+    { prompt: 'Они ___ (решать / решить) задачу и пошли домой.', answers: ['решили'], note: 'One action finished before the next: perfective.' },
+    { prompt: 'Я буду ___ (учить / выучить) слова весь вечер.', answers: ['учить'], note: 'буду takes the imperfective infinitive.' },
+    { prompt: 'К пятнице я ___ (учить / выучить) все слова.', answers: ['выучу'], note: 'A result by a deadline: perfective, future form.' },
+    { prompt: 'Что вы ___ (делать / сделать) вчера вечером?', answers: ['делали'], note: 'Asking what was going on: imperfective.' },
+    { prompt: 'Она ___ (открывать / открыть) окно, и в комнате стало холодно.', answers: ['открыла'], note: 'A single action followed by a result: perfective.' },
+  ]),
+
+  'ru-prepositions': gaps('Type the missing preposition. Type only that word.', [
+    { prompt: 'Я иду ___ школу (to).', answers: ['в'], note: 'в + accusative answers "where to?" for enclosed places.' },
+    { prompt: 'Мы живём ___ Ирландии (in).', answers: ['в'], note: 'в + prepositional answers "where?" for countries and enclosed places.' },
+    { prompt: 'Он работает ___ почте (at).', answers: ['на'], note: 'на goes with open places and some buildings: на почте, на работе, на вокзале.' },
+    { prompt: 'Я еду ___ автобусе (by).', answers: ['на'], note: 'Transport takes на + prepositional: на автобусе, на поезде.' },
+    { prompt: 'Он приехал ___ Москвы (from).', answers: ['из'], note: 'из + genitive for "from" a city or country.' },
+    { prompt: 'Книга лежит ___ столом (under).', answers: ['под'], note: 'под + instrumental when something is under, под + accusative when it moves there.' },
+    { prompt: 'Лампа висит ___ столом (above).', answers: ['над'], note: 'над + instrumental means above.' },
+    { prompt: 'Я иду в кино ___ друзьями (with).', answers: ['с'], note: 'с + instrumental means with.' },
+    { prompt: 'Я иду в гости ___ другу (to a person).', answers: ['к'], note: 'к + dative for going to a person.' },
+    { prompt: 'Я получил письмо ___ мамы (from).', answers: ['от'], note: 'от + genitive for "from" a person.' },
+    { prompt: 'Мы говорим ___ экзамене (about).', answers: ['об'], note: 'о becomes об before a vowel: об экзамене.' },
+    { prompt: '___ уроков я иду домой (after).', answers: ['после'], note: 'после + genitive means after.' },
+    { prompt: 'Мы сидим ___ столом (at).', answers: ['за'], note: 'за + instrumental means behind or at: за столом.' },
+  ]),
+
+  'ru-motion-verbs': gaps('Choose the verb that fits and put it in the form the sentence needs. Type only that word.', [
+    { prompt: 'Каждый день я ___ (идти / ходить) в школу пешком.', answers: ['хожу'], note: 'A habit: multidirectional ходить. Я хожу, ты ходишь.' },
+    { prompt: 'Сейчас я ___ (идти / ходить) в школу.', answers: ['иду'], note: 'One journey in one direction right now: unidirectional идти.' },
+    { prompt: 'Вчера мы ___ (ехать / ездить) в Корк.', answers: ['ездили'], note: 'A round trip, there and back: multidirectional, past tense.' },
+    { prompt: 'Завтра мы ___ (ехать / ездить) в Дублин (future).', answers: ['поедем'], note: 'One journey in the future: unidirectional ехать with по-: поедем.' },
+    { prompt: 'Он часто ___ (бегать / бежать) в парке.', answers: ['бегает'], note: 'A habit: multidirectional бегать.' },
+    { prompt: 'Смотри, собака ___ (бегать / бежать) за мячом!', answers: ['бежит'], note: 'One action happening now: unidirectional бежать. Она бежит.' },
+    { prompt: 'Самолёты ___ (летать / лететь) быстро.', answers: ['летают'], note: 'General statement: multidirectional летать.' },
+    { prompt: 'Летом я люблю ___ (плавать / плыть) в море.', answers: ['плавать'], note: 'Liking an activity in general: multidirectional плавать.' },
+    { prompt: 'Вчера она ___ (идти / ходить) в театр.', answers: ['ходила'], note: 'Went and came back: multidirectional, past tense, feminine.' },
+    { prompt: 'Он ___ (войти / выйти) в комнату и сел.', answers: ['вошёл'], note: 'в- means in: войти. Past tense masculine: вошёл.' },
+    { prompt: 'Она ___ (войти / выйти) из дома и закрыла дверь.', answers: ['вышла'], note: 'вы- means out: выйти. Past tense feminine: вышла.' },
+    { prompt: 'Мы ___ (ехать / ездить) на велосипеде каждое воскресенье.', answers: ['ездим'], note: 'A habit: multidirectional ездить. Мы ездим.' },
+    { prompt: 'Каждый день я ___ (нести / носить) в школу тяжёлую сумку.', answers: ['ношу'], note: 'A habit, carrying: multidirectional носить. Я ношу, ты носишь.' },
+  ]),
+
+  'ru-numerals-time': gaps('Write the number as a word, in the form the sentence needs. Type only the number.', [
+    { prompt: 'У меня ___ (2) сестры.', answers: ['две'], note: 'The feminine form of two is две.' },
+    { prompt: 'Мне ___ (17) лет.', answers: ['семнадцать'], note: 'Age: Мне ... лет. Семнадцать is 17.' },
+    { prompt: 'В классе ___ (21) ученик.', answers: ['двадцать один'], note: 'A number ending in 1 is followed by the nominative singular.' },
+    { prompt: 'У него ___ (3) брата.', answers: ['три'], note: 'Two, three and four are followed by the genitive singular.' },
+    { prompt: 'Сейчас ___ (5) часов.', answers: ['пять'], note: 'Five and above are followed by the genitive plural: пять часов.' },
+    { prompt: 'Урок начинается в ___ (9) часов.', answers: ['девять'], note: 'в + the time as a number: в девять часов.' },
+    { prompt: 'Мой день рождения ___ января (1st).', answers: ['первого'], note: 'Dates use the ordinal in the genitive: первого января.' },
+    { prompt: 'У меня ___ (4) книги.', answers: ['четыре'], note: 'Four is followed by the genitive singular.' },
+    { prompt: 'В неделе ___ (7) дней.', answers: ['семь'], note: 'Seven is followed by the genitive plural.' },
+    { prompt: 'В году ___ (12) месяцев.', answers: ['двенадцать'], note: 'Twelve is followed by the genitive plural.' },
+    { prompt: 'Сейчас ___ (2) часа.', answers: ['два'], note: 'Masculine два goes with час, часа.' },
+    { prompt: 'Это стоит ___ (100) рублей.', answers: ['сто'], note: 'Сто is followed by the genitive plural.' },
+    { prompt: 'Брату ___ (1) год.', answers: ['один'], note: 'Один agrees with the noun год.' },
+  ]),
+
+  'ru-moods-comparison': gaps('Type the missing word in the form the sentence needs. Type only that word.', [
+    { prompt: '___ (открыть), пожалуйста, окно! (ты)', answers: ['открой'], note: 'Imperative, ты: open becomes открой.' },
+    { prompt: '___ (читать) вслух! (ты)', answers: ['читай'], note: 'Imperative, ты: читай.' },
+    { prompt: '___ (писать) аккуратно, дети! (вы)', answers: ['пишите'], note: 'Imperative, вы: пиши becomes пишите.' },
+    { prompt: 'Я бы ___ (пойти) в кино, если бы у меня было время.', answers: ['пошёл', 'пошла'], note: 'Conditional: бы + the past tense. Masculine пошёл, feminine пошла.' },
+    { prompt: 'Мой брат ___ (старый) меня.', answers: ['старше'], note: 'The comparative of старый is старше.' },
+    { prompt: 'Эта книга ___ (интересный), чем та.', answers: ['интереснее'], note: 'Short comparative in -ее: интереснее.' },
+    { prompt: 'Сегодня ___ (холодный), чем вчера.', answers: ['холоднее'], note: 'Short comparative in -ее: холоднее.' },
+    { prompt: 'Он бегает ___ (быстро) всех.', answers: ['быстрее'], note: 'Comparative: быстрее, and всех means than everyone.' },
+    { prompt: 'Она говорит по-русски ___ (хорошо), чем я.', answers: ['лучше'], note: 'Irregular comparative of хорошо: лучше.' },
+    { prompt: 'Мама хочет, ___ я пришёл рано.', answers: ['чтобы'], note: 'хотеть, чтобы + past tense, when the subject changes.' },
+    { prompt: 'Давайте ___ (пойти) в парк! (мы)', answers: ['пойдём'], note: 'The "let us" imperative with давайте uses the мы form: пойдём.' },
+    { prompt: 'Мой брат ___ (молодой) меня.', answers: ['моложе'], note: 'The comparative of молодой is моложе.' },
+  ]),
+
+  'ru-language-awareness': {
+    lang: 'ru',
+    promptLang: 'en',
+    instruction:
+      'Answer each item: give the infinitive of the verb in Russian, or name the case or the part of speech in English. Type only the answer.',
+    items: [
+      { prompt: 'Infinitive of: пишешь', answers: ['писать'], note: 'Drop the personal ending and find the dictionary form: пишешь comes from писать.' },
+      { prompt: 'Infinitive of: пошла', answers: ['пойти'], note: 'The past tense of пойти is пошёл, пошла, пошли.' },
+      { prompt: 'Infinitive of: говорили', answers: ['говорить'], note: 'Remove the past tense ending -ли and add -ть.' },
+      { prompt: 'Infinitive of: живёт', answers: ['жить'], note: 'живу, живёшь, живёт all come from жить.' },
+      { prompt: 'Infinitive of: купим', answers: ['купить'], note: 'This is the future of the perfective verb купить.' },
+      { prompt: 'Infinitive of: хотят', answers: ['хотеть'], note: 'хочу, хочешь, хочет, хотим, хотите, хотят come from хотеть.' },
+      { prompt: 'Infinitive of: учился', answers: ['учиться'], note: 'Reflexive verbs keep -ся in the infinitive.' },
+      { prompt: 'Infinitive of: дала', answers: ['дать'], note: 'The past tense of дать is дал, дала, дало, дали.' },
+      { prompt: 'Infinitive of: могут', answers: ['мочь'], note: 'могу, можешь, может, можем, можете, могут come from мочь.' },
+      { prompt: 'Infinitive of: прочитаю', answers: ['прочитать'], note: 'The future of the perfective verb прочитать.' },
+      { prompt: 'Case of «книгу» in: Я читаю книгу.', answers: ['accusative', 'винительный'], note: 'The direct object of a verb takes the accusative; feminine -а becomes -у.', answerLang: 'en' },
+      { prompt: 'Case of «школе» in: Мы были в школе.', answers: ['prepositional', 'предложный'], note: 'в with the meaning "where" takes the prepositional case.', answerLang: 'en' },
+      { prompt: 'Case of «сестры» in: У меня нет сестры.', answers: ['genitive', 'родительный'], note: 'нет takes the genitive.', answerLang: 'en' },
+      { prompt: 'Case of «брату» in: Я позвонил брату.', answers: ['dative', 'дательный'], note: 'звонить takes the dative for the person you call.', answerLang: 'en' },
+      { prompt: 'Case of «ручкой» in: Он пишет ручкой.', answers: ['instrumental', 'творительный'], note: 'The tool with which you do something: instrumental.', answerLang: 'en' },
+      { prompt: 'Part of speech of «на» in: Книга лежит на столе.', answers: ['preposition', 'предлог'], note: 'на links the noun to the verb and takes a case after it.', answerLang: 'en' },
+      { prompt: 'Part of speech of «красивый» in: Это красивый город.', answers: ['adjective', 'прилагательное', 'имя прилагательное'], note: 'It describes the noun город and agrees with it.', answerLang: 'en' },
+      { prompt: 'Part of speech of «мы» in: Мы идём домой.', answers: ['pronoun', 'местоимение'], note: 'мы stands in the place of a noun.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «в большом городе» in: Мы живём в большом городе.', answers: ['prepositional','предложный'], note: 'в meaning "where" takes the prepositional case; the adjective and noun both end in -ом/-е.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «новую книгу» in: Я купила новую книгу.', answers: ['accusative','винительный'], note: 'The direct object takes the accusative; the feminine adjective ends in -ую.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «без сестры» in: Я пошёл в кино без сестры.', answers: ['genitive','родительный'], note: 'без always takes the genitive.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «с моим другом» in: Я гуляю с моим другом.', answers: ['instrumental','творительный'], note: 'с meaning "with" takes the instrumental.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «старшему брату» in: Я помогаю старшему брату.', answers: ['dative','дательный'], note: 'помогать takes the dative.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «русские города» in: Русские города очень красивы.', answers: ['nominative','именительный'], note: 'The subject of the sentence takes the nominative; the plural adjective ends in -ие.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «до вокзала» in: Дойдите до вокзала.', answers: ['genitive','родительный'], note: 'до takes the genitive.', answerLang: 'en' },
+      { prompt: 'Case of the noun phrase «по улице» in: Мы шли по улице.', answers: ['dative','дательный'], note: 'по meaning "along" takes the dative.', answerLang: 'en' },
+      { prompt: 'Part of speech of «быстро» in: Он быстро бежит.', answers: ['adverb','наречие'], note: 'быстро describes the verb and never changes.', answerLang: 'en' },
+      { prompt: 'Part of speech of «читает» in: Она читает книгу.', answers: ['verb','глагол'], note: 'читает is a verb in the present tense.', answerLang: 'en' },
+      { prompt: 'Part of speech of «потому что» in: Я дома, потому что идёт дождь.', answers: ['conjunction','союз'], note: 'потому что links two clauses.', answerLang: 'en' },
+      { prompt: 'Part of speech of «из» in: Он приехал из Москвы.', answers: ['preposition','предлог'], note: 'из takes the genitive.', answerLang: 'en' },
+      { prompt: 'Part of speech of «три» in: У меня три брата.', answers: ['numeral','числительное'], note: 'три is a number.', answerLang: 'en' },
+      { prompt: 'Part of speech of «ей» in: Я дал ей книгу.', answers: ['pronoun','местоимение'], note: 'ей is the dative of она.', answerLang: 'en' },
+      { prompt: 'Part of speech of «здание» in: Это старое здание.', answers: ['noun','существительное'], note: 'здание names a thing; it is a neuter noun.', answerLang: 'en' },
+    ],
+  },
+
+  'ru-vocab-me': translate('Write each word or phrase in Russian. Type only the Russian.', [
+    { prompt: 'mother', answers: ['мама', 'мать'], note: 'мама (feminine), formally мать.' },
+    { prompt: 'father', answers: ['папа', 'отец'], note: 'папа (masculine), formally отец.' },
+    { prompt: 'brother', answers: ['брат'], note: 'брат (masculine); plural братья.' },
+    { prompt: 'sister', answers: ['сестра'], note: 'сестра (feminine).' },
+    { prompt: 'grandmother', answers: ['бабушка'], note: 'бабушка (feminine).' },
+    { prompt: 'grandfather', answers: ['дедушка'], note: 'дедушка (masculine, but with a feminine-looking ending).' },
+    { prompt: 'house', answers: ['дом'], note: 'дом (masculine); plural дома.' },
+    { prompt: 'flat, apartment', answers: ['квартира'], note: 'квартира (feminine).' },
+    { prompt: 'room', answers: ['комната'], note: 'комната (feminine).' },
+    { prompt: 'school', answers: ['школа'], note: 'школа (feminine).' },
+    { prompt: 'teacher (man)', answers: ['учитель'], note: 'учитель (masculine); plural учителя.' },
+    { prompt: 'lesson', answers: ['урок'], note: 'урок (masculine).' },
+    { prompt: 'friend (boy or man)', answers: ['друг'], note: 'друг (masculine); plural друзья.' },
+    { prompt: 'free time', answers: ['свободное время'], note: 'свободное время (neuter): the adjective ends in -ое.' },
+    { prompt: 'homework', answers: ['домашнее задание', 'домашняя работа'], note: 'домашнее задание (neuter) or домашняя работа (feminine): the adjective ends in -ее or -яя.' },
+    { prompt: 'breakfast', answers: ['завтрак'], note: 'завтрак (masculine).' },
+  ]),
+
+  'ru-vocab-world': translate('Write each word or phrase in Russian. Type only the Russian.', [
+    { prompt: 'health', answers: ['здоровье'], note: 'здоровье (neuter).' },
+    { prompt: 'doctor', answers: ['врач', 'доктор'], note: 'врач (masculine) is the usual word; a woman is also called врач.' },
+    { prompt: 'hospital', answers: ['больница'], note: 'больница (feminine).' },
+    { prompt: 'to travel', answers: ['путешествовать'], note: 'путешествовать: я путешествую.' },
+    { prompt: 'trip, journey', answers: ['поездка', 'путешествие'], note: 'поездка (feminine), a trip; путешествие (neuter), a journey.' },
+    { prompt: 'airport', answers: ['аэропорт'], note: 'аэропорт (masculine).' },
+    { prompt: 'ticket', answers: ['билет'], note: 'билет (masculine).' },
+    { prompt: 'job, work', answers: ['работа'], note: 'работа (feminine).' },
+    { prompt: 'the environment', answers: ['окружающая среда'], note: 'окружающая среда (feminine): both words are feminine.' },
+    { prompt: 'technology', answers: ['технология', 'технологии'], note: 'технология (feminine); often used in the plural, технологии.' },
+    { prompt: 'computer', answers: ['компьютер'], note: 'компьютер (masculine).' },
+    { prompt: 'weather', answers: ['погода'], note: 'погода (feminine).' },
+    { prompt: 'village', answers: ['деревня'], note: 'деревня (feminine).' },
+    { prompt: 'pollution', answers: ['загрязнение'], note: 'загрязнение (neuter).' },
+    { prompt: 'school holidays', answers: ['каникулы'], note: 'каникулы is only used in the plural.' },
+    { prompt: 'shop', answers: ['магазин'], note: 'магазин (masculine).' },
+  ]),
+}

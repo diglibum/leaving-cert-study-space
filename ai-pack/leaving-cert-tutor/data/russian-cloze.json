@@ -1,0 +1,343 @@
+{
+  "note": "Connected texts in the format of the grammar question. Each gap shows the base form in brackets. `gaps[].answers` lists every accepted form; the first is the model answer.",
+  "texts": [
+    {
+      "id": "cloze-1",
+      "title": "Путешествие по России",
+      "summary": "Travelling in Russia: tourists, big cities, the Trans-Siberian railway, the Caucasus, the Black Sea and Kamchatka.",
+      "paragraphs": [
+        "Россия очень велика, и ездить по ней можно целый год. Каждый год сюда приезжают миллионы (1) ___ [турист] из разных (2) ___ [страна]. Они (3) ___ [любить] старые города, музеи и красивую природу.",
+        "Многие сначала едут в Москву и в Санкт-Петербург. В (4) ___ [эти города] можно увидеть дворцы, соборы и театры. Потом туристы часто едут на поезде по (5) ___ [Транссибирская магистраль] до озера Байкал. Дорога (6) ___ [занимать] несколько дней.",
+        "Зимой многие катаются на лыжах на (7) ___ [Кавказ], а летом отдыхают у (8) ___ [Чёрное море]. Любители (9) ___ [природа] ездят на Камчатку, где можно увидеть вулканы и гейзеры. Красота этой страны (10) ___ [удивлять] всех, кто её видит."
+      ],
+      "gaps": [
+        {"gap":1,"base":"турист","answers":["туристов"],"note":"миллионы + genitive plural."},
+        {"gap":2,"base":"страна","answers":["стран"],"note":"из + genitive plural: \"из стран\"."},
+        {"gap":3,"base":"любить","answers":["любят"],"note":"Present tense, third person plural: the subject is \"они\"."},
+        {"gap":4,"base":"эти города","answers":["этих городах"],"note":"в + prepositional plural: both words change."},
+        {"gap":5,"base":"Транссибирская магистраль","answers":["Транссибирской магистрали"],"note":"по + dative: both words change."},
+        {"gap":6,"base":"занимать","answers":["занимает"],"note":"Present tense, singular: the subject is \"дорога\"."},
+        {"gap":7,"base":"Кавказ","answers":["Кавказе"],"note":"на + prepositional: \"на Кавказе\"."},
+        {"gap":8,"base":"Чёрное море","answers":["Чёрного моря"],"note":"у + genitive: both words change."},
+        {"gap":9,"base":"природа","answers":["природы"],"note":"любители + genitive: \"любители природы\"."},
+        {"gap":10,"base":"удивлять","answers":["удивляет"],"note":"Present tense, singular: the subject is \"красота\"."}
+      ]
+    },
+    {
+      "id": "cloze-2",
+      "title": "Что мы знаем о России",
+      "summary": "Facts about Russia: the capital, St Petersburg, languages, Lake Baikal, the Volga, pancakes and summer in the country.",
+      "paragraphs": [
+        "Столица России — Москва. Это один из самых (1) ___ [большой город] Европы. Второй город страны — Санкт-Петербург, который стоит на (2) ___ [река Нева]. Население России (3) ___ [говорить] на многих (4) ___ [язык], но государственный язык — русский.",
+        "Байкал — самое глубокое озеро в мире. Оно находится в (5) ___ [Сибирь]. В его воде живёт много (6) ___ [редкая рыба], и нигде больше их нет. Через Россию течёт самая длинная река Европы — Волга. На (7) ___ [берег] Волги стоят старые города.",
+        "Русские любят блины. Их пекут особенно на (8) ___ [Масленица], когда прощаются с (9) ___ [зима]. Летом многие семьи (10) ___ [уезжать] за город, где они (11) ___ [выращивать] овощи и ягоды."
+      ],
+      "gaps": [
+        {"gap":1,"base":"большой город","answers":["больших городов"],"note":"один из + genitive plural: both words change."},
+        {"gap":2,"base":"река Нева","answers":["реке Неве"],"note":"на + prepositional: both words change."},
+        {"gap":3,"base":"говорить","answers":["говорит"],"note":"Present tense, singular: the subject is \"население\"."},
+        {"gap":4,"base":"язык","answers":["языках"],"note":"на + prepositional plural: \"на языках\"."},
+        {"gap":5,"base":"Сибирь","answers":["Сибири"],"note":"в + prepositional: \"в Сибири\"."},
+        {"gap":6,"base":"редкая рыба","answers":["редких рыб"],"note":"много + genitive plural: both words change."},
+        {"gap":7,"base":"берег","answers":["берегах"],"note":"на + prepositional plural: \"на берегах\"."},
+        {"gap":8,"base":"Масленица","answers":["Масленицу"],"note":"на + accusative: \"на Масленицу\" (for the festival)."},
+        {"gap":9,"base":"зима","answers":["зимой"],"note":"прощаться с + instrumental: \"с зимой\"."},
+        {"gap":10,"base":"уезжать","answers":["уезжают"],"note":"Present tense, third person plural: the subject is \"семьи\"."},
+        {"gap":11,"base":"выращивать","answers":["выращивают"],"note":"Present tense, third person plural: the subject is \"они\"."}
+      ]
+    },
+    {
+      "id": "cloze-3",
+      "title": "Дикие животные России",
+      "summary": "Wild animals of Russia: the taiga, the tundra, the Arctic, the Far East and nature reserves.",
+      "paragraphs": [
+        "В России живёт очень много разных (1) ___ [животное]. В (2) ___ [тайга] можно встретить медведя, волка и рысь, а в (3) ___ [тундра] — северного оленя и песца.",
+        "На берегах (4) ___ [северные моря] живут моржи и белые медведи. Белый медведь (5) ___ [охотиться] на тюленей, потому что ему нужно много еды.",
+        "На Дальнем Востоке живёт амурский тигр. Это один из самых (6) ___ [редкий зверь] в мире. Люди (7) ___ [создать] заповедники, чтобы животные (8) ___ [жить] спокойно. К сожалению, многим (9) ___ [животные] всё равно трудно выжить, потому что леса вырубают."
+      ],
+      "gaps": [
+        {"gap":1,"base":"животное","answers":["животных"],"note":"много + genitive plural."},
+        {"gap":2,"base":"тайга","answers":["тайге"],"note":"в + prepositional: \"в тайге\"."},
+        {"gap":3,"base":"тундра","answers":["тундре"],"note":"в + prepositional: \"в тундре\"."},
+        {"gap":4,"base":"северные моря","answers":["северных морей"],"note":"на берегах + genitive plural: both words change."},
+        {"gap":5,"base":"охотиться","answers":["охотится"],"note":"Present tense, singular: the subject is \"медведь\"."},
+        {"gap":6,"base":"редкий зверь","answers":["редких зверей"],"note":"один из + genitive plural: both words change."},
+        {"gap":7,"base":"создать","answers":["создали"],"note":"Past tense, plural: the subject is \"люди\"."},
+        {"gap":8,"base":"жить","answers":["жили"],"note":"After чтобы the verb is in the past tense: plural, the subject is \"животные\"."},
+        {"gap":9,"base":"животные","answers":["животным"],"note":"многим + dative plural: \"многим животным\"."}
+      ]
+    },
+    {
+      "id": "cloze-4",
+      "title": "Спорт в России",
+      "summary": "Sport in Russia: football, hockey, chess and the 2014 Sochi Olympics.",
+      "paragraphs": [
+        "Россияне любят заниматься (1) ___ [спорт]. Самым популярным (2) ___ [вид] спорта в стране считается футбол, а зимой все (3) ___ [болеть] за хоккейную команду. В (4) ___ [хоккей] российские спортсмены не раз становились (5) ___ [чемпионы] мира.",
+        "В 2014 году в Сочи прошли зимние Олимпийские (6) ___ [игра]. Для (7) ___ [этот] праздника спорта построили новые стадионы, и тысячи (8) ___ [турист] приехали в город из разных стран. Российские спортсмены (9) ___ [получить] много медалей, и вся страна смотрела на (10) ___ [свои спортсмены] с гордостью.",
+        "В России очень любят и шахматы. Многие известные (11) ___ [шахматист] родились в нашей стране. В школах шахматы (12) ___ [изучать], и дети с (13) ___ [ранний] детства сидят за (14) ___ [шахматная доска]."
+      ],
+      "gaps": [
+        {"gap":1,"base":"спорт","answers":["спортом"],"note":"заниматься + instrumental: \"заниматься спортом\"."},
+        {"gap":2,"base":"вид","answers":["видом"],"note":"Instrumental after \"считается\": \"считается самым популярным видом\"."},
+        {"gap":3,"base":"болеть","answers":["болеют"],"note":"Present tense, third person plural: the subject is \"все\"."},
+        {"gap":4,"base":"хоккей","answers":["хоккее"],"note":"в + prepositional: \"в хоккее\"."},
+        {"gap":5,"base":"чемпионы","answers":["чемпионами"],"note":"становиться + instrumental plural: \"чемпионами мира\"."},
+        {"gap":6,"base":"игра","answers":["игры"],"note":"Nominative plural of \"игра\"."},
+        {"gap":7,"base":"этот","answers":["этого"],"note":"для + genitive: \"для этого праздника\" (masculine)."},
+        {"gap":8,"base":"турист","answers":["туристов"],"note":"тысячи + genitive plural: \"тысячи туристов\"."},
+        {"gap":9,"base":"получить","answers":["получили"],"note":"Past tense, plural, perfective: they got many medals."},
+        {"gap":10,"base":"свои спортсмены","answers":["своих спортсменов"],"note":"смотреть на + accusative; animate plural = genitive."},
+        {"gap":11,"base":"шахматист","answers":["шахматисты"],"note":"Nominative plural: \"известные шахматисты\"."},
+        {"gap":12,"base":"изучать","answers":["изучают"],"note":"Present tense, third person plural: \"изучают шахматы\" (they study)."},
+        {"gap":13,"base":"ранний","answers":["раннего"],"note":"с + genitive: \"с раннего детства\" (masculine/neuter genitive in -ого)."},
+        {"gap":14,"base":"шахматная доска","answers":["шахматной доской"],"note":"за + instrumental (where): both words change."}
+      ]
+    },
+    {
+      "id": "cloze-5",
+      "title": "Школа в России",
+      "summary": "School in Russia: 1 September, eleven years of study, the final exam and the Last Bell.",
+      "paragraphs": [
+        "В России учебный год начинается первого (1) ___ [сентябрь]. Этот день называют Днём (2) ___ [знание]. Ученики идут в (3) ___ [школа] с (4) ___ [цветы] и дарят их (5) ___ [учитель].",
+        "Школьники учатся одиннадцать (6) ___ [год], а потом (7) ___ [сдавать] единый государственный экзамен. Они долго (8) ___ [готовиться] к экзаменам, и многие занимаются с (9) ___ [репетитор].",
+        "В конце (10) ___ [май] бывает последний звонок — праздник для (11) ___ [выпускник]. После (12) ___ [звонок] выпускники (13) ___ [пойти] гулять по (14) ___ [город]."
+      ],
+      "gaps": [
+        {"gap":1,"base":"сентябрь","answers":["сентября"],"note":"Dates use the genitive: \"первого сентября\"."},
+        {"gap":2,"base":"знание","answers":["знаний"],"note":"День знаний: genitive plural."},
+        {"gap":3,"base":"школа","answers":["школу"],"note":"в + accusative (where to): \"в школу\"."},
+        {"gap":4,"base":"цветы","answers":["цветами"],"note":"с + instrumental plural: \"с цветами\"."},
+        {"gap":5,"base":"учитель","answers":["учителям"],"note":"дарить + dative plural: \"дарят учителям\"."},
+        {"gap":6,"base":"год","answers":["лет"],"note":"After numerals from 5 the genitive plural of \"год\" is \"лет\"."},
+        {"gap":7,"base":"сдавать","answers":["сдают"],"note":"Present tense, third person plural: they take the exam."},
+        {"gap":8,"base":"готовиться","answers":["готовятся"],"note":"Present tense, third person plural, reflexive: keep -ся."},
+        {"gap":9,"base":"репетитор","answers":["репетитором"],"note":"с + instrumental: \"с репетитором\"."},
+        {"gap":10,"base":"май","answers":["мая"],"note":"Months in a date or time phrase: genitive \"в конце мая\"."},
+        {"gap":11,"base":"выпускник","answers":["выпускников"],"note":"для + genitive plural: \"для выпускников\"."},
+        {"gap":12,"base":"звонок","answers":["звонка"],"note":"после + genitive: \"после звонка\"."},
+        {"gap":13,"base":"пойти","answers":["пойдут"],"note":"Future tense of a perfective verb: third person plural."},
+        {"gap":14,"base":"город","answers":["городу"],"note":"по + dative: \"гулять по городу\"."}
+      ]
+    },
+    {
+      "id": "cloze-6",
+      "title": "Русские народные сказки",
+      "summary": "Russian fairy tales: Ivan Tsarevich, Baba Yaga, the Grey Wolf and the Firebird.",
+      "paragraphs": [
+        "Русские сказки читают (1) ___ [ребёнок] в (2) ___ [Россия]. Бабушки рассказывают эти сказки (3) ___ [внуки], и в них часто (4) ___ [встречаться] Иван-царевич, Баба-яга и Змей Горыныч.",
+        "Герой всегда (5) ___ [искать] добрых (6) ___ [помощники], и в трудный момент ему помогает серый волк. Баба-яга живёт в маленькой (7) ___ [избушка] и (8) ___ [любить] пугать (9) ___ [путники], но иногда (10) ___ [давать] добрый совет.",
+        "Однажды Иван-царевич (11) ___ [поймать] жар-птицу, и царь (12) ___ [отдать] ему полцарства. В конце сказки герой всегда (13) ___ [жениться] на красивой (14) ___ [царевна]."
+      ],
+      "gaps": [
+        {"gap":1,"base":"ребёнок","answers":["дети"],"note":"The plural of \"ребёнок\" is irregular: \"дети\"."},
+        {"gap":2,"base":"Россия","answers":["России"],"note":"в + prepositional: \"в России\"."},
+        {"gap":3,"base":"внуки","answers":["внукам"],"note":"рассказывать + dative plural: \"рассказывают внукам\"."},
+        {"gap":4,"base":"встречаться","answers":["встречаются"],"note":"Present tense, third person plural, reflexive: \"встречаются Иван-царевич и Баба-яга\"."},
+        {"gap":5,"base":"искать","answers":["ищет"],"note":"Present tense, singular: \"он ищет\" (consonant change ск → щ)."},
+        {"gap":6,"base":"помощники","answers":["помощников"],"note":"Animate plural accusative = genitive: \"помощников\"."},
+        {"gap":7,"base":"избушка","answers":["избушке"],"note":"в + prepositional: \"в избушке\"."},
+        {"gap":8,"base":"любить","answers":["любит"],"note":"Present tense, singular: \"она любит\"."},
+        {"gap":9,"base":"путники","answers":["путников"],"note":"Animate plural accusative = genitive: \"путников\"."},
+        {"gap":10,"base":"давать","answers":["даёт"],"note":"Present tense, singular: \"она даёт\"."},
+        {"gap":11,"base":"поймать","answers":["поймал"],"note":"Past tense, masculine, perfective: a single result."},
+        {"gap":12,"base":"отдать","answers":["отдал"],"note":"Past tense, masculine, perfective."},
+        {"gap":13,"base":"жениться","answers":["женится"],"note":"Present tense, singular, reflexive: \"он женится\"."},
+        {"gap":14,"base":"царевна","answers":["царевне"],"note":"жениться на + prepositional: \"на царевне\"."}
+      ]
+    },
+    {
+      "id": "cloze-7",
+      "title": "Озеро Байкал",
+      "summary": "Lake Baikal: the deepest lake in the world, its seal and its winter ice.",
+      "paragraphs": [
+        "Байкал — самое глубокое озеро в (1) ___ [мир]. Оно находится в (2) ___ [Сибирь], недалеко от (3) ___ [Иркутск]. В (4) ___ [озеро] живёт байкальская нерпа — единственный тюлень, который (5) ___ [жить] в (6) ___ [пресная] воде.",
+        "Вода в Байкале очень (7) ___ [чистый]. Летом (8) ___ [турист] купаются, хотя она (9) ___ [холодный]. Зимой озеро покрывается (10) ___ [лёд], и по (11) ___ [оно] можно ездить на машине.",
+        "Учёные (12) ___ [изучать] озеро уже много (13) ___ [год]. Байкал (14) ___ [называть] жемчужиной Сибири."
+      ],
+      "gaps": [
+        {"gap":1,"base":"мир","answers":["мире"],"note":"в + prepositional: \"в мире\"."},
+        {"gap":2,"base":"Сибирь","answers":["Сибири"],"note":"в + prepositional: \"в Сибири\"."},
+        {"gap":3,"base":"Иркутск","answers":["Иркутска"],"note":"недалеко от + genitive: \"от Иркутска\"."},
+        {"gap":4,"base":"озеро","answers":["озере"],"note":"в + prepositional: \"в озере\"."},
+        {"gap":5,"base":"жить","answers":["живёт"],"note":"Present tense, singular: \"который живёт\"."},
+        {"gap":6,"base":"пресная","answers":["пресной"],"note":"в + prepositional feminine: \"в пресной воде\"."},
+        {"gap":7,"base":"чистый","answers":["чистая","чиста"],"note":"The adjective agrees with \"вода\": feminine."},
+        {"gap":8,"base":"турист","answers":["туристы"],"note":"Nominative plural: \"туристы купаются\"."},
+        {"gap":9,"base":"холодный","answers":["холодная","холодна"],"note":"The adjective agrees with \"она\": feminine."},
+        {"gap":10,"base":"лёд","answers":["льдом"],"note":"покрываться + instrumental: \"льдом\" (the vowel ё drops out)."},
+        {"gap":11,"base":"оно","answers":["нему"],"note":"по + dative; after a preposition the pronoun gets н-: \"по нему\"."},
+        {"gap":12,"base":"изучать","answers":["изучают"],"note":"Present tense, third person plural."},
+        {"gap":13,"base":"год","answers":["лет"],"note":"After \"много\" the genitive plural of \"год\" is \"лет\"."},
+        {"gap":14,"base":"называть","answers":["называют"],"note":"Impersonal third person plural: \"называют\" (people call it)."}
+      ]
+    },
+    {
+      "id": "cloze-8",
+      "title": "Санкт-Петербург",
+      "summary": "Saint Petersburg: its founding, the Hermitage, white nights and the drawbridges.",
+      "paragraphs": [
+        "Санкт-Петербург (1) ___ [основать] царь Пётр Первый в 1703 (2) ___ [год]. Город часто называют северной (3) ___ [столица] России. Самое известное место города — Эрмитаж, огромный музей, где (4) ___ [хранить] картины великих (5) ___ [художник].",
+        "Летом в городе бывают белые (6) ___ [ночь]: солнце почти не (7) ___ [заходить], и на (8) ___ [улица] светло до (9) ___ [утро]. Туристы любят гулять по (10) ___ [набережная] и смотреть, как (11) ___ [разводить] мосты. Метро в Петербурге — одно из самых (12) ___ [глубокий] в мире."
+      ],
+      "gaps": [
+        {"gap":1,"base":"основать","answers":["основал"],"note":"Past tense, masculine, perfective: the subject is Peter the Great."},
+        {"gap":2,"base":"год","answers":["году"],"note":"в + prepositional: \"в году\"."},
+        {"gap":3,"base":"столица","answers":["столицей"],"note":"называть + instrumental: \"столицей\"."},
+        {"gap":4,"base":"хранить","answers":["хранят"],"note":"Present tense, third person plural, impersonal: \"хранят\"."},
+        {"gap":5,"base":"художник","answers":["художников"],"note":"Genitive plural: \"картины художников\"."},
+        {"gap":6,"base":"ночь","answers":["ночи"],"note":"Nominative plural: \"белые ночи\"."},
+        {"gap":7,"base":"заходить","answers":["заходит"],"note":"Present tense, singular: \"оно не заходит\"."},
+        {"gap":8,"base":"улица","answers":["улицах"],"note":"на + prepositional plural: \"на улицах\"."},
+        {"gap":9,"base":"утро","answers":["утра"],"note":"до + genitive: \"до утра\"."},
+        {"gap":10,"base":"набережная","answers":["набережным"],"note":"по + dative plural: \"по набережным\"."},
+        {"gap":11,"base":"разводить","answers":["разводят"],"note":"Present tense, third person plural: they raise the bridges."},
+        {"gap":12,"base":"глубокий","answers":["глубоких"],"note":"один из + genitive plural: \"из самых глубоких\"."}
+      ]
+    },
+    {
+      "id": "cloze-9",
+      "title": "Москва",
+      "summary": "Moscow: Red Square, the Kremlin, St Basil’s Cathedral and the metro.",
+      "paragraphs": [
+        "Москва — столица России и самый большой город страны. Главная площадь называется Красной. Там (1) ___ [находиться] Кремль, где (2) ___ [работать] президент, и собор Василия Блаженного с разноцветными (3) ___ [купол].",
+        "В Москве много (4) ___ [парк], (5) ___ [музей] и (6) ___ [театр]. Туристы любят кататься на метро, потому что станции похожи на (7) ___ [дворец]. Зимой на Красной площади (8) ___ [открывать] большой каток."
+      ],
+      "gaps": [
+        {"gap":1,"base":"находиться","answers":["находится"],"note":"Present tense, singular: the Kremlin is located."},
+        {"gap":2,"base":"работать","answers":["работает"],"note":"Present tense, singular: the subject is the president."},
+        {"gap":3,"base":"купол","answers":["куполами"],"note":"с + instrumental plural: \"с куполами\"."},
+        {"gap":4,"base":"парк","answers":["парков"],"note":"много + genitive plural."},
+        {"gap":5,"base":"музей","answers":["музеев"],"note":"много + genitive plural of \"музей\"."},
+        {"gap":6,"base":"театр","answers":["театров"],"note":"много + genitive plural."},
+        {"gap":7,"base":"дворец","answers":["дворцы"],"note":"похожи на + accusative plural: inanimate, so \"дворцы\"."},
+        {"gap":8,"base":"открывать","answers":["открывают"],"note":"Present tense, third person plural, impersonal: \"открывают каток\"."}
+      ]
+    },
+    {
+      "id": "cloze-10",
+      "title": "Новый год",
+      "summary": "New Year in Russia: preparations, Grandfather Frost and midnight.",
+      "paragraphs": [
+        "Новый год — самый любимый праздник в (1) ___ [Россия]. Все (2) ___ [готовиться] к нему заранее: покупают (3) ___ [подарок], украшают ёлку и готовят (4) ___ [вкусный] блюда.",
+        "Дети ждут (5) ___ [Дед Мороз] и Снегурочку. В двенадцать часов вся семья (6) ___ [слушать] обращение президента, а потом загадывает желание под бой (7) ___ [куранты]. После (8) ___ [полночь] все идут на (9) ___ [улица] смотреть фейерверк."
+      ],
+      "gaps": [
+        {"gap":1,"base":"Россия","answers":["России"],"note":"в + prepositional: \"в России\"."},
+        {"gap":2,"base":"готовиться","answers":["готовятся"],"note":"Present tense, third person plural, reflexive."},
+        {"gap":3,"base":"подарок","answers":["подарки"],"note":"Accusative plural: \"подарки\"."},
+        {"gap":4,"base":"вкусный","answers":["вкусные"],"note":"Accusative plural, inanimate: \"вкусные блюда\"."},
+        {"gap":5,"base":"Дед Мороз","answers":["Деда Мороза"],"note":"Animate accusative = genitive: \"ждут Деда Мороза\"."},
+        {"gap":6,"base":"слушать","answers":["слушает"],"note":"Present tense, singular: \"вся семья слушает\"."},
+        {"gap":7,"base":"куранты","answers":["курантов"],"note":"под бой + genitive plural: \"курантов\" (the chimes)."},
+        {"gap":8,"base":"полночь","answers":["полуночи"],"note":"после + genitive: \"после полуночи\"."},
+        {"gap":9,"base":"улица","answers":["улицу"],"note":"на + accusative (where to): \"на улицу\"."}
+      ]
+    },
+    {
+      "id": "cloze-11",
+      "title": "Лето на даче",
+      "summary": "Summer at the dacha: the garden, mushrooms and evenings by the samovar.",
+      "paragraphs": [
+        "Летом многие российские (1) ___ [семья] живут на (2) ___ [дача]. Там можно отдохнуть от (3) ___ [большой город]. Взрослые работают в (4) ___ [сад] и (5) ___ [огород], а дети (6) ___ [играть] во (7) ___ [двор].",
+        "После (8) ___ [дождь] все идут в лес за (9) ___ [гриб]. Вечером вся семья (10) ___ [пить] чай из самовара и (11) ___ [рассказывать] истории."
+      ],
+      "gaps": [
+        {"gap":1,"base":"семья","answers":["семьи"],"note":"Nominative plural: \"семьи\"."},
+        {"gap":2,"base":"дача","answers":["даче"],"note":"на + prepositional: \"на даче\"."},
+        {"gap":3,"base":"большой город","answers":["большого города"],"note":"от + genitive: both words change."},
+        {"gap":4,"base":"сад","answers":["саду"],"note":"в + prepositional of a masculine noun with -у: \"в саду\"."},
+        {"gap":5,"base":"огород","answers":["огороде"],"note":"в + prepositional: \"в огороде\"."},
+        {"gap":6,"base":"играть","answers":["играют"],"note":"Present tense, third person plural."},
+        {"gap":7,"base":"двор","answers":["дворе"],"note":"в/во + prepositional: \"во дворе\"."},
+        {"gap":8,"base":"дождь","answers":["дождя"],"note":"после + genitive: \"после дождя\"."},
+        {"gap":9,"base":"гриб","answers":["грибами"],"note":"за + instrumental (to fetch): \"за грибами\"."},
+        {"gap":10,"base":"пить","answers":["пьёт"],"note":"Present tense, singular: \"семья пьёт чай\"."},
+        {"gap":11,"base":"рассказывать","answers":["рассказывает"],"note":"Present tense, singular: \"вся семья рассказывает\"."}
+      ]
+    },
+    {
+      "id": "cloze-12",
+      "title": "Путешествие на поезде",
+      "summary": "A journey on the Trans-Siberian Railway told in the past tense.",
+      "paragraphs": [
+        "Прошлым летом я (1) ___ [поехать] на (2) ___ [поезд] из (3) ___ [Москва] во Владивосток. Дорога (4) ___ [занять] семь (5) ___ [день].",
+        "Я (6) ___ [познакомиться] с (7) ___ [интересный] (8) ___ [человек]. Мы много (9) ___ [разговаривать] и (10) ___ [смотреть] в окно. Больше всего мне (11) ___ [понравиться] озеро Байкал."
+      ],
+      "gaps": [
+        {"gap":1,"base":"поехать","answers":["поехал","поехала"],"note":"Past tense, masculine, perfective: a single journey."},
+        {"gap":2,"base":"поезд","answers":["поезде"],"note":"на + prepositional: \"на поезде\" (by train)."},
+        {"gap":3,"base":"Москва","answers":["Москвы"],"note":"из + genitive: \"из Москвы\"."},
+        {"gap":4,"base":"занять","answers":["заняла"],"note":"Past tense, feminine, perfective: the subject is \"дорога\"."},
+        {"gap":5,"base":"день","answers":["дней"],"note":"After 5-20 the genitive plural: \"дней\"."},
+        {"gap":6,"base":"познакомиться","answers":["познакомился","познакомилась"],"note":"Past tense, masculine, perfective, reflexive."},
+        {"gap":7,"base":"интересный","answers":["интересными"],"note":"с + instrumental plural: \"с интересными людьми\"."},
+        {"gap":8,"base":"человек","answers":["людьми"],"note":"The plural of \"человек\" is \"люди\": instrumental \"людьми\"."},
+        {"gap":9,"base":"разговаривать","answers":["разговаривали"],"note":"Past tense, plural, imperfective: a long process."},
+        {"gap":10,"base":"смотреть","answers":["смотрели"],"note":"Past tense, plural, imperfective: they looked out of the window for hours."},
+        {"gap":11,"base":"понравиться","answers":["понравилось"],"note":"Past tense, neuter, perfective: it agrees with \"озеро\"."}
+      ]
+    },
+    {
+      "id": "cloze-13",
+      "title": "Мои выходные",
+      "summary": "A weekend told in the past tense, with a choice of aspect.",
+      "paragraphs": [
+        "В субботу я долго (1) ___ [спать], потому что накануне поздно (2) ___ [лечь] спать. Утром я (3) ___ [позавтракать] и позвонил(а) (4) ___ [друг].",
+        "Днём мы (5) ___ [пойти] на (6) ___ [комедия], а вечером (7) ___ [гулять] по (8) ___ [парк]. В воскресенье я весь день (9) ___ [делать] (10) ___ [домашний] задание и наконец (11) ___ [сделать] его."
+      ],
+      "gaps": [
+        {"gap":1,"base":"спать","answers":["спал","спала"],"note":"Past tense, masculine, imperfective: a long process."},
+        {"gap":2,"base":"лечь","answers":["лёг","легла"],"note":"Past tense, masculine, perfective: a single action."},
+        {"gap":3,"base":"позавтракать","answers":["позавтракал","позавтракала"],"note":"Past tense, masculine, perfective: a finished action."},
+        {"gap":4,"base":"друг","answers":["другу"],"note":"звонить + dative: \"позвонил другу\"."},
+        {"gap":5,"base":"пойти","answers":["пошли"],"note":"Past tense, plural of \"пойти\": \"пошли\"."},
+        {"gap":6,"base":"комедия","answers":["комедию"],"note":"на + accusative feminine: \"на комедию\"."},
+        {"gap":7,"base":"гулять","answers":["гуляли"],"note":"Past tense, plural, imperfective: a long process."},
+        {"gap":8,"base":"парк","answers":["парку"],"note":"по + dative: \"по парку\"."},
+        {"gap":9,"base":"делать","answers":["делал","делала"],"note":"Past tense, masculine, imperfective: a long process."},
+        {"gap":10,"base":"домашний","answers":["домашнее"],"note":"The adjective agrees with the neuter noun \"задание\"."},
+        {"gap":11,"base":"сделать","answers":["сделал","сделала"],"note":"Past tense, masculine, perfective: the result is reached."}
+      ]
+    },
+    {
+      "id": "cloze-14",
+      "title": "Животные Дальнего Востока",
+      "summary": "The Amur tiger, the Kamchatka bear and how to protect them.",
+      "paragraphs": [
+        "На Дальнем (1) ___ [Восток] живёт самая большая в (2) ___ [мир] кошка — амурский тигр. Он (3) ___ [охотиться] ночью и (4) ___ [любить] тишину.",
+        "На (5) ___ [Камчатка] живут бурые (6) ___ [медведь]. Летом они (7) ___ [ловить] рыбу в (8) ___ [быстрая река]. Учёные (9) ___ [считать], что этих (10) ___ [животное] нужно беречь."
+      ],
+      "gaps": [
+        {"gap":1,"base":"Восток","answers":["Востоке"],"note":"на + prepositional: \"на Дальнем Востоке\"."},
+        {"gap":2,"base":"мир","answers":["мире"],"note":"в + prepositional: \"в мире\"."},
+        {"gap":3,"base":"охотиться","answers":["охотится"],"note":"Present tense, singular, reflexive: keep -ся."},
+        {"gap":4,"base":"любить","answers":["любит"],"note":"Present tense, singular: \"он любит\"."},
+        {"gap":5,"base":"Камчатка","answers":["Камчатке"],"note":"на + prepositional: \"на Камчатке\"."},
+        {"gap":6,"base":"медведь","answers":["медведи"],"note":"Nominative plural: \"медведи\"."},
+        {"gap":7,"base":"ловить","answers":["ловят"],"note":"Present tense, third person plural of a second-conjugation verb: -ят."},
+        {"gap":8,"base":"быстрая река","answers":["быстрых реках"],"note":"в + prepositional plural: both words change."},
+        {"gap":9,"base":"считать","answers":["считают"],"note":"Present tense, third person plural."},
+        {"gap":10,"base":"животное","answers":["животных"],"note":"Genitive plural after \"этих\": \"животных\"."}
+      ]
+    },
+    {
+      "id": "cloze-15",
+      "title": "Золотое кольцо",
+      "summary": "The Golden Ring: old towns north-east of Moscow, with kremlins and monasteries.",
+      "paragraphs": [
+        "Золотое кольцо — это маршрут по (1) ___ [старые города] вокруг (2) ___ [Москва]. В него входят Сергиев Посад, Суздаль и Владимир. Там много (3) ___ [древняя церковь] и монастырей.",
+        "Туристы (4) ___ [осматривать] кремли, (5) ___ [пробовать] местные (6) ___ [блюдо] и покупают (7) ___ [сувенир]. В (8) ___ [каждый] городе есть свой музей."
+      ],
+      "gaps": [
+        {"gap":1,"base":"старые города","answers":["старым городам"],"note":"по + dative plural: both words change."},
+        {"gap":2,"base":"Москва","answers":["Москвы"],"note":"вокруг + genitive: \"вокруг Москвы\"."},
+        {"gap":3,"base":"древняя церковь","answers":["древних церквей"],"note":"много + genitive plural; \"церковь\" has the plural genitive \"церквей\"."},
+        {"gap":4,"base":"осматривать","answers":["осматривают"],"note":"Present tense, third person plural."},
+        {"gap":5,"base":"пробовать","answers":["пробуют"],"note":"Present tense, third person plural: \"пробуют\" (they try)."},
+        {"gap":6,"base":"блюдо","answers":["блюда"],"note":"Accusative plural, neuter: \"блюда\"."},
+        {"gap":7,"base":"сувенир","answers":["сувениры"],"note":"Accusative plural, inanimate: \"сувениры\"."},
+        {"gap":8,"base":"каждый","answers":["каждом"],"note":"в + prepositional, masculine: \"в каждом городе\"."}
+      ]
+    }
+  ]
+}

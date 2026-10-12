@@ -257,7 +257,9 @@ keys in `ai-pack/leaving-cert-tutor/data/`. The AI tutor sets the exercises,
 checks answers against the key and gives feedback with the same rules as the
 app's AI check (quotes, strengths first, up to three improvements, no marks).
 It works with Claude skills, GitHub Copilot skills, a custom GPT, or by pasting
-into any chat; see `ai-pack/README.md`. Only Russian is covered so far.
+into any chat; see `ai-pack/README.md`. It covers Applied Mathematics (several
+generated problems per topic with computed answers, plus sketch tasks) and
+Russian.
 
 The data files are generated from the app's own exercise data by
 `npm run build:ai-pack` (`scripts/build-ai-pack.mjs`, `src/features/aipack/`),

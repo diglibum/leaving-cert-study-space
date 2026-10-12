@@ -14,8 +14,8 @@ const server = await createServer({
   logLevel: 'error',
 })
 try {
-  const { buildRussianPack, renderPack } = await server.ssrLoadModule('/src/features/aipack/russianPack.ts')
-  const files = renderPack(buildRussianPack())
+  const { buildPack, renderPack } = await server.ssrLoadModule('/src/features/aipack/pack.ts')
+  const files = renderPack(buildPack())
   await mkdir(outDir, { recursive: true })
   for (const [name, text] of Object.entries(files)) {
     await writeFile(join(outDir, name), text)

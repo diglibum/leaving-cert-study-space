@@ -1,0 +1,831 @@
+{
+  "subject": "Applied Mathematics (Leaving Certificate, Higher Level)",
+  "exam": "One paper, 150 minutes: answer 8 of 10 questions on strands 2 to 4 (networks and graphs, mechanics, difference and differential equations). Strand 1, modelling, is assessed through the modelling project and the contexts of the questions. The official papers are not included: the student brings the question text from their own copy.",
+  "answerChecking": "A numeric answer is correct when it is within 1% of `answer` or within the last rounding place given by `decimals`, whichever is larger. A comma may be used as the decimal point and units after the number are ignored.",
+  "topics": [
+    {
+      "id": "am-kinematics-1d",
+      "title": "Motion in a straight line: graphs and constant-acceleration formulae",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": true,
+      "recallPrompts": [
+        "Write the four constant-acceleration equations and say which quantity each one leaves out.",
+        "What do the gradient and the area under a velocity-time graph represent?",
+        "Sketch displacement-time, velocity-time and acceleration-time graphs for a car that speeds up, cruises and brakes to rest.",
+        "How do you set up a problem with two stages, such as a reaction time followed by braking?",
+        "For a ball thrown straight up, what are its velocity at the top and its acceleration throughout? How do you choose the positive direction?"
+      ]
+    },
+    {
+      "id": "am-calculus-for-motion",
+      "title": "Calculus for motion: derivatives, integrals, chain rule",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Write velocity and acceleration as derivatives of displacement. How do you go back with integration, and where do the initial conditions go?",
+        "Use the chain rule to show that a = v dv/ds. When is this form the useful one?",
+        "Differentiate and integrate powers of t, e^(kt), sin(kt) and cos(kt).",
+        "What is the difference between displacement and distance travelled, and when does it matter?"
+      ]
+    },
+    {
+      "id": "am-network-terms",
+      "title": "Networks and their terminology",
+      "strand": 2,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-networks.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Define node, edge, weight, path, cycle, connected graph and tree.",
+        "What is the difference between a directed and an undirected network?",
+        "How does a network differ from a road map? What does it keep and what does it leave out?",
+        "How many edges does a tree with n nodes have, and why?"
+      ]
+    },
+    {
+      "id": "am-adjacency-matrices",
+      "title": "Adjacency matrices and matrix multiplication",
+      "strand": 2,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-networks.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "How do you write the adjacency matrix of a directed network? How is an undirected one different?",
+        "Multiply two 3 by 3 matrices by hand without slips.",
+        "What does an entry of M squared tell you? What about M cubed?",
+        "How can you read the number of routes of a given length between two nodes from a power of the matrix?"
+      ]
+    },
+    {
+      "id": "am-vectors-2d",
+      "title": "Motion in 2D: vector algebra, components, dot product, vector calculus",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Write position, velocity and acceleration as vectors in i and j, and say how they link through differentiation.",
+        "How do you find the magnitude and direction of a vector, and a unit vector in a given direction?",
+        "Give both forms of the dot product. What does a dot product of zero tell you?",
+        "How do you find the component of one vector in the direction of another?"
+      ]
+    },
+    {
+      "id": "am-projectiles",
+      "title": "Projectile motion",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": true,
+      "recallPrompts": [
+        "Write the horizontal and vertical components of the launch velocity and the equation of motion in each direction.",
+        "How do you find the time of flight, the greatest height and the range?",
+        "How do you find the speed and direction of travel at a given time?",
+        "Why can a target be hit with two different launch angles, and how do you find both?",
+        "What stays constant in the horizontal direction, and why?"
+      ]
+    },
+    {
+      "id": "am-spanning-trees",
+      "title": "Minimum spanning trees: Kruskal and Prim",
+      "strand": 2,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-networks.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "List the steps of Kruskal’s algorithm and of Prim’s algorithm.",
+        "How do you start Prim’s algorithm from a distance table, and how do you spot an edge that would make a cycle?",
+        "Why do both algorithms give the same total weight even when the trees differ?",
+        "How should you set out the working so an examiner can follow the order of the edges?"
+      ]
+    },
+    {
+      "id": "am-forces-newton",
+      "title": "Forces, free-body diagrams and Newton’s laws",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "State Newton’s three laws in your own words.",
+        "Draw a free-body diagram for a block pulled along a surface. Name every force.",
+        "What is the difference between mass and weight?",
+        "Write the equation of motion for a person in a lift that accelerates up and one that accelerates down.",
+        "What does it mean for a particle to be in equilibrium, and how do you use it?"
+      ]
+    },
+    {
+      "id": "am-planes-friction",
+      "title": "Inclined planes, friction, rough and smooth surfaces",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Draw the forces on a block on a rough inclined plane. Which way does friction act when it slides down? Up?",
+        "How do you resolve forces parallel and perpendicular to the plane to find the normal reaction?",
+        "State the friction law F = μR and say what limiting friction means.",
+        "How do you find the acceleration of a block moving up or down a rough incline?",
+        "How do you find the angle at which a block is just about to slide?"
+      ]
+    },
+    {
+      "id": "am-connected-masses",
+      "title": "Connected masses",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Write the equation of motion for each of two masses joined over a smooth pulley. What do you assume about the tension?",
+        "How do you solve the two equations to find the acceleration and the tension?",
+        "How does the acceleration of a movable pulley relate to the accelerations of the masses?",
+        "How do the equations change when one mass sits on a rough table?"
+      ]
+    },
+    {
+      "id": "am-dynamic-programming",
+      "title": "Dynamic programming and Bellman’s Principle of Optimality",
+      "strand": 2,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-networks.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Define stage, state, decision and return in a dynamic programming problem.",
+        "State Bellman’s Principle of Optimality in your own words.",
+        "Why do you work backwards from the final stage, and how do you lay out the table?",
+        "What must your final answer contain: the strategy, the total cost, or both?"
+      ]
+    },
+    {
+      "id": "am-dijkstra",
+      "title": "Dijkstra’s algorithm and shortest paths",
+      "strand": 2,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-networks.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "List the steps of Dijkstra’s algorithm. When does a label become permanent?",
+        "How do you recover the shortest path, not just its length?",
+        "How is Dijkstra’s algorithm different from a minimum spanning tree algorithm?",
+        "Why does the algorithm need non-negative weights?"
+      ]
+    },
+    {
+      "id": "am-momentum-impulse",
+      "title": "Momentum, impulse and conservation of momentum (1D and 2D)",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Define momentum and impulse. How are they linked?",
+        "State the principle of conservation of momentum and when it applies.",
+        "How do you handle a two-dimensional problem, for example an explosion or an oblique impact?",
+        "How do you find the average force from an impulse and a contact time?"
+      ]
+    },
+    {
+      "id": "am-collisions",
+      "title": "Collisions: coefficient of restitution; oblique collisions are Higher only",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "State Newton’s experimental law and what e = 0 and e = 1 mean.",
+        "Which two equations do you write for a direct collision of two spheres?",
+        "How do you handle a collision with a fixed wall, and what is the speed after it?",
+        "How do you find the kinetic energy lost in a collision?",
+        "For an oblique collision, which components change and which stay the same?"
+      ]
+    },
+    {
+      "id": "am-project-scheduling",
+      "title": "Project scheduling: critical path, early and late times, floats",
+      "strand": 2,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-networks.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "How do you build an activity network from a precedence table?",
+        "Explain the forward pass and the backward pass. What do early and late times mean?",
+        "What is a critical path and how do you find it?",
+        "What is float and how do you calculate it for an activity?"
+      ]
+    },
+    {
+      "id": "am-resistive-forces",
+      "title": "Resistive forces F ∝ vⁿ, integration by parts and by substitution",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Write Newton’s second law for a particle moving against a resistance proportional to a power of the speed.",
+        "Why do you choose a = dv/dt in some problems and a = v dv/ds in others?",
+        "How do you find a terminal velocity from the equation of motion?",
+        "Do an integration by parts and an integration by substitution without notes."
+      ]
+    },
+    {
+      "id": "am-work-energy",
+      "title": "Work, energy, conservation of energy, springs and elastic strings",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Write the work done by a constant force and by a varying force. How do you calculate it by integration?",
+        "State kinetic and potential energy formulae, and when mechanical energy is conserved.",
+        "State Hooke’s law for an elastic string and the elastic potential energy stored.",
+        "How do you use the work-energy principle when friction acts?",
+        "Define power and link it to force and speed."
+      ]
+    },
+    {
+      "id": "am-circular-motion",
+      "title": "Circular motion",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Link speed, angular velocity and period. What is the acceleration towards the centre?",
+        "Which forces provide the centripetal force for a conical pendulum? Write the two equations.",
+        "For a particle on a string in a vertical circle, what are the tension and speed at the bottom and at the top?",
+        "What condition on the speed lets the particle complete the circle?"
+      ]
+    },
+    {
+      "id": "am-dimensional-analysis",
+      "title": "Dimensional analysis",
+      "strand": 3,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-mechanics.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Write the dimensions of speed, acceleration, force, work, power and pressure in M, L and T.",
+        "How do you check that an equation is dimensionally consistent?",
+        "How do you find the powers in a formula such as a period of a pendulum from its dimensions?",
+        "What can dimensional analysis not tell you?"
+      ]
+    },
+    {
+      "id": "am-greedy-vs-dp",
+      "title": "Greedy algorithms versus dynamic programming; justifying algorithms",
+      "strand": 2,
+      "higherOnly": true,
+      "problemFile": "applied-maths-problems-networks.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "Describe how a greedy algorithm makes its choices.",
+        "Give an example where a greedy choice fails to give the best answer, and say how dynamic programming avoids that.",
+        "Which algorithms from the course are greedy, and why can you trust them?",
+        "How would you justify that an algorithm gives an optimal answer?"
+      ]
+    },
+    {
+      "id": "am-recurrence",
+      "title": "Recurrence relations and differences",
+      "strand": 4,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-difference-equations.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "What do you need to start a sequence defined by a recurrence relation?",
+        "Write the same relationship using differences and using a recurrence.",
+        "What do first-order, second-order, linear and homogeneous mean?",
+        "Generate the first terms of a sequence from its recurrence by hand."
+      ]
+    },
+    {
+      "id": "am-difference-modelling",
+      "title": "Modelling with difference equations: growth, loans, supply and demand, disease",
+      "strand": 4,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-difference-equations.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "How do you turn a description such as a yearly growth rate or a loan repayment into a difference equation? What do n and U(n) stand for?",
+        "How do you write a model when the change in one period depends on the change in the previous period?",
+        "How do you use the first terms given in a problem to set the starting conditions?",
+        "What do supply and demand, loan and disease models look like as difference equations?"
+      ]
+    },
+    {
+      "id": "am-difference-solving",
+      "title": "Solving difference equations: linear and non-linear",
+      "strand": 4,
+      "higherOnly": false,
+      "problemFile": "applied-maths-problems-difference-equations.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "How do you solve a first-order linear difference equation, homogeneous and inhomogeneous?",
+        "How do you use the characteristic equation for a second-order equation, for each type of roots?",
+        "What form of particular solution do you try for a constant, a linear or a quadratic right-hand side?",
+        "How do you use the starting values to find the constants in the general solution?",
+        "For a non-linear equation, how do you find the fixed points?"
+      ]
+    },
+    {
+      "id": "am-differential-modelling",
+      "title": "Modelling with differential equations",
+      "strand": 4,
+      "higherOnly": true,
+      "problemFile": "applied-maths-problems-difference-equations.json",
+      "hasSketches": true,
+      "recallPrompts": [
+        "How do you turn “rate of change proportional to…” into a differential equation?",
+        "How do you set up the initial condition and units?",
+        "Write the equations for growth and decay, Newton’s law of cooling and a model with a limiting value.",
+        "How do you explain what a solution means in context?"
+      ]
+    },
+    {
+      "id": "am-differential-solving",
+      "title": "Solving differential equations: separation of variables, reducible second-order, numerical and graphical methods",
+      "strand": 4,
+      "higherOnly": true,
+      "problemFile": "applied-maths-problems-difference-equations.json",
+      "hasSketches": false,
+      "recallPrompts": [
+        "List the steps of separation of variables, including the constant of integration.",
+        "How do you reduce a second-order equation of the form d2x/dt2 = f(v) or f(x) to first order?",
+        "Describe a numerical method (such as Euler’s method) and write one step by hand.",
+        "How can a slope field or graph show the behaviour of a solution?"
+      ]
+    }
+  ],
+  "pastPaperPointers": {
+    "note": "Own-words descriptions of where each topic appears in the official 2023 to 2026 Higher papers.",
+    "parts": [
+      {
+        "year": 2023,
+        "question": 1,
+        "part": "a",
+        "topics": ["am-adjacency-matrices","am-network-terms"],
+        "summary": "adjacency matrix, directed graph, cycle and graph terminology"
+      },
+      {
+        "year": 2023,
+        "question": 1,
+        "part": "b",
+        "topics": ["am-calculus-for-motion"],
+        "summary": "integrate velocity to find displacement of a particle"
+      },
+      {
+        "year": 2023,
+        "question": 2,
+        "part": "a",
+        "topics": ["am-dijkstra"],
+        "summary": "cheapest campus route using Dijkstra's algorithm"
+      },
+      {
+        "year": 2023,
+        "question": 2,
+        "part": "b",
+        "topics": ["am-collisions","am-vectors-2d"],
+        "summary": "oblique sphere collision resolved into vector components"
+      },
+      {
+        "year": 2023,
+        "question": 3,
+        "part": "",
+        "topics": ["am-circular-motion","am-forces-newton","am-dimensional-analysis","am-projectiles"],
+        "summary": "chain swing forces, angular speed, units and orange flight"
+      },
+      {
+        "year": 2023,
+        "question": 4,
+        "part": "",
+        "topics": ["am-calculus-for-motion","am-resistive-forces","am-differential-solving"],
+        "summary": "ball moving through water with buoyancy and drag"
+      },
+      {
+        "year": 2023,
+        "question": 5,
+        "part": "a",
+        "topics": ["am-connected-masses","am-planes-friction"],
+        "summary": "connected blocks with friction on an incline and table"
+      },
+      {
+        "year": 2023,
+        "question": 5,
+        "part": "b",
+        "topics": ["am-kinematics-1d"],
+        "summary": "car journey timing from piecewise linear motion"
+      },
+      {
+        "year": 2023,
+        "question": 6,
+        "part": "",
+        "topics": ["am-recurrence","am-difference-solving"],
+        "summary": "spider plant recurrence model with homogeneous and forced solutions"
+      },
+      {
+        "year": 2023,
+        "question": 7,
+        "part": "a",
+        "topics": ["am-spanning-trees"],
+        "summary": "minimum spanning tree and route through every waterfall"
+      },
+      {
+        "year": 2023,
+        "question": 7,
+        "part": "b",
+        "topics": ["am-differential-solving"],
+        "summary": "learning curve differential equation and sketching its graph"
+      },
+      {
+        "year": 2023,
+        "question": 8,
+        "part": "",
+        "topics": ["am-projectiles","am-vectors-2d"],
+        "summary": "projectiles collide mid-air; velocities, dot product and angle"
+      },
+      {
+        "year": 2023,
+        "question": 9,
+        "part": "",
+        "topics": ["am-project-scheduling"],
+        "summary": "project scheduling: dependencies, timings, critical path and cascade chart"
+      },
+      {
+        "year": 2023,
+        "question": 10,
+        "part": "a",
+        "topics": ["am-difference-modelling","am-difference-solving"],
+        "summary": "grasshopper population recurrence with monthly removals"
+      },
+      {
+        "year": 2023,
+        "question": 10,
+        "part": "b",
+        "topics": ["am-circular-motion","am-work-energy","am-forces-newton"],
+        "summary": "toy car loop: contact condition and minimum launch factor"
+      },
+      {
+        "year": 2024,
+        "question": 1,
+        "part": "a",
+        "topics": ["am-adjacency-matrices"],
+        "summary": "multiply two matrices"
+      },
+      {
+        "year": 2024,
+        "question": 1,
+        "part": "b",
+        "topics": ["am-spanning-trees"],
+        "summary": "minimum spanning tree and total walking distance along it"
+      },
+      {
+        "year": 2024,
+        "question": 1,
+        "part": "c",
+        "topics": ["am-kinematics-1d"],
+        "summary": "overtaking times for two cyclists with delayed acceleration"
+      },
+      {
+        "year": 2024,
+        "question": 2,
+        "part": "a",
+        "topics": ["am-planes-friction"],
+        "summary": "forces on a jeep towing a trailer up a hill"
+      },
+      {
+        "year": 2024,
+        "question": 2,
+        "part": "b",
+        "topics": ["am-connected-masses"],
+        "summary": "pulley system with two weights and a moving pulley"
+      },
+      {
+        "year": 2024,
+        "question": 3,
+        "part": "a",
+        "topics": ["am-calculus-for-motion"],
+        "summary": "integrate a time-dependent acceleration to find velocity"
+      },
+      {
+        "year": 2024,
+        "question": 3,
+        "part": "b",
+        "topics": ["am-collisions"],
+        "summary": "oblique collision of identical spheres and a perpendicular result"
+      },
+      {
+        "year": 2024,
+        "question": 4,
+        "part": "",
+        "topics": ["am-circular-motion","am-work-energy","am-resistive-forces"],
+        "summary": "circular-arc motion then upward motion with linear air resistance"
+      },
+      {
+        "year": 2024,
+        "question": 5,
+        "part": "a",
+        "topics": ["am-collisions"],
+        "summary": "direct collision of unequal spheres with a restitution parameter"
+      },
+      {
+        "year": 2024,
+        "question": 5,
+        "part": "b",
+        "topics": ["am-kinematics-1d"],
+        "summary": "train journey with acceleration, cruising, and braking phases"
+      },
+      {
+        "year": 2024,
+        "question": 6,
+        "part": "a",
+        "topics": ["am-difference-modelling","am-difference-solving"],
+        "summary": "population model with yearly growth and fixed emigration"
+      },
+      {
+        "year": 2024,
+        "question": 6,
+        "part": "b",
+        "topics": ["am-calculus-for-motion","am-differential-solving"],
+        "summary": "solve a velocity-displacement differential equation and evaluate speed"
+      },
+      {
+        "year": 2024,
+        "question": 7,
+        "part": "a",
+        "topics": ["am-projectiles"],
+        "summary": "launch angle needed for a sliotar to reach crossbar height"
+      },
+      {
+        "year": 2024,
+        "question": 7,
+        "part": "b",
+        "topics": ["am-circular-motion","am-planes-friction"],
+        "summary": "circular motion in a stunt sphere with and without friction"
+      },
+      {
+        "year": 2024,
+        "question": 8,
+        "part": "a",
+        "topics": ["am-dynamic-programming","am-greedy-vs-dp"],
+        "summary": "choose the most profitable strategy path using Bellman"
+      },
+      {
+        "year": 2024,
+        "question": 8,
+        "part": "b",
+        "topics": ["am-dimensional-analysis"],
+        "summary": "check that a formula has displacement units"
+      },
+      {
+        "year": 2024,
+        "question": 9,
+        "part": "",
+        "topics": ["am-recurrence","am-difference-solving"],
+        "summary": "solve homogeneous and inhomogeneous mining recurrences and total outputs"
+      },
+      {
+        "year": 2024,
+        "question": 10,
+        "part": "a",
+        "topics": ["am-project-scheduling"],
+        "summary": "find event times, critical paths, and effects of a delay"
+      },
+      {
+        "year": 2024,
+        "question": 10,
+        "part": "b",
+        "topics": ["am-differential-modelling","am-differential-solving"],
+        "summary": "draining tank model with exponential decay of water height"
+      },
+      {
+        "year": 2025,
+        "question": 1,
+        "part": "a",
+        "topics": ["am-adjacency-matrices"],
+        "summary": "adjacency matrix of a directed graph, its square and what it means"
+      },
+      {
+        "year": 2025,
+        "question": 1,
+        "part": "b",
+        "topics": ["am-circular-motion","am-forces-newton"],
+        "summary": "conical pendulum: forces, tension, angular velocity and a new radius"
+      },
+      {
+        "year": 2025,
+        "question": 2,
+        "part": "",
+        "topics": ["am-calculus-for-motion","am-resistive-forces","am-differential-solving"],
+        "summary": "vertical motion with and without air resistance using a = v dv/ds and differential equations"
+      },
+      {
+        "year": 2025,
+        "question": 3,
+        "part": "a",
+        "topics": ["am-connected-masses","am-planes-friction"],
+        "summary": "two blocks on rough tables joined over a movable pulley"
+      },
+      {
+        "year": 2025,
+        "question": 3,
+        "part": "b",
+        "topics": ["am-spanning-trees"],
+        "summary": "Prim's algorithm on a distance table, then draw the network"
+      },
+      {
+        "year": 2025,
+        "question": 4,
+        "part": "",
+        "topics": ["am-collisions","am-work-energy","am-circular-motion"],
+        "summary": "sphere released from a horizontal string collides with another, which then swings"
+      },
+      {
+        "year": 2025,
+        "question": 5,
+        "part": "a",
+        "topics": ["am-planes-friction","am-kinematics-1d"],
+        "summary": "two blocks with different friction sliding down an incline and colliding"
+      },
+      {
+        "year": 2025,
+        "question": 5,
+        "part": "b",
+        "topics": ["am-vectors-2d"],
+        "summary": "perpendicular vectors and a dot product to find unknown components"
+      },
+      {
+        "year": 2025,
+        "question": 6,
+        "part": "a",
+        "topics": ["am-dynamic-programming"],
+        "summary": "optimal replacement strategy for a vehicle; stage versus state"
+      },
+      {
+        "year": 2025,
+        "question": 6,
+        "part": "b",
+        "topics": ["am-work-energy"],
+        "summary": "work done stretching an elastic band, by integration"
+      },
+      {
+        "year": 2025,
+        "question": 7,
+        "part": "a",
+        "topics": ["am-dijkstra","am-network-terms"],
+        "summary": "shortest path on a road network; network versus map"
+      },
+      {
+        "year": 2025,
+        "question": 7,
+        "part": "b",
+        "topics": ["am-projectiles","am-collisions"],
+        "summary": "ball thrown at a wall, two launch angles, bounce with restitution"
+      },
+      {
+        "year": 2025,
+        "question": 8,
+        "part": "a",
+        "topics": ["am-difference-modelling","am-difference-solving"],
+        "summary": "model infections with a second-order difference equation and solve it"
+      },
+      {
+        "year": 2025,
+        "question": 8,
+        "part": "b",
+        "topics": ["am-differential-solving","am-differential-modelling"],
+        "summary": "population differential equation solved by integration by parts"
+      },
+      {
+        "year": 2025,
+        "question": 9,
+        "part": "a",
+        "topics": ["am-kinematics-1d"],
+        "summary": "car braking with reaction time, deceleration and displacement-time graph"
+      },
+      {
+        "year": 2025,
+        "question": 9,
+        "part": "b",
+        "topics": ["am-collisions"],
+        "summary": "oblique collision: fraction of kinetic energy lost"
+      },
+      {
+        "year": 2025,
+        "question": 10,
+        "part": "a",
+        "topics": ["am-difference-solving","am-difference-modelling"],
+        "summary": "inhomogeneous second-order difference equation for customer numbers"
+      },
+      {
+        "year": 2025,
+        "question": 10,
+        "part": "b",
+        "topics": ["am-projectiles"],
+        "summary": "find the launch speed from displacements after a given time"
+      },
+      {
+        "year": 2026,
+        "question": 1,
+        "part": "a",
+        "topics": ["am-spanning-trees","am-dijkstra"],
+        "summary": "minimum spanning tree, shortest return path, and total inspection time"
+      },
+      {
+        "year": 2026,
+        "question": 1,
+        "part": "b",
+        "topics": ["am-recurrence","am-difference-solving"],
+        "summary": "solve a first-order inhomogeneous population difference equation"
+      },
+      {
+        "year": 2026,
+        "question": 2,
+        "part": "",
+        "topics": ["am-project-scheduling","am-forces-newton","am-calculus-for-motion","am-differential-solving"],
+        "summary": "draw a precedence network, then model and solve motion on a rough floor"
+      },
+      {
+        "year": 2026,
+        "question": 3,
+        "part": "",
+        "topics": ["am-connected-masses","am-momentum-impulse"],
+        "summary": "connected-particle motion, a sticking collision, and later travel time"
+      },
+      {
+        "year": 2026,
+        "question": 4,
+        "part": "",
+        "topics": ["am-collisions","am-momentum-impulse"],
+        "summary": "direct and oblique snooker collisions with impulse and deflection"
+      },
+      {
+        "year": 2026,
+        "question": 5,
+        "part": "",
+        "topics": ["am-circular-motion","am-work-energy"],
+        "summary": "circular motion on a table and then on a vertical arc"
+      },
+      {
+        "year": 2026,
+        "question": 6,
+        "part": "a",
+        "topics": ["am-calculus-for-motion","am-differential-solving"],
+        "summary": "solve a velocity-displacement differential equation for motion from rest"
+      },
+      {
+        "year": 2026,
+        "question": 6,
+        "part": "b",
+        "topics": ["am-kinematics-1d"],
+        "summary": "time for a dropped sensor from a rising balloon to land"
+      },
+      {
+        "year": 2026,
+        "question": 7,
+        "part": "",
+        "topics": ["am-difference-solving","am-differential-solving"],
+        "summary": "solve cooling models using difference and differential equations"
+      },
+      {
+        "year": 2026,
+        "question": 8,
+        "part": "a",
+        "topics": ["am-kinematics-1d","am-difference-modelling"],
+        "summary": "derive nth-second distance and its recurrence under uniform acceleration"
+      },
+      {
+        "year": 2026,
+        "question": 8,
+        "part": "b",
+        "topics": ["am-recurrence","am-difference-solving"],
+        "summary": "solve an inhomogeneous recurrence for harvested bulbs and predict a future yield"
+      },
+      {
+        "year": 2026,
+        "question": 9,
+        "part": "a",
+        "topics": ["am-calculus-for-motion"],
+        "summary": "integrate logarithmic velocity to displacement and find the next return"
+      },
+      {
+        "year": 2026,
+        "question": 9,
+        "part": "b",
+        "topics": ["am-projectiles","am-vectors-2d"],
+        "summary": "vector projectile motion with perpendicular velocity and displacement conditions"
+      },
+      {
+        "year": 2026,
+        "question": 10,
+        "part": "",
+        "topics": ["am-project-scheduling"],
+        "summary": "schedule a refurbishment project with critical paths, staffing, and delay analysis"
+      }
+    ]
+  }
+}

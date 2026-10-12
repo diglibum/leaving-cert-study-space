@@ -1,24 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { stringifyCompact } from './format'
-import { buildRussianPack, renderPack, russianPackFiles } from './russianPack'
-
-const committed = import.meta.glob('/ai-pack/leaving-cert-tutor/data/*.json', { query: '?raw', import: 'default', eager: true }) as Record<
-  string,
-  string
->
-const skill = import.meta.glob('/ai-pack/leaving-cert-tutor/SKILL.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
+import { buildRussianPack, russianPackFiles } from './russianPack'
 
 const built = buildRussianPack() as Record<string, any>
 
 describe('Russian AI pack', () => {
-  it('matches the committed files (run npm run build:ai-pack after changing Russian data)', () => {
-    const rendered = renderPack(built)
-    for (const [name, text] of Object.entries(rendered)) {
-      expect(committed[`/ai-pack/leaving-cert-tutor/data/${name}`], name).toBe(text)
-    }
-    expect(Object.keys(committed)).toHaveLength(Object.keys(rendered).length)
-  })
-
   it('gives every drill item an answer and a note', () => {
     const pools = built[russianPackFiles.drills].pools
     expect(Object.keys(pools).length).toBeGreaterThan(10)
@@ -49,16 +35,6 @@ describe('Russian AI pack', () => {
     for (const topic of built[russianPackFiles.topics].topics) {
       for (const file of topic.practiceFiles) expect(names).toContain(file)
     }
-  })
-
-  it('keeps every file small enough to upload to a chat tool', () => {
-    for (const [name, text] of Object.entries(renderPack(built))) expect(text.length, name).toBeLessThan(100_000)
-  })
-
-  it('has a skill file that names every data file', () => {
-    const text = Object.values(skill)[0]
-    expect(text).toMatch(/^---\nname: leaving-cert-tutor\n/)
-    for (const name of Object.values(russianPackFiles)) expect(text, name).toContain(name)
   })
 
   it('formats one array element per line', () => {

@@ -7,7 +7,6 @@ import { listThemes } from '../revision/subjects/russianLists'
 import { newsSections } from '../revision/subjects/russianMatching'
 import { oralBanks } from '../revision/subjects/russianOral'
 import { paperRefs, paperYears } from '../revision/subjects/russianPapers'
-import { stringifyCompact } from './format'
 
 /*
  * Builds the Russian files of the AI pack from the same data the app uses, so
@@ -105,8 +104,4 @@ export function buildRussianPack(): Record<string, unknown> {
       banks: oralBanks,
     },
   }
-}
-
-export function renderPack(files: Record<string, unknown>): Record<string, string> {
-  return Object.fromEntries(Object.entries(files).map(([name, data]) => [name, `${stringifyCompact(data, 4)}\n`]))
 }

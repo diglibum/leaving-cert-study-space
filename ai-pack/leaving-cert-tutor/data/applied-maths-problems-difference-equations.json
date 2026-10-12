@@ -1,0 +1,215 @@
+{
+  "note": "Generated difference and differential equation problems. `parts[].answer` is the exact value; the student answers in the unit given.",
+  "problems": {
+    "am-recurrence": [
+      {
+        "statement": "A sequence satisfies U(n+1) = -U(n) - 5, for n = 0, 1, 2, ..., with U(0) = 4.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":-9,"decimals":0,"unit":"","expected":"-9"},{"label":"(b)","prompt":"Find U(5).","answer":-9,"decimals":0,"unit":"","expected":"-9"}],
+        "solution": ["The terms are 4, -9, 4, -9, 4, -9.","Each term comes from the one before it, starting from U(0) = 4."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+1) = 2U(n) - 1, for n = 0, 1, 2, ..., with U(0) = 3.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":17,"decimals":0,"unit":"","expected":"17"},{"label":"(b)","prompt":"Find U(5).","answer":65,"decimals":0,"unit":"","expected":"65"}],
+        "solution": ["The terms are 3, 5, 9, 17, 33, 65.","Each term comes from the one before it, starting from U(0) = 3."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+1) = -U(n) + 1, for n = 0, 1, 2, ..., with U(0) = 4.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":-3,"decimals":0,"unit":"","expected":"-3"},{"label":"(b)","prompt":"Find U(5).","answer":-3,"decimals":0,"unit":"","expected":"-3"}],
+        "solution": ["The terms are 4, -3, 4, -3, 4, -3.","Each term comes from the one before it, starting from U(0) = 4."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+1) = 3U(n) + 7, for n = 0, 1, 2, ..., with U(0) = 3.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":172,"decimals":0,"unit":"","expected":"172"},{"label":"(b)","prompt":"Find U(5).","answer":1576,"decimals":0,"unit":"","expected":"1576"}],
+        "solution": ["The terms are 3, 16, 55, 172, 523, 1576.","Each term comes from the one before it, starting from U(0) = 3."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+1) = -U(n) + 2, for n = 0, 1, 2, ..., with U(0) = 6.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":-4,"decimals":0,"unit":"","expected":"-4"},{"label":"(b)","prompt":"Find U(5).","answer":-4,"decimals":0,"unit":"","expected":"-4"}],
+        "solution": ["The terms are 6, -4, 6, -4, 6, -4.","Each term comes from the one before it, starting from U(0) = 6."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+1) = 2U(n) - 4, for n = 0, 1, 2, ..., with U(0) = 6.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":20,"decimals":0,"unit":"","expected":"20"},{"label":"(b)","prompt":"Find U(5).","answer":68,"decimals":0,"unit":"","expected":"68"}],
+        "solution": ["The terms are 6, 8, 12, 20, 36, 68.","Each term comes from the one before it, starting from U(0) = 6."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+1) = 4U(n) - 4, for n = 0, 1, 2, ..., with U(0) = 3.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":108,"decimals":0,"unit":"","expected":"108"},{"label":"(b)","prompt":"Find U(5).","answer":1708,"decimals":0,"unit":"","expected":"1708"}],
+        "solution": ["The terms are 3, 8, 28, 108, 428, 1708.","Each term comes from the one before it, starting from U(0) = 3."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+1) = -U(n) + 8, for n = 0, 1, 2, ..., with U(0) = 6.",
+        "parts": [{"label":"(a)","prompt":"Find U(3).","answer":2,"decimals":0,"unit":"","expected":"2"},{"label":"(b)","prompt":"Find U(5).","answer":2,"decimals":0,"unit":"","expected":"2"}],
+        "solution": ["The terms are 6, 2, 6, 2, 6, 2.","Each term comes from the one before it, starting from U(0) = 6."]
+      }
+    ],
+    "am-difference-modelling": [
+      {
+        "statement": "A fish population grows by 12% each year. At the end of every year 200 fish are removed. At the start there are 2400 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":2696.9,"decimals":1,"unit":"","expected":"2696.9"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":1666.7,"decimals":1,"unit":"","expected":"1666.7"}],
+        "solution": ["Model: U(n+1) = 1.12U(n) - 200, U(0) = 2400.","U(1) = 2488, U(2) = 2586.56, U(3) = 2696.95.","Equilibrium: U = 1.12U - 200, so U = 200 / 0.12 = 1666.7."]
+      },
+      {
+        "statement": "A fish population grows by 8% each year. At the end of every year 400 fish are removed. At the start there are 4500 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":4370.1,"decimals":1,"unit":"","expected":"4370.1"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":5000,"decimals":1,"unit":"","expected":"5000.0"}],
+        "solution": ["Model: U(n+1) = 1.08U(n) - 400, U(0) = 4500.","U(1) = 4460, U(2) = 4416.8, U(3) = 4370.14.","Equilibrium: U = 1.08U - 400, so U = 400 / 0.08 = 5000."]
+      },
+      {
+        "statement": "A fish population grows by 10% each year. At the end of every year 150 fish are removed. At the start there are 2300 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":2564.8,"decimals":1,"unit":"","expected":"2564.8"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":1500,"decimals":1,"unit":"","expected":"1500.0"}],
+        "solution": ["Model: U(n+1) = 1.1U(n) - 150, U(0) = 2300.","U(1) = 2380, U(2) = 2468, U(3) = 2564.8.","Equilibrium: U = 1.1U - 150, so U = 150 / 0.1 = 1500."]
+      },
+      {
+        "statement": "A fish population grows by 10% each year. At the end of every year 100 fish are removed. At the start there are 5000 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":6324,"decimals":1,"unit":"","expected":"6324.0"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":1000,"decimals":1,"unit":"","expected":"1000.0"}],
+        "solution": ["Model: U(n+1) = 1.1U(n) - 100, U(0) = 5000.","U(1) = 5400, U(2) = 5840, U(3) = 6324.","Equilibrium: U = 1.1U - 100, so U = 100 / 0.1 = 1000."]
+      },
+      {
+        "statement": "A fish population grows by 5% each year. At the end of every year 400 fish are removed. At the start there are 2300 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":1401.5,"decimals":1,"unit":"","expected":"1401.5"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":8000,"decimals":1,"unit":"","expected":"8000.0"}],
+        "solution": ["Model: U(n+1) = 1.05U(n) - 400, U(0) = 2300.","U(1) = 2015, U(2) = 1715.75, U(3) = 1401.54.","Equilibrium: U = 1.05U - 400, so U = 400 / 0.05 = 8000."]
+      },
+      {
+        "statement": "A fish population grows by 5% each year. At the end of every year 100 fish are removed. At the start there are 4600 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":5009.8,"decimals":1,"unit":"","expected":"5009.8"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":2000,"decimals":1,"unit":"","expected":"2000.0"}],
+        "solution": ["Model: U(n+1) = 1.05U(n) - 100, U(0) = 4600.","U(1) = 4730, U(2) = 4866.5, U(3) = 5009.82.","Equilibrium: U = 1.05U - 100, so U = 100 / 0.05 = 2000."]
+      },
+      {
+        "statement": "A fish population grows by 10% each year. At the end of every year 300 fish are removed. At the start there are 4500 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":4996.5,"decimals":1,"unit":"","expected":"4996.5"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":3000,"decimals":1,"unit":"","expected":"3000.0"}],
+        "solution": ["Model: U(n+1) = 1.1U(n) - 300, U(0) = 4500.","U(1) = 4650, U(2) = 4815, U(3) = 4996.5.","Equilibrium: U = 1.1U - 300, so U = 300 / 0.1 = 3000."]
+      },
+      {
+        "statement": "A fish population grows by 5% each year. At the end of every year 300 fish are removed. At the start there are 3600 fish. Let U(n) be the number of fish after n years, once the removal for that year has been made.",
+        "parts": [{"label":"(a)","prompt":"Find U(3). (Model it as U(n+1) = r U(n) - c and work year by year.)","answer":3221.7,"decimals":1,"unit":"","expected":"3221.7"},{"label":"(b)","prompt":"Find the number of fish at which the population neither grows nor shrinks.","answer":6000,"decimals":1,"unit":"","expected":"6000.0"}],
+        "solution": ["Model: U(n+1) = 1.05U(n) - 300, U(0) = 3600.","U(1) = 3480, U(2) = 3354, U(3) = 3221.7.","Equilibrium: U = 1.05U - 300, so U = 300 / 0.05 = 6000."]
+      }
+    ],
+    "am-difference-solving": [
+      {
+        "statement": "A sequence satisfies U(n+2) = 7U(n+1) - 12U(n), with U(0) = 0 and U(1) = 1. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":4,"decimals":0,"unit":"","expected":"4"},{"label":"(b)","prompt":"Find A.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(c)","prompt":"Find U(5).","answer":781,"decimals":0,"unit":"","expected":"781"}],
+        "solution": ["Characteristic equation: r^2 - 7r + 12 = 0, with roots 4 and 3.","A + B = 0 and 4A + 3B = 1, so A = 1 and B = -1.","U(5) = 1 x 4^5 + -1 x 3^5 = 781."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+2) = 7U(n+1) - 12U(n), with U(0) = 2 and U(1) = 9. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":4,"decimals":0,"unit":"","expected":"4"},{"label":"(b)","prompt":"Find A.","answer":3,"decimals":0,"unit":"","expected":"3"},{"label":"(c)","prompt":"Find U(5).","answer":2829,"decimals":0,"unit":"","expected":"2829"}],
+        "solution": ["Characteristic equation: r^2 - 7r + 12 = 0, with roots 4 and 3.","A + B = 2 and 4A + 3B = 9, so A = 3 and B = -1.","U(5) = 3 x 4^5 + -1 x 3^5 = 2829."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+2) = 3U(n+1) - 2U(n), with U(0) = 3 and U(1) = 4. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":2,"decimals":0,"unit":"","expected":"2"},{"label":"(b)","prompt":"Find A.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(c)","prompt":"Find U(5).","answer":34,"decimals":0,"unit":"","expected":"34"}],
+        "solution": ["Characteristic equation: r^2 - 3r + 2 = 0, with roots 2 and 1.","A + B = 3 and 2A + 1B = 4, so A = 1 and B = 2.","U(5) = 1 x 2^5 + 2 x 1^5 = 34."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+2) = 5U(n+1) - 6U(n), with U(0) = 3 and U(1) = 7. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":3,"decimals":0,"unit":"","expected":"3"},{"label":"(b)","prompt":"Find A.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(c)","prompt":"Find U(5).","answer":307,"decimals":0,"unit":"","expected":"307"}],
+        "solution": ["Characteristic equation: r^2 - 5r + 6 = 0, with roots 3 and 2.","A + B = 3 and 3A + 2B = 7, so A = 1 and B = 2.","U(5) = 1 x 3^5 + 2 x 2^5 = 307."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+2) = 1U(n+1) + 2U(n), with U(0) = 3 and U(1) = 0. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":2,"decimals":0,"unit":"","expected":"2"},{"label":"(b)","prompt":"Find A.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(c)","prompt":"Find U(5).","answer":30,"decimals":0,"unit":"","expected":"30"}],
+        "solution": ["Characteristic equation: r^2 - 1r + -2 = 0, with roots 2 and -1.","A + B = 3 and 2A + -1B = 0, so A = 1 and B = 2.","U(5) = 1 x 2^5 + 2 x -1^5 = 30."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+2) = 1U(n+1) + 2U(n), with U(0) = 6 and U(1) = 9. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":2,"decimals":0,"unit":"","expected":"2"},{"label":"(b)","prompt":"Find A.","answer":5,"decimals":0,"unit":"","expected":"5"},{"label":"(c)","prompt":"Find U(5).","answer":159,"decimals":0,"unit":"","expected":"159"}],
+        "solution": ["Characteristic equation: r^2 - 1r + -2 = 0, with roots 2 and -1.","A + B = 6 and 2A + -1B = 9, so A = 5 and B = 1.","U(5) = 5 x 2^5 + 1 x -1^5 = 159."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+2) = 7U(n+1) - 10U(n), with U(0) = 0 and U(1) = 9. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":5,"decimals":0,"unit":"","expected":"5"},{"label":"(b)","prompt":"Find A.","answer":3,"decimals":0,"unit":"","expected":"3"},{"label":"(c)","prompt":"Find U(5).","answer":9279,"decimals":0,"unit":"","expected":"9279"}],
+        "solution": ["Characteristic equation: r^2 - 7r + 10 = 0, with roots 5 and 2.","A + B = 0 and 5A + 2B = 9, so A = 3 and B = -3.","U(5) = 3 x 5^5 + -3 x 2^5 = 9279."]
+      },
+      {
+        "statement": "A sequence satisfies U(n+2) = 5U(n+1) - 4U(n), with U(0) = 7 and U(1) = 16. Its solution has the form U(n) = A x r1^n + B x r2^n, where r1 > r2 are the roots of the characteristic equation.",
+        "parts": [{"label":"(a)","prompt":"Find r1.","answer":4,"decimals":0,"unit":"","expected":"4"},{"label":"(b)","prompt":"Find A.","answer":3,"decimals":0,"unit":"","expected":"3"},{"label":"(c)","prompt":"Find U(5).","answer":3076,"decimals":0,"unit":"","expected":"3076"}],
+        "solution": ["Characteristic equation: r^2 - 5r + 4 = 0, with roots 4 and 1.","A + B = 7 and 4A + 1B = 16, so A = 3 and B = 4.","U(5) = 3 x 4^5 + 4 x 1^5 = 3076."]
+      }
+    ],
+    "am-differential-modelling": [
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 3000, and after 4 years it is 3900.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.0656,"decimals":4,"unit":"per year","expected":"0.0656 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":5781,"decimals":0,"unit":"","expected":"5781"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":10.57,"decimals":2,"unit":"years","expected":"10.57 years"}],
+        "solution": ["Separating variables: P = 3000e^(kt). At t = 4: 3900 = 3000e^(4k), so k = ln(3900/3000) / 4 = 0.0656.","P(10) = 3000e^(10k) = 5781.","Doubling: e^(kt) = 2, so t = ln 2 / k = 10.57 years."]
+      },
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 1500, and after 2 years it is 1800.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.0912,"decimals":4,"unit":"per year","expected":"0.0912 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":3732,"decimals":0,"unit":"","expected":"3732"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":7.6,"decimals":2,"unit":"years","expected":"7.60 years"}],
+        "solution": ["Separating variables: P = 1500e^(kt). At t = 2: 1800 = 1500e^(2k), so k = ln(1800/1500) / 2 = 0.0912.","P(10) = 1500e^(10k) = 3732.","Doubling: e^(kt) = 2, so t = ln 2 / k = 7.6 years."]
+      },
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 1000, and after 4 years it is 1200.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.0456,"decimals":4,"unit":"per year","expected":"0.0456 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":1577,"decimals":0,"unit":"","expected":"1577"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":15.21,"decimals":2,"unit":"years","expected":"15.21 years"}],
+        "solution": ["Separating variables: P = 1000e^(kt). At t = 4: 1200 = 1000e^(4k), so k = ln(1200/1000) / 4 = 0.0456.","P(10) = 1000e^(10k) = 1577.","Doubling: e^(kt) = 2, so t = ln 2 / k = 15.21 years."]
+      },
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 3500, and after 2 years it is 5250.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.2027,"decimals":4,"unit":"per year","expected":"0.2027 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":26578,"decimals":0,"unit":"","expected":"26578"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":3.42,"decimals":2,"unit":"years","expected":"3.42 years"}],
+        "solution": ["Separating variables: P = 3500e^(kt). At t = 2: 5250 = 3500e^(2k), so k = ln(5250/3500) / 2 = 0.2027.","P(10) = 3500e^(10k) = 26578.","Doubling: e^(kt) = 2, so t = ln 2 / k = 3.42 years."]
+      },
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 3500, and after 2 years it is 5600.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.235,"decimals":4,"unit":"per year","expected":"0.2350 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":36700,"decimals":0,"unit":"","expected":"36700"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":2.95,"decimals":2,"unit":"years","expected":"2.95 years"}],
+        "solution": ["Separating variables: P = 3500e^(kt). At t = 2: 5600 = 3500e^(2k), so k = ln(5600/3500) / 2 = 0.235.","P(10) = 3500e^(10k) = 36700.","Doubling: e^(kt) = 2, so t = ln 2 / k = 2.95 years."]
+      },
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 5000, and after 3 years it is 8000.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.1567,"decimals":4,"unit":"per year","expected":"0.1567 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":23954,"decimals":0,"unit":"","expected":"23954"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":4.42,"decimals":2,"unit":"years","expected":"4.42 years"}],
+        "solution": ["Separating variables: P = 5000e^(kt). At t = 3: 8000 = 5000e^(3k), so k = ln(8000/5000) / 3 = 0.1567.","P(10) = 5000e^(10k) = 23954.","Doubling: e^(kt) = 2, so t = ln 2 / k = 4.42 years."]
+      },
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 4500, and after 4 years it is 7200.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.1175,"decimals":4,"unit":"per year","expected":"0.1175 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":14572,"decimals":0,"unit":"","expected":"14572"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":5.9,"decimals":2,"unit":"years","expected":"5.90 years"}],
+        "solution": ["Separating variables: P = 4500e^(kt). At t = 4: 7200 = 4500e^(4k), so k = ln(7200/4500) / 4 = 0.1175.","P(10) = 4500e^(10k) = 14572.","Doubling: e^(kt) = 2, so t = ln 2 / k = 5.9 years."]
+      },
+      {
+        "statement": "The population of a town grows at a rate proportional to its size, dP/dt = kP, where t is in years. At t = 0 the population is 4000, and after 2 years it is 4800.",
+        "parts": [{"label":"(a)","prompt":"Find k, to 4 decimal places.","answer":0.0912,"decimals":4,"unit":"per year","expected":"0.0912 per year"},{"label":"(b)","prompt":"Find the population after 10 years, to the nearest whole number.","answer":9953,"decimals":0,"unit":"","expected":"9953"},{"label":"(c)","prompt":"Find the time for the population to double.","answer":7.6,"decimals":2,"unit":"years","expected":"7.60 years"}],
+        "solution": ["Separating variables: P = 4000e^(kt). At t = 2: 4800 = 4000e^(2k), so k = ln(4800/4000) / 2 = 0.0912.","P(10) = 4000e^(10k) = 9953.","Doubling: e^(kt) = 2, so t = ln 2 / k = 7.6 years."]
+      }
+    ],
+    "am-differential-solving": [
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 10 - 2v, with v = 1 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":5,"decimals":2,"unit":"m/s","expected":"5.00 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 2.","answer":4.93,"decimals":2,"unit":"m/s","expected":"4.93 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":5,"decimals":2,"unit":"m/s","expected":"5.00 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 10/2 = 5.","Separating variables: v = 5 + (1 - 5)e^(-2t). At t = 2, v = 4.93.","Euler: v(0.5) ~ 1 + 0.5 x (10 - 2 x 1) = 5."]
+      },
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 17 - 1v, with v = 3 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":17,"decimals":2,"unit":"m/s","expected":"17.00 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 1.","answer":11.85,"decimals":2,"unit":"m/s","expected":"11.85 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":10,"decimals":2,"unit":"m/s","expected":"10.00 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 17/1 = 17.","Separating variables: v = 17 + (3 - 17)e^(-1t). At t = 1, v = 11.85.","Euler: v(0.5) ~ 3 + 0.5 x (17 - 1 x 3) = 10."]
+      },
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 6 - 0.5v, with v = 4 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":12,"decimals":2,"unit":"m/s","expected":"12.00 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 1.","answer":7.15,"decimals":2,"unit":"m/s","expected":"7.15 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":6,"decimals":2,"unit":"m/s","expected":"6.00 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 6/0.5 = 12.","Separating variables: v = 12 + (4 - 12)e^(-0.5t). At t = 1, v = 7.15.","Euler: v(0.5) ~ 4 + 0.5 x (6 - 0.5 x 4) = 6."]
+      },
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 16 - 0.5v, with v = 0 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":32,"decimals":2,"unit":"m/s","expected":"32.00 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 2.","answer":20.23,"decimals":2,"unit":"m/s","expected":"20.23 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":8,"decimals":2,"unit":"m/s","expected":"8.00 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 16/0.5 = 32.","Separating variables: v = 32 + (0 - 32)e^(-0.5t). At t = 2, v = 20.23.","Euler: v(0.5) ~ 0 + 0.5 x (16 - 0.5 x 0) = 8."]
+      },
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 17 - 1v, with v = 4 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":17,"decimals":2,"unit":"m/s","expected":"17.00 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 2.","answer":15.24,"decimals":2,"unit":"m/s","expected":"15.24 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":10.5,"decimals":2,"unit":"m/s","expected":"10.50 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 17/1 = 17.","Separating variables: v = 17 + (4 - 17)e^(-1t). At t = 2, v = 15.24.","Euler: v(0.5) ~ 4 + 0.5 x (17 - 1 x 4) = 10.5."]
+      },
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 12 - 2v, with v = 2 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":6,"decimals":2,"unit":"m/s","expected":"6.00 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 3.","answer":5.99,"decimals":2,"unit":"m/s","expected":"5.99 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":6,"decimals":2,"unit":"m/s","expected":"6.00 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 12/2 = 6.","Separating variables: v = 6 + (2 - 6)e^(-2t). At t = 3, v = 5.99.","Euler: v(0.5) ~ 2 + 0.5 x (12 - 2 x 2) = 6."]
+      },
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 15 - 0.5v, with v = 4 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":30,"decimals":2,"unit":"m/s","expected":"30.00 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 3.","answer":24.2,"decimals":2,"unit":"m/s","expected":"24.20 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":10.5,"decimals":2,"unit":"m/s","expected":"10.50 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 15/0.5 = 30.","Separating variables: v = 30 + (4 - 30)e^(-0.5t). At t = 3, v = 24.2.","Euler: v(0.5) ~ 4 + 0.5 x (15 - 0.5 x 4) = 10.5."]
+      },
+      {
+        "statement": "The speed v m/s of a falling object after t seconds satisfies dv/dt = 11 - 2v, with v = 2 when t = 0.",
+        "parts": [{"label":"(a)","prompt":"Find the value that v approaches as t becomes very large.","answer":5.5,"decimals":2,"unit":"m/s","expected":"5.50 m/s"},{"label":"(b)","prompt":"Solve the equation and find v when t = 3.","answer":5.49,"decimals":2,"unit":"m/s","expected":"5.49 m/s"},{"label":"(c)","prompt":"Use one step of Euler's method with step size 0.5 to estimate v when t = 0.5.","answer":5.5,"decimals":2,"unit":"m/s","expected":"5.50 m/s"}],
+        "solution": ["As t grows dv/dt tends to 0, so v tends to 11/2 = 5.5.","Separating variables: v = 5.5 + (2 - 5.5)e^(-2t). At t = 3, v = 5.49.","Euler: v(0.5) ~ 2 + 0.5 x (11 - 2 x 2) = 5.5."]
+      }
+    ]
+  }
+}

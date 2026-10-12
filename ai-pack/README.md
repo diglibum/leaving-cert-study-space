@@ -5,9 +5,9 @@ A set of files that lets you practise with any AI chat tool (Claude, ChatGPT, Gi
 The pack has one skill, `leaving-cert-tutor/`:
 
 - `SKILL.md`: the tutor's rules and how to run each exercise type.
-- `data/`: exercises and answer keys as JSON, built from the same data the app uses. So far: Russian (Higher Level).
+- `data/`: exercises and answer keys as JSON, built from the same data the app uses. Subjects: Applied Mathematics (about 8 generated problems for each of 24 topics, plus sketch tasks) and Russian (Higher Level).
 
-Do not edit the files in `data/` by hand. After changing any Russian data in the app, run `npm run build:ai-pack`; a test fails if the files are out of date.
+Do not edit the files in `data/` by hand. After changing any exercise data or generator in the app, run `npm run build:ai-pack`; a test fails if the files are out of date.
 
 The official exam papers and marking schemes are not in the pack. Paste the question text from your own copy when you want past paper practice.
 
@@ -25,4 +25,5 @@ The official exam papers and marking schemes are not in the pack. Paste the ques
 
 - The answer keys sit in the files, so the AI could show them early. The rules tell it not to.
 - AI tutors make mistakes. The rule "check against the key" helps for drills, but for your own writing treat the feedback as a second opinion and ask your teacher about anything that surprises you.
+- The Applied Mathematics problems are generated and their answers are computed by the app's code, but the topics and wording have not been checked by a teacher.
 - The Russian content was reviewed by a model, not by a teacher.

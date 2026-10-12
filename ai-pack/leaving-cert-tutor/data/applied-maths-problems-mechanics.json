@@ -1,0 +1,542 @@
+{
+  "note": "Generated mechanics problems. Each topic has several different problems. `parts[].answer` is the exact value; the student answers in the unit given. Diagrams give data to read off a picture (a graph or a network).",
+  "problems": {
+    "am-kinematics-1d": [
+      {
+        "statement": "A train travelling at 13 m/s brakes with a constant deceleration of 2 m/s^2 until it stops.",
+        "parts": [{"label":"(a)","prompt":"How long does it take to stop?","answer":6.5,"decimals":2,"unit":"s","expected":"6.50 s"},{"label":"(b)","prompt":"How far does it travel while braking?","answer":42.25,"decimals":2,"unit":"m","expected":"42.25 m"}],
+        "solution": ["0 = 13 - 2t, so t = 13/2 = 6.5 s.","v^2 = u^2 + 2as: 0 = 13^2 - 2 x 2 x s, so s = 42.25 m."]
+      },
+      {
+        "statement": "A train travelling at 26 m/s brakes with a constant deceleration of 2.5 m/s^2 until it stops.",
+        "parts": [{"label":"(a)","prompt":"How long does it take to stop?","answer":10.4,"decimals":2,"unit":"s","expected":"10.40 s"},{"label":"(b)","prompt":"How far does it travel while braking?","answer":135.2,"decimals":2,"unit":"m","expected":"135.20 m"}],
+        "solution": ["0 = 26 - 2.5t, so t = 26/2.5 = 10.4 s.","v^2 = u^2 + 2as: 0 = 26^2 - 2 x 2.5 x s, so s = 135.2 m."]
+      },
+      {
+        "statement": "A cyclist moving in a straight line at 11 m/s accelerates uniformly at 1.5 m/s^2 for 5 seconds.",
+        "parts": [{"label":"(a)","prompt":"Find the speed at the end of the 5 seconds.","answer":18.5,"decimals":2,"unit":"m/s","expected":"18.50 m/s"},{"label":"(b)","prompt":"Find the distance travelled in those seconds.","answer":73.75,"decimals":2,"unit":"m","expected":"73.75 m"}],
+        "solution": ["v = u + at = 11 + 1.5 x 5 = 18.5 m/s.","s = ut + (1/2)at^2 = 11 x 5 + 0.5 x 1.5 x 5^2 = 73.75 m."]
+      },
+      {
+        "statement": "A cyclist moving in a straight line at 7 m/s accelerates uniformly at 2 m/s^2 for 8 seconds.",
+        "parts": [{"label":"(a)","prompt":"Find the speed at the end of the 8 seconds.","answer":23,"decimals":2,"unit":"m/s","expected":"23.00 m/s"},{"label":"(b)","prompt":"Find the distance travelled in those seconds.","answer":120,"decimals":2,"unit":"m","expected":"120.00 m"}],
+        "solution": ["v = u + at = 7 + 2 x 8 = 23 m/s.","s = ut + (1/2)at^2 = 7 x 8 + 0.5 x 2 x 8^2 = 120 m."]
+      },
+      {
+        "statement": "The velocity-time graph shows the motion of a particle in a straight line. Read the values from the graph.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration in the first stage.","answer":2,"decimals":2,"unit":"m/s^2","expected":"2.00 m/s^2"},{"label":"(b)","prompt":"Find the total distance travelled (the area under the graph).","answer":96,"decimals":2,"unit":"m","expected":"96.00 m"},{"label":"(c)","prompt":"Find the average speed for the whole journey.","answer":5.65,"decimals":2,"unit":"m/s","expected":"5.65 m/s"}],
+        "solution": ["Acceleration = gradient = 8 / 4 = 2 m/s^2.","Distance = area: (1/2) x 4 x 8 + 7 x 8 + (1/2) x 6 x 8 = 96 m.","Average speed = total distance / total time = 96 / 17 = 5.65 m/s."],
+        "diagram": {"kind":"graph","description":"Velocity-time graph. The velocity rises in a straight line from 0 to 8 metres per second at 4 seconds, stays at 8 metres per second until 11 seconds, then falls in a straight line to 0 at 17 seconds.","xLabel":"time (s)","yLabel":"velocity (m/s)","xMax":20,"yMax":8,"xStep":5,"yStep":2,"lines":[{"points":[[0,0],[4,8],[11,8],[17,0]]}],"marks":[{"x":4,"y":8,"label":"(4, 8)","guides":true},{"x":11,"y":8,"label":"(11, 8)","guides":true},{"x":17,"y":0,"label":"(17, 0)"}]}
+      },
+      {
+        "statement": "A train travelling at 16 m/s brakes with a constant deceleration of 4 m/s^2 until it stops.",
+        "parts": [{"label":"(a)","prompt":"How long does it take to stop?","answer":4,"decimals":2,"unit":"s","expected":"4.00 s"},{"label":"(b)","prompt":"How far does it travel while braking?","answer":32,"decimals":2,"unit":"m","expected":"32.00 m"}],
+        "solution": ["0 = 16 - 4t, so t = 16/4 = 4 s.","v^2 = u^2 + 2as: 0 = 16^2 - 2 x 4 x s, so s = 32 m."]
+      },
+      {
+        "statement": "A cyclist moving in a straight line at 8 m/s accelerates uniformly at 1 m/s^2 for 12 seconds.",
+        "parts": [{"label":"(a)","prompt":"Find the speed at the end of the 12 seconds.","answer":20,"decimals":2,"unit":"m/s","expected":"20.00 m/s"},{"label":"(b)","prompt":"Find the distance travelled in those seconds.","answer":168,"decimals":2,"unit":"m","expected":"168.00 m"}],
+        "solution": ["v = u + at = 8 + 1 x 12 = 20 m/s.","s = ut + (1/2)at^2 = 8 x 12 + 0.5 x 1 x 12^2 = 168 m."]
+      },
+      {
+        "statement": "A cyclist moving in a straight line at 7 m/s accelerates uniformly at 2.5 m/s^2 for 6 seconds.",
+        "parts": [{"label":"(a)","prompt":"Find the speed at the end of the 6 seconds.","answer":22,"decimals":2,"unit":"m/s","expected":"22.00 m/s"},{"label":"(b)","prompt":"Find the distance travelled in those seconds.","answer":87,"decimals":2,"unit":"m","expected":"87.00 m"}],
+        "solution": ["v = u + at = 7 + 2.5 x 6 = 22 m/s.","s = ut + (1/2)at^2 = 7 x 6 + 0.5 x 2.5 x 6^2 = 87 m."]
+      }
+    ],
+    "am-calculus-for-motion": [
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = t^3 - 4t^2 + 7t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 2.","answer":3,"decimals":0,"unit":"m/s","expected":"3 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 2.","answer":4,"decimals":0,"unit":"m/s^2","expected":"4 m/s^2"}],
+        "solution": ["v = ds/dt = 3t^2 - 8t + 7; at t = 2, v = 3 m/s.","a = dv/dt = 6t - 8; at t = 2, a = 4 m/s^2."]
+      },
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = 3t^3 - 3t^2 + 8t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 2.","answer":32,"decimals":0,"unit":"m/s","expected":"32 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 2.","answer":30,"decimals":0,"unit":"m/s^2","expected":"30 m/s^2"}],
+        "solution": ["v = ds/dt = 9t^2 - 6t + 8; at t = 2, v = 32 m/s.","a = dv/dt = 18t - 6; at t = 2, a = 30 m/s^2."]
+      },
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = 2t^3 - 2t^2 + 8t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 2.","answer":24,"decimals":0,"unit":"m/s","expected":"24 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 2.","answer":20,"decimals":0,"unit":"m/s^2","expected":"20 m/s^2"}],
+        "solution": ["v = ds/dt = 6t^2 - 4t + 8; at t = 2, v = 24 m/s.","a = dv/dt = 12t - 4; at t = 2, a = 20 m/s^2."]
+      },
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = t^3 - 6t^2 + 1t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 4.","answer":1,"decimals":0,"unit":"m/s","expected":"1 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 4.","answer":12,"decimals":0,"unit":"m/s^2","expected":"12 m/s^2"}],
+        "solution": ["v = ds/dt = 3t^2 - 12t + 1; at t = 4, v = 1 m/s.","a = dv/dt = 6t - 12; at t = 4, a = 12 m/s^2."]
+      },
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = 2t^3 - 5t^2 + 6t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 2.","answer":10,"decimals":0,"unit":"m/s","expected":"10 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 2.","answer":14,"decimals":0,"unit":"m/s^2","expected":"14 m/s^2"}],
+        "solution": ["v = ds/dt = 6t^2 - 10t + 6; at t = 2, v = 10 m/s.","a = dv/dt = 12t - 10; at t = 2, a = 14 m/s^2."]
+      },
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = 2t^3 - 3t^2 + 4t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 4.","answer":76,"decimals":0,"unit":"m/s","expected":"76 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 4.","answer":42,"decimals":0,"unit":"m/s^2","expected":"42 m/s^2"}],
+        "solution": ["v = ds/dt = 6t^2 - 6t + 4; at t = 4, v = 76 m/s.","a = dv/dt = 12t - 6; at t = 4, a = 42 m/s^2."]
+      },
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = 2t^3 - 2t^2 + 9t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 4.","answer":89,"decimals":0,"unit":"m/s","expected":"89 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 4.","answer":44,"decimals":0,"unit":"m/s^2","expected":"44 m/s^2"}],
+        "solution": ["v = ds/dt = 6t^2 - 4t + 9; at t = 4, v = 89 m/s.","a = dv/dt = 12t - 4; at t = 4, a = 44 m/s^2."]
+      },
+      {
+        "statement": "A particle moves in a straight line. Its displacement from the origin after t seconds is s = t^3 - 6t^2 + 7t metres.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity when t = 2.","answer":-5,"decimals":0,"unit":"m/s","expected":"-5 m/s"},{"label":"(b)","prompt":"Find the acceleration when t = 2.","answer":0,"decimals":0,"unit":"m/s^2","expected":"0 m/s^2"}],
+        "solution": ["v = ds/dt = 3t^2 - 12t + 7; at t = 2, v = -5 m/s.","a = dv/dt = 6t - 12; at t = 2, a = 0 m/s^2."]
+      }
+    ],
+    "am-vectors-2d": [
+      {
+        "statement": "Let a = 5i + 3j and b = -3i + 0j, where i and j are perpendicular unit vectors. A third vector is c = pi + 15j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":-15,"decimals":0,"unit":"","expected":"-15"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":5.83,"decimals":2,"unit":"","expected":"5.83"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":-9,"decimals":0,"unit":"","expected":"-9"}],
+        "solution": ["a . b = 5 x -3 + 3 x 0 = -15.","|a| = sqrt(5^2 + 3^2) = 5.83.","Perpendicular means a . c = 0: 5p + 3 x 15 = 0, so p = -9."]
+      },
+      {
+        "statement": "Let a = 4i + 5j and b = 6i - 1j, where i and j are perpendicular unit vectors. A third vector is c = pi + 12j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":19,"decimals":0,"unit":"","expected":"19"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":6.4,"decimals":2,"unit":"","expected":"6.40"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":-15,"decimals":0,"unit":"","expected":"-15"}],
+        "solution": ["a . b = 4 x 6 + 5 x -1 = 19.","|a| = sqrt(4^2 + 5^2) = 6.4.","Perpendicular means a . c = 0: 4p + 5 x 12 = 0, so p = -15."]
+      },
+      {
+        "statement": "Let a = 5i + 3j and b = -4i + 3j, where i and j are perpendicular unit vectors. A third vector is c = pi + 5j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":-11,"decimals":0,"unit":"","expected":"-11"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":5.83,"decimals":2,"unit":"","expected":"5.83"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":-3,"decimals":0,"unit":"","expected":"-3"}],
+        "solution": ["a . b = 5 x -4 + 3 x 3 = -11.","|a| = sqrt(5^2 + 3^2) = 5.83.","Perpendicular means a . c = 0: 5p + 3 x 5 = 0, so p = -3."]
+      },
+      {
+        "statement": "Let a = 2i + 3j and b = 6i + 1j, where i and j are perpendicular unit vectors. A third vector is c = pi + 4j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":15,"decimals":0,"unit":"","expected":"15"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":3.61,"decimals":2,"unit":"","expected":"3.61"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":-6,"decimals":0,"unit":"","expected":"-6"}],
+        "solution": ["a . b = 2 x 6 + 3 x 1 = 15.","|a| = sqrt(2^2 + 3^2) = 3.61.","Perpendicular means a . c = 0: 2p + 3 x 4 = 0, so p = -6."]
+      },
+      {
+        "statement": "Let a = 4i + 1j and b = 4i + 0j, where i and j are perpendicular unit vectors. A third vector is c = pi + 4j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":16,"decimals":0,"unit":"","expected":"16"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":4.12,"decimals":2,"unit":"","expected":"4.12"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":-1,"decimals":0,"unit":"","expected":"-1"}],
+        "solution": ["a . b = 4 x 4 + 1 x 0 = 16.","|a| = sqrt(4^2 + 1^2) = 4.12.","Perpendicular means a . c = 0: 4p + 1 x 4 = 0, so p = -1."]
+      },
+      {
+        "statement": "Let a = 5i - 6j and b = 0i - 2j, where i and j are perpendicular unit vectors. A third vector is c = pi + 5j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":12,"decimals":0,"unit":"","expected":"12"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":7.81,"decimals":2,"unit":"","expected":"7.81"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":6,"decimals":0,"unit":"","expected":"6"}],
+        "solution": ["a . b = 5 x 0 + -6 x -2 = 12.","|a| = sqrt(5^2 + -6^2) = 7.81.","Perpendicular means a . c = 0: 5p + -6 x 5 = 0, so p = 6."]
+      },
+      {
+        "statement": "Let a = 7i + 5j and b = 0i - 3j, where i and j are perpendicular unit vectors. A third vector is c = pi + 21j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":-15,"decimals":0,"unit":"","expected":"-15"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":8.6,"decimals":2,"unit":"","expected":"8.60"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":-15,"decimals":0,"unit":"","expected":"-15"}],
+        "solution": ["a . b = 7 x 0 + 5 x -3 = -15.","|a| = sqrt(7^2 + 5^2) = 8.6.","Perpendicular means a . c = 0: 7p + 5 x 21 = 0, so p = -15."]
+      },
+      {
+        "statement": "Let a = 4i - 2j and b = -3i - 4j, where i and j are perpendicular unit vectors. A third vector is c = pi + 4j.",
+        "parts": [{"label":"(a)","prompt":"Find the dot product a . b.","answer":-4,"decimals":0,"unit":"","expected":"-4"},{"label":"(b)","prompt":"Find the magnitude of a.","answer":4.47,"decimals":2,"unit":"","expected":"4.47"},{"label":"(c)","prompt":"Find p so that c is perpendicular to a.","answer":2,"decimals":0,"unit":"","expected":"2"}],
+        "solution": ["a . b = 4 x -3 + -2 x -4 = -4.","|a| = sqrt(4^2 + -2^2) = 4.47.","Perpendicular means a . c = 0: 4p + -2 x 4 = 0, so p = 2."]
+      }
+    ],
+    "am-projectiles": [
+      {
+        "statement": "A ball is hit from level ground with speed 30 m/s at 30 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":3.06,"decimals":2,"unit":"s","expected":"3.06 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":11.48,"decimals":2,"unit":"m","expected":"11.48 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":79.53,"decimals":2,"unit":"m","expected":"79.53 m"}],
+        "solution": ["Vertical: 0 = 30 sin(30) t - 4.9t^2, so t = 2 x 30 x sin(30)/9.8 = 3.06 s.","Greatest height: (30 sin(30))^2 / (2 x 9.8) = 11.48 m.","Range: 30 cos(30) x 3.06 = 79.53 m."]
+      },
+      {
+        "statement": "A ball is hit from level ground with speed 16 m/s at 60 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":2.83,"decimals":2,"unit":"s","expected":"2.83 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":9.8,"decimals":2,"unit":"m","expected":"9.80 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":22.62,"decimals":2,"unit":"m","expected":"22.62 m"}],
+        "solution": ["Vertical: 0 = 16 sin(60) t - 4.9t^2, so t = 2 x 16 x sin(60)/9.8 = 2.83 s.","Greatest height: (16 sin(60))^2 / (2 x 9.8) = 9.8 m.","Range: 16 cos(60) x 2.83 = 22.62 m."]
+      },
+      {
+        "statement": "A ball is hit from level ground with speed 17 m/s at 45 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":2.45,"decimals":2,"unit":"s","expected":"2.45 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":7.37,"decimals":2,"unit":"m","expected":"7.37 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":29.49,"decimals":2,"unit":"m","expected":"29.49 m"}],
+        "solution": ["Vertical: 0 = 17 sin(45) t - 4.9t^2, so t = 2 x 17 x sin(45)/9.8 = 2.45 s.","Greatest height: (17 sin(45))^2 / (2 x 9.8) = 7.37 m.","Range: 17 cos(45) x 2.45 = 29.49 m."]
+      },
+      {
+        "statement": "A ball is hit from level ground with speed 40 m/s at 35 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":4.68,"decimals":2,"unit":"s","expected":"4.68 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":26.86,"decimals":2,"unit":"m","expected":"26.86 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":153.42,"decimals":2,"unit":"m","expected":"153.42 m"}],
+        "solution": ["Vertical: 0 = 40 sin(35) t - 4.9t^2, so t = 2 x 40 x sin(35)/9.8 = 4.68 s.","Greatest height: (40 sin(35))^2 / (2 x 9.8) = 26.86 m.","Range: 40 cos(35) x 4.68 = 153.42 m."]
+      },
+      {
+        "statement": "A ball is hit from level ground with speed 29 m/s at 40 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":3.8,"decimals":2,"unit":"s","expected":"3.80 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":17.73,"decimals":2,"unit":"m","expected":"17.73 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":84.51,"decimals":2,"unit":"m","expected":"84.51 m"}],
+        "solution": ["Vertical: 0 = 29 sin(40) t - 4.9t^2, so t = 2 x 29 x sin(40)/9.8 = 3.8 s.","Greatest height: (29 sin(40))^2 / (2 x 9.8) = 17.73 m.","Range: 29 cos(40) x 3.8 = 84.51 m."]
+      },
+      {
+        "statement": "A ball is hit from level ground with speed 29 m/s at 50 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":4.53,"decimals":2,"unit":"s","expected":"4.53 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":25.18,"decimals":2,"unit":"m","expected":"25.18 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":84.51,"decimals":2,"unit":"m","expected":"84.51 m"}],
+        "solution": ["Vertical: 0 = 29 sin(50) t - 4.9t^2, so t = 2 x 29 x sin(50)/9.8 = 4.53 s.","Greatest height: (29 sin(50))^2 / (2 x 9.8) = 25.18 m.","Range: 29 cos(50) x 4.53 = 84.51 m."]
+      },
+      {
+        "statement": "A ball is hit from level ground with speed 23 m/s at 35 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":2.69,"decimals":2,"unit":"s","expected":"2.69 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":8.88,"decimals":2,"unit":"m","expected":"8.88 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":50.72,"decimals":2,"unit":"m","expected":"50.72 m"}],
+        "solution": ["Vertical: 0 = 23 sin(35) t - 4.9t^2, so t = 2 x 23 x sin(35)/9.8 = 2.69 s.","Greatest height: (23 sin(35))^2 / (2 x 9.8) = 8.88 m.","Range: 23 cos(35) x 2.69 = 50.72 m."]
+      },
+      {
+        "statement": "A ball is hit from level ground with speed 22 m/s at 35 degrees above the horizontal. Ignore air resistance and take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the time of flight.","answer":2.58,"decimals":2,"unit":"s","expected":"2.58 s"},{"label":"(b)","prompt":"Find the greatest height reached.","answer":8.12,"decimals":2,"unit":"m","expected":"8.12 m"},{"label":"(c)","prompt":"Find the horizontal range.","answer":46.41,"decimals":2,"unit":"m","expected":"46.41 m"}],
+        "solution": ["Vertical: 0 = 22 sin(35) t - 4.9t^2, so t = 2 x 22 x sin(35)/9.8 = 2.58 s.","Greatest height: (22 sin(35))^2 / (2 x 9.8) = 8.12 m.","Range: 22 cos(35) x 2.58 = 46.41 m."]
+      }
+    ],
+    "am-forces-newton": [
+      {
+        "statement": "A person of mass 72 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 1.2 m/s^2.","answer":792,"decimals":1,"unit":"N","expected":"792.0 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 1.2 m/s^2.","answer":619.2,"decimals":1,"unit":"N","expected":"619.2 N"}],
+        "solution": ["Upwards: R - 72g = 72 x 1.2, so R = 72 x (9.8 + 1.2) = 792 N.","Downwards: 72g - R = 72 x 1.2, so R = 72 x (9.8 - 1.2) = 619.2 N."]
+      },
+      {
+        "statement": "A person of mass 50 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 1.2 m/s^2.","answer":550,"decimals":1,"unit":"N","expected":"550.0 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 1.2 m/s^2.","answer":430,"decimals":1,"unit":"N","expected":"430.0 N"}],
+        "solution": ["Upwards: R - 50g = 50 x 1.2, so R = 50 x (9.8 + 1.2) = 550 N.","Downwards: 50g - R = 50 x 1.2, so R = 50 x (9.8 - 1.2) = 430 N."]
+      },
+      {
+        "statement": "A person of mass 75 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 0.5 m/s^2.","answer":772.5,"decimals":1,"unit":"N","expected":"772.5 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 0.5 m/s^2.","answer":697.5,"decimals":1,"unit":"N","expected":"697.5 N"}],
+        "solution": ["Upwards: R - 75g = 75 x 0.5, so R = 75 x (9.8 + 0.5) = 772.5 N.","Downwards: 75g - R = 75 x 0.5, so R = 75 x (9.8 - 0.5) = 697.5 N."]
+      },
+      {
+        "statement": "A person of mass 65 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 0.8 m/s^2.","answer":689,"decimals":1,"unit":"N","expected":"689.0 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 0.8 m/s^2.","answer":585,"decimals":1,"unit":"N","expected":"585.0 N"}],
+        "solution": ["Upwards: R - 65g = 65 x 0.8, so R = 65 x (9.8 + 0.8) = 689 N.","Downwards: 65g - R = 65 x 0.8, so R = 65 x (9.8 - 0.8) = 585 N."]
+      },
+      {
+        "statement": "A person of mass 90 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 1 m/s^2.","answer":972,"decimals":1,"unit":"N","expected":"972.0 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 1 m/s^2.","answer":792,"decimals":1,"unit":"N","expected":"792.0 N"}],
+        "solution": ["Upwards: R - 90g = 90 x 1, so R = 90 x (9.8 + 1) = 972 N.","Downwards: 90g - R = 90 x 1, so R = 90 x (9.8 - 1) = 792 N."]
+      },
+      {
+        "statement": "A person of mass 68 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 0.5 m/s^2.","answer":700.4,"decimals":1,"unit":"N","expected":"700.4 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 0.5 m/s^2.","answer":632.4,"decimals":1,"unit":"N","expected":"632.4 N"}],
+        "solution": ["Upwards: R - 68g = 68 x 0.5, so R = 68 x (9.8 + 0.5) = 700.4 N.","Downwards: 68g - R = 68 x 0.5, so R = 68 x (9.8 - 0.5) = 632.4 N."]
+      },
+      {
+        "statement": "A person of mass 58 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 1.5 m/s^2.","answer":655.4,"decimals":1,"unit":"N","expected":"655.4 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 1.5 m/s^2.","answer":481.4,"decimals":1,"unit":"N","expected":"481.4 N"}],
+        "solution": ["Upwards: R - 58g = 58 x 1.5, so R = 58 x (9.8 + 1.5) = 655.4 N.","Downwards: 58g - R = 58 x 1.5, so R = 58 x (9.8 - 1.5) = 481.4 N."]
+      },
+      {
+        "statement": "A person of mass 67 kg stands on the floor of a lift. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the reaction of the floor when the lift accelerates upwards at 0.5 m/s^2.","answer":690.1,"decimals":1,"unit":"N","expected":"690.1 N"},{"label":"(b)","prompt":"Find the reaction of the floor when the lift accelerates downwards at 0.5 m/s^2.","answer":623.1,"decimals":1,"unit":"N","expected":"623.1 N"}],
+        "solution": ["Upwards: R - 67g = 67 x 0.5, so R = 67 x (9.8 + 0.5) = 690.1 N.","Downwards: 67g - R = 67 x 0.5, so R = 67 x (9.8 - 0.5) = 623.1 N."]
+      }
+    ],
+    "am-planes-friction": [
+      {
+        "statement": "A block of mass 5 kg slides down a rough plane inclined at 35 degrees to the horizontal. The coefficient of friction is 0.21. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":40.14,"decimals":2,"unit":"N","expected":"40.14 N"},{"label":"(b)","prompt":"Find the friction force.","answer":8.43,"decimals":2,"unit":"N","expected":"8.43 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":3.94,"decimals":2,"unit":"m/s^2","expected":"3.94 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 5g cos(35) = 40.14 N.","F = mu R = 0.21 x 40.14 = 8.43 N.","Down the plane: 5g sin(35) - F = 5a, so a = 3.94 m/s^2."]
+      },
+      {
+        "statement": "A block of mass 6 kg slides down a rough plane inclined at 30 degrees to the horizontal. The coefficient of friction is 0.29. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":50.92,"decimals":2,"unit":"N","expected":"50.92 N"},{"label":"(b)","prompt":"Find the friction force.","answer":14.77,"decimals":2,"unit":"N","expected":"14.77 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":2.44,"decimals":2,"unit":"m/s^2","expected":"2.44 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 6g cos(30) = 50.92 N.","F = mu R = 0.29 x 50.92 = 14.77 N.","Down the plane: 6g sin(30) - F = 6a, so a = 2.44 m/s^2."]
+      },
+      {
+        "statement": "A block of mass 6 kg slides down a rough plane inclined at 30 degrees to the horizontal. The coefficient of friction is 0.17. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":50.92,"decimals":2,"unit":"N","expected":"50.92 N"},{"label":"(b)","prompt":"Find the friction force.","answer":8.66,"decimals":2,"unit":"N","expected":"8.66 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":3.46,"decimals":2,"unit":"m/s^2","expected":"3.46 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 6g cos(30) = 50.92 N.","F = mu R = 0.17 x 50.92 = 8.66 N.","Down the plane: 6g sin(30) - F = 6a, so a = 3.46 m/s^2."]
+      },
+      {
+        "statement": "A block of mass 3 kg slides down a rough plane inclined at 30 degrees to the horizontal. The coefficient of friction is 0.4. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":25.46,"decimals":2,"unit":"N","expected":"25.46 N"},{"label":"(b)","prompt":"Find the friction force.","answer":10.18,"decimals":2,"unit":"N","expected":"10.18 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":1.51,"decimals":2,"unit":"m/s^2","expected":"1.51 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 3g cos(30) = 25.46 N.","F = mu R = 0.4 x 25.46 = 10.18 N.","Down the plane: 3g sin(30) - F = 3a, so a = 1.51 m/s^2."]
+      },
+      {
+        "statement": "A block of mass 8 kg slides down a rough plane inclined at 35 degrees to the horizontal. The coefficient of friction is 0.35. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":64.22,"decimals":2,"unit":"N","expected":"64.22 N"},{"label":"(b)","prompt":"Find the friction force.","answer":22.48,"decimals":2,"unit":"N","expected":"22.48 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":2.81,"decimals":2,"unit":"m/s^2","expected":"2.81 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 8g cos(35) = 64.22 N.","F = mu R = 0.35 x 64.22 = 22.48 N.","Down the plane: 8g sin(35) - F = 8a, so a = 2.81 m/s^2."]
+      },
+      {
+        "statement": "A block of mass 3 kg slides down a rough plane inclined at 40 degrees to the horizontal. The coefficient of friction is 0.42. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":22.52,"decimals":2,"unit":"N","expected":"22.52 N"},{"label":"(b)","prompt":"Find the friction force.","answer":9.46,"decimals":2,"unit":"N","expected":"9.46 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":3.15,"decimals":2,"unit":"m/s^2","expected":"3.15 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 3g cos(40) = 22.52 N.","F = mu R = 0.42 x 22.52 = 9.46 N.","Down the plane: 3g sin(40) - F = 3a, so a = 3.15 m/s^2."]
+      },
+      {
+        "statement": "A block of mass 4 kg slides down a rough plane inclined at 40 degrees to the horizontal. The coefficient of friction is 0.25. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":30.03,"decimals":2,"unit":"N","expected":"30.03 N"},{"label":"(b)","prompt":"Find the friction force.","answer":7.51,"decimals":2,"unit":"N","expected":"7.51 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":4.42,"decimals":2,"unit":"m/s^2","expected":"4.42 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 4g cos(40) = 30.03 N.","F = mu R = 0.25 x 30.03 = 7.51 N.","Down the plane: 4g sin(40) - F = 4a, so a = 4.42 m/s^2."]
+      },
+      {
+        "statement": "A block of mass 7 kg slides down a rough plane inclined at 40 degrees to the horizontal. The coefficient of friction is 0.42. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the normal reaction.","answer":52.55,"decimals":2,"unit":"N","expected":"52.55 N"},{"label":"(b)","prompt":"Find the friction force.","answer":22.07,"decimals":2,"unit":"N","expected":"22.07 N"},{"label":"(c)","prompt":"Find the acceleration of the block down the plane.","answer":3.15,"decimals":2,"unit":"m/s^2","expected":"3.15 m/s^2"}],
+        "solution": ["Perpendicular to the plane: R = 7g cos(40) = 52.55 N.","F = mu R = 0.42 x 52.55 = 22.07 N.","Down the plane: 7g sin(40) - F = 7a, so a = 3.15 m/s^2."]
+      }
+    ],
+    "am-connected-masses": [
+      {
+        "statement": "A particle of mass 6 kg lies on a smooth horizontal table. It is joined by a light inextensible string over a smooth pulley at the edge of the table to a particle of mass 1 kg hanging freely. The system is released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration.","answer":1.4,"decimals":2,"unit":"m/s^2","expected":"1.40 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":8.4,"decimals":2,"unit":"N","expected":"8.40 N"}],
+        "solution": ["Table: T = 6a. Hanging: 1g - T = 1a. So a = 1g/(6 + 1) = 1.4 m/s^2.","T = 6 x 1.4 = 8.4 N."]
+      },
+      {
+        "statement": "A particle of mass 5 kg lies on a smooth horizontal table. It is joined by a light inextensible string over a smooth pulley at the edge of the table to a particle of mass 4 kg hanging freely. The system is released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration.","answer":4.36,"decimals":2,"unit":"m/s^2","expected":"4.36 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":21.78,"decimals":2,"unit":"N","expected":"21.78 N"}],
+        "solution": ["Table: T = 5a. Hanging: 4g - T = 4a. So a = 4g/(5 + 4) = 4.36 m/s^2.","T = 5 x 4.36 = 21.78 N."]
+      },
+      {
+        "statement": "A particle of mass 4 kg lies on a smooth horizontal table. It is joined by a light inextensible string over a smooth pulley at the edge of the table to a particle of mass 4 kg hanging freely. The system is released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration.","answer":4.9,"decimals":2,"unit":"m/s^2","expected":"4.90 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":19.6,"decimals":2,"unit":"N","expected":"19.60 N"}],
+        "solution": ["Table: T = 4a. Hanging: 4g - T = 4a. So a = 4g/(4 + 4) = 4.9 m/s^2.","T = 4 x 4.9 = 19.6 N."]
+      },
+      {
+        "statement": "A particle of mass 2 kg lies on a smooth horizontal table. It is joined by a light inextensible string over a smooth pulley at the edge of the table to a particle of mass 4 kg hanging freely. The system is released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration.","answer":6.53,"decimals":2,"unit":"m/s^2","expected":"6.53 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":13.07,"decimals":2,"unit":"N","expected":"13.07 N"}],
+        "solution": ["Table: T = 2a. Hanging: 4g - T = 4a. So a = 4g/(2 + 4) = 6.53 m/s^2.","T = 2 x 6.53 = 13.07 N."]
+      },
+      {
+        "statement": "Particles of mass 4 kg and 2 kg are joined by a light inextensible string over a smooth fixed pulley and released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration of the particles.","answer":3.27,"decimals":2,"unit":"m/s^2","expected":"3.27 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":26.13,"decimals":2,"unit":"N","expected":"26.13 N"}],
+        "solution": ["4g - T = 4a and T - 2g = 2a. Adding: a = (4 - 2)g/(4 + 2) = 3.27 m/s^2.","T = 2(g + a) = 26.13 N."]
+      },
+      {
+        "statement": "A particle of mass 5 kg lies on a smooth horizontal table. It is joined by a light inextensible string over a smooth pulley at the edge of the table to a particle of mass 2 kg hanging freely. The system is released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration.","answer":2.8,"decimals":2,"unit":"m/s^2","expected":"2.80 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":14,"decimals":2,"unit":"N","expected":"14.00 N"}],
+        "solution": ["Table: T = 5a. Hanging: 2g - T = 2a. So a = 2g/(5 + 2) = 2.8 m/s^2.","T = 5 x 2.8 = 14 N."]
+      },
+      {
+        "statement": "Particles of mass 8 kg and 1 kg are joined by a light inextensible string over a smooth fixed pulley and released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration of the particles.","answer":7.62,"decimals":2,"unit":"m/s^2","expected":"7.62 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":17.42,"decimals":2,"unit":"N","expected":"17.42 N"}],
+        "solution": ["8g - T = 8a and T - 1g = 1a. Adding: a = (8 - 1)g/(8 + 1) = 7.62 m/s^2.","T = 1(g + a) = 17.42 N."]
+      },
+      {
+        "statement": "Particles of mass 9 kg and 3 kg are joined by a light inextensible string over a smooth fixed pulley and released from rest. Take g = 9.8 m/s^2.",
+        "parts": [{"label":"(a)","prompt":"Find the acceleration of the particles.","answer":4.9,"decimals":2,"unit":"m/s^2","expected":"4.90 m/s^2"},{"label":"(b)","prompt":"Find the tension in the string.","answer":44.1,"decimals":2,"unit":"N","expected":"44.10 N"}],
+        "solution": ["9g - T = 9a and T - 3g = 3a. Adding: a = (9 - 3)g/(9 + 3) = 4.9 m/s^2.","T = 3(g + a) = 44.1 N."]
+      }
+    ],
+    "am-momentum-impulse": [
+      {
+        "statement": "A ball of mass 0.6 kg hits a wall at right angles with speed 18 m/s and rebounds along the same line with speed 13 m/s. The contact lasts 0.01 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":18.6,"decimals":2,"unit":"N s","expected":"18.60 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":1860,"decimals":1,"unit":"N","expected":"1860.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.72,"decimals":2,"unit":"","expected":"0.72"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.6(13 - (-18)) = 18.6 N s.","Average force = impulse / time = 18.6 / 0.01 = 1860 N.","e = speed of separation / speed of approach = 13/18 = 0.72."]
+      },
+      {
+        "statement": "A ball of mass 0.6 kg hits a wall at right angles with speed 13 m/s and rebounds along the same line with speed 11 m/s. The contact lasts 0.05 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":14.4,"decimals":2,"unit":"N s","expected":"14.40 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":288,"decimals":1,"unit":"N","expected":"288.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.85,"decimals":2,"unit":"","expected":"0.85"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.6(11 - (-13)) = 14.4 N s.","Average force = impulse / time = 14.4 / 0.05 = 288 N.","e = speed of separation / speed of approach = 11/13 = 0.85."]
+      },
+      {
+        "statement": "A ball of mass 0.5 kg hits a wall at right angles with speed 20 m/s and rebounds along the same line with speed 4 m/s. The contact lasts 0.01 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":12,"decimals":2,"unit":"N s","expected":"12.00 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":1200,"decimals":1,"unit":"N","expected":"1200.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.2,"decimals":2,"unit":"","expected":"0.20"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.5(4 - (-20)) = 12 N s.","Average force = impulse / time = 12 / 0.01 = 1200 N.","e = speed of separation / speed of approach = 4/20 = 0.2."]
+      },
+      {
+        "statement": "A ball of mass 0.2 kg hits a wall at right angles with speed 11 m/s and rebounds along the same line with speed 4 m/s. The contact lasts 0.05 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":3,"decimals":2,"unit":"N s","expected":"3.00 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":60,"decimals":1,"unit":"N","expected":"60.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.36,"decimals":2,"unit":"","expected":"0.36"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.2(4 - (-11)) = 3 N s.","Average force = impulse / time = 3 / 0.05 = 60 N.","e = speed of separation / speed of approach = 4/11 = 0.36."]
+      },
+      {
+        "statement": "A ball of mass 0.5 kg hits a wall at right angles with speed 18 m/s and rebounds along the same line with speed 5 m/s. The contact lasts 0.05 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":11.5,"decimals":2,"unit":"N s","expected":"11.50 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":230,"decimals":1,"unit":"N","expected":"230.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.28,"decimals":2,"unit":"","expected":"0.28"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.5(5 - (-18)) = 11.5 N s.","Average force = impulse / time = 11.5 / 0.05 = 230 N.","e = speed of separation / speed of approach = 5/18 = 0.28."]
+      },
+      {
+        "statement": "A ball of mass 0.5 kg hits a wall at right angles with speed 17 m/s and rebounds along the same line with speed 4 m/s. The contact lasts 0.02 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":10.5,"decimals":2,"unit":"N s","expected":"10.50 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":525,"decimals":1,"unit":"N","expected":"525.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.24,"decimals":2,"unit":"","expected":"0.24"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.5(4 - (-17)) = 10.5 N s.","Average force = impulse / time = 10.5 / 0.02 = 525 N.","e = speed of separation / speed of approach = 4/17 = 0.24."]
+      },
+      {
+        "statement": "A ball of mass 0.4 kg hits a wall at right angles with speed 11 m/s and rebounds along the same line with speed 4 m/s. The contact lasts 0.05 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":6,"decimals":2,"unit":"N s","expected":"6.00 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":120,"decimals":1,"unit":"N","expected":"120.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.36,"decimals":2,"unit":"","expected":"0.36"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.4(4 - (-11)) = 6 N s.","Average force = impulse / time = 6 / 0.05 = 120 N.","e = speed of separation / speed of approach = 4/11 = 0.36."]
+      },
+      {
+        "statement": "A ball of mass 0.5 kg hits a wall at right angles with speed 9 m/s and rebounds along the same line with speed 5 m/s. The contact lasts 0.05 s.",
+        "parts": [{"label":"(a)","prompt":"Find the magnitude of the impulse the wall gives the ball.","answer":7,"decimals":2,"unit":"N s","expected":"7.00 N s"},{"label":"(b)","prompt":"Find the average force of the wall on the ball.","answer":140,"decimals":1,"unit":"N","expected":"140.0 N"},{"label":"(c)","prompt":"Find the coefficient of restitution between the ball and the wall.","answer":0.56,"decimals":2,"unit":"","expected":"0.56"}],
+        "solution": ["Take the rebound direction as positive: impulse = 0.5(5 - (-9)) = 7 N s.","Average force = impulse / time = 7 / 0.05 = 140 N.","e = speed of separation / speed of approach = 5/9 = 0.56."]
+      }
+    ],
+    "am-collisions": [
+      {
+        "statement": "A smooth sphere of mass 3 kg moving at 12 m/s collides directly with a smooth sphere of mass 4 kg at rest. The coefficient of restitution is 0.8.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":-0.34,"decimals":2,"unit":"m/s","expected":"-0.34 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":9.26,"decimals":2,"unit":"m/s","expected":"9.26 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":44.43,"decimals":2,"unit":"J","expected":"44.43 J"}],
+        "solution": ["Momentum: 3(12) = 3v1 + 4v2. Restitution: v2 - v1 = 0.8 x 12.","Solving gives v1 = -0.34 m/s and v2 = 9.26 m/s.","Energy lost = 0.5 x 3 x 12^2 - 0.5 x 3 x v1^2 - 0.5 x 4 x v2^2 = 44.43 J."]
+      },
+      {
+        "statement": "A smooth sphere of mass 2 kg moving at 11 m/s collides directly with a smooth sphere of mass 3 kg at rest. The coefficient of restitution is 0.5.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":1.1,"decimals":2,"unit":"m/s","expected":"1.10 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":6.6,"decimals":2,"unit":"m/s","expected":"6.60 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":54.45,"decimals":2,"unit":"J","expected":"54.45 J"}],
+        "solution": ["Momentum: 2(11) = 2v1 + 3v2. Restitution: v2 - v1 = 0.5 x 11.","Solving gives v1 = 1.1 m/s and v2 = 6.6 m/s.","Energy lost = 0.5 x 2 x 11^2 - 0.5 x 2 x v1^2 - 0.5 x 3 x v2^2 = 54.45 J."]
+      },
+      {
+        "statement": "A smooth sphere of mass 4 kg moving at 6 m/s collides directly with a smooth sphere of mass 4 kg at rest. The coefficient of restitution is 0.4.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":1.8,"decimals":2,"unit":"m/s","expected":"1.80 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":4.2,"decimals":2,"unit":"m/s","expected":"4.20 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":30.24,"decimals":2,"unit":"J","expected":"30.24 J"}],
+        "solution": ["Momentum: 4(6) = 4v1 + 4v2. Restitution: v2 - v1 = 0.4 x 6.","Solving gives v1 = 1.8 m/s and v2 = 4.2 m/s.","Energy lost = 0.5 x 4 x 6^2 - 0.5 x 4 x v1^2 - 0.5 x 4 x v2^2 = 30.24 J."]
+      },
+      {
+        "statement": "A smooth sphere of mass 3 kg moving at 9 m/s collides directly with a smooth sphere of mass 4 kg at rest. The coefficient of restitution is 0.6.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":0.77,"decimals":2,"unit":"m/s","expected":"0.77 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":6.17,"decimals":2,"unit":"m/s","expected":"6.17 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":44.43,"decimals":2,"unit":"J","expected":"44.43 J"}],
+        "solution": ["Momentum: 3(9) = 3v1 + 4v2. Restitution: v2 - v1 = 0.6 x 9.","Solving gives v1 = 0.77 m/s and v2 = 6.17 m/s.","Energy lost = 0.5 x 3 x 9^2 - 0.5 x 3 x v1^2 - 0.5 x 4 x v2^2 = 44.43 J."]
+      },
+      {
+        "statement": "A smooth sphere of mass 3 kg moving at 9 m/s collides directly with a smooth sphere of mass 4 kg at rest. The coefficient of restitution is 0.5.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":1.29,"decimals":2,"unit":"m/s","expected":"1.29 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":5.79,"decimals":2,"unit":"m/s","expected":"5.79 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":52.07,"decimals":2,"unit":"J","expected":"52.07 J"}],
+        "solution": ["Momentum: 3(9) = 3v1 + 4v2. Restitution: v2 - v1 = 0.5 x 9.","Solving gives v1 = 1.29 m/s and v2 = 5.79 m/s.","Energy lost = 0.5 x 3 x 9^2 - 0.5 x 3 x v1^2 - 0.5 x 4 x v2^2 = 52.07 J."]
+      },
+      {
+        "statement": "A smooth sphere of mass 2 kg moving at 10 m/s collides directly with a smooth sphere of mass 3 kg at rest. The coefficient of restitution is 0.5.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":1,"decimals":2,"unit":"m/s","expected":"1.00 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":6,"decimals":2,"unit":"m/s","expected":"6.00 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":45,"decimals":2,"unit":"J","expected":"45.00 J"}],
+        "solution": ["Momentum: 2(10) = 2v1 + 3v2. Restitution: v2 - v1 = 0.5 x 10.","Solving gives v1 = 1 m/s and v2 = 6 m/s.","Energy lost = 0.5 x 2 x 10^2 - 0.5 x 2 x v1^2 - 0.5 x 3 x v2^2 = 45 J."]
+      },
+      {
+        "statement": "A smooth sphere of mass 5 kg moving at 9 m/s collides directly with a smooth sphere of mass 4 kg at rest. The coefficient of restitution is 0.5.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":3,"decimals":2,"unit":"m/s","expected":"3.00 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":7.5,"decimals":2,"unit":"m/s","expected":"7.50 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":67.5,"decimals":2,"unit":"J","expected":"67.50 J"}],
+        "solution": ["Momentum: 5(9) = 5v1 + 4v2. Restitution: v2 - v1 = 0.5 x 9.","Solving gives v1 = 3 m/s and v2 = 7.5 m/s.","Energy lost = 0.5 x 5 x 9^2 - 0.5 x 5 x v1^2 - 0.5 x 4 x v2^2 = 67.5 J."]
+      },
+      {
+        "statement": "A smooth sphere of mass 2 kg moving at 10 m/s collides directly with a smooth sphere of mass 3 kg at rest. The coefficient of restitution is 0.6.",
+        "parts": [{"label":"(a)","prompt":"Find the velocity of the first sphere after the collision (in its original direction).","answer":0.4,"decimals":2,"unit":"m/s","expected":"0.40 m/s"},{"label":"(b)","prompt":"Find the velocity of the second sphere after the collision.","answer":6.4,"decimals":2,"unit":"m/s","expected":"6.40 m/s"},{"label":"(c)","prompt":"Find the kinetic energy lost.","answer":38.4,"decimals":2,"unit":"J","expected":"38.40 J"}],
+        "solution": ["Momentum: 2(10) = 2v1 + 3v2. Restitution: v2 - v1 = 0.6 x 10.","Solving gives v1 = 0.4 m/s and v2 = 6.4 m/s.","Energy lost = 0.5 x 2 x 10^2 - 0.5 x 2 x v1^2 - 0.5 x 3 x v2^2 = 38.4 J."]
+      }
+    ],
+    "am-resistive-forces": [
+      {
+        "statement": "A particle of mass 3 kg moves in a straight line against a resistance of magnitude 3kv newtons, where v m/s is its speed and k = 0.5 per second. Its initial speed is 13 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 4 seconds.","answer":1.76,"decimals":2,"unit":"m/s","expected":"1.76 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":26,"decimals":2,"unit":"m","expected":"26.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":1.39,"decimals":2,"unit":"s","expected":"1.39 s"}],
+        "solution": ["3dv/dt = -3kv, so dv/dt = -0.5v. Separating: v = 13e^(-0.5t); at t = 4, v = 1.76 m/s.","Use a = v dv/dx = -0.5v, so dv/dx = -0.5 and v = 13 - 0.5x. It stops when x = 13/0.5 = 26 m.","Half speed: e^(-0.5t) = 1/2, so t = ln 2 / 0.5 = 1.39 s."]
+      },
+      {
+        "statement": "A particle of mass 4 kg moves in a straight line against a resistance of magnitude 4kv newtons, where v m/s is its speed and k = 0.5 per second. Its initial speed is 14 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 2 seconds.","answer":5.15,"decimals":2,"unit":"m/s","expected":"5.15 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":28,"decimals":2,"unit":"m","expected":"28.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":1.39,"decimals":2,"unit":"s","expected":"1.39 s"}],
+        "solution": ["4dv/dt = -4kv, so dv/dt = -0.5v. Separating: v = 14e^(-0.5t); at t = 2, v = 5.15 m/s.","Use a = v dv/dx = -0.5v, so dv/dx = -0.5 and v = 14 - 0.5x. It stops when x = 14/0.5 = 28 m.","Half speed: e^(-0.5t) = 1/2, so t = ln 2 / 0.5 = 1.39 s."]
+      },
+      {
+        "statement": "A particle of mass 5 kg moves in a straight line against a resistance of magnitude 5kv newtons, where v m/s is its speed and k = 0.4 per second. Its initial speed is 12 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 6 seconds.","answer":1.09,"decimals":2,"unit":"m/s","expected":"1.09 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":30,"decimals":2,"unit":"m","expected":"30.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":1.73,"decimals":2,"unit":"s","expected":"1.73 s"}],
+        "solution": ["5dv/dt = -5kv, so dv/dt = -0.4v. Separating: v = 12e^(-0.4t); at t = 6, v = 1.09 m/s.","Use a = v dv/dx = -0.4v, so dv/dx = -0.4 and v = 12 - 0.4x. It stops when x = 12/0.4 = 30 m.","Half speed: e^(-0.4t) = 1/2, so t = ln 2 / 0.4 = 1.73 s."]
+      },
+      {
+        "statement": "A particle of mass 4 kg moves in a straight line against a resistance of magnitude 4kv newtons, where v m/s is its speed and k = 0.4 per second. Its initial speed is 10 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 5 seconds.","answer":1.35,"decimals":2,"unit":"m/s","expected":"1.35 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":25,"decimals":2,"unit":"m","expected":"25.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":1.73,"decimals":2,"unit":"s","expected":"1.73 s"}],
+        "solution": ["4dv/dt = -4kv, so dv/dt = -0.4v. Separating: v = 10e^(-0.4t); at t = 5, v = 1.35 m/s.","Use a = v dv/dx = -0.4v, so dv/dx = -0.4 and v = 10 - 0.4x. It stops when x = 10/0.4 = 25 m.","Half speed: e^(-0.4t) = 1/2, so t = ln 2 / 0.4 = 1.73 s."]
+      },
+      {
+        "statement": "A particle of mass 6 kg moves in a straight line against a resistance of magnitude 6kv newtons, where v m/s is its speed and k = 0.2 per second. Its initial speed is 25 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 3 seconds.","answer":13.72,"decimals":2,"unit":"m/s","expected":"13.72 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":125,"decimals":2,"unit":"m","expected":"125.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":3.47,"decimals":2,"unit":"s","expected":"3.47 s"}],
+        "solution": ["6dv/dt = -6kv, so dv/dt = -0.2v. Separating: v = 25e^(-0.2t); at t = 3, v = 13.72 m/s.","Use a = v dv/dx = -0.2v, so dv/dx = -0.2 and v = 25 - 0.2x. It stops when x = 25/0.2 = 125 m.","Half speed: e^(-0.2t) = 1/2, so t = ln 2 / 0.2 = 3.47 s."]
+      },
+      {
+        "statement": "A particle of mass 5 kg moves in a straight line against a resistance of magnitude 5kv newtons, where v m/s is its speed and k = 0.25 per second. Its initial speed is 21 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 6 seconds.","answer":4.69,"decimals":2,"unit":"m/s","expected":"4.69 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":84,"decimals":2,"unit":"m","expected":"84.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":2.77,"decimals":2,"unit":"s","expected":"2.77 s"}],
+        "solution": ["5dv/dt = -5kv, so dv/dt = -0.25v. Separating: v = 21e^(-0.25t); at t = 6, v = 4.69 m/s.","Use a = v dv/dx = -0.25v, so dv/dx = -0.25 and v = 21 - 0.25x. It stops when x = 21/0.25 = 84 m.","Half speed: e^(-0.25t) = 1/2, so t = ln 2 / 0.25 = 2.77 s."]
+      },
+      {
+        "statement": "A particle of mass 5 kg moves in a straight line against a resistance of magnitude 5kv newtons, where v m/s is its speed and k = 0.2 per second. Its initial speed is 17 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 6 seconds.","answer":5.12,"decimals":2,"unit":"m/s","expected":"5.12 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":85,"decimals":2,"unit":"m","expected":"85.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":3.47,"decimals":2,"unit":"s","expected":"3.47 s"}],
+        "solution": ["5dv/dt = -5kv, so dv/dt = -0.2v. Separating: v = 17e^(-0.2t); at t = 6, v = 5.12 m/s.","Use a = v dv/dx = -0.2v, so dv/dx = -0.2 and v = 17 - 0.2x. It stops when x = 17/0.2 = 85 m.","Half speed: e^(-0.2t) = 1/2, so t = ln 2 / 0.2 = 3.47 s."]
+      },
+      {
+        "statement": "A particle of mass 6 kg moves in a straight line against a resistance of magnitude 6kv newtons, where v m/s is its speed and k = 0.2 per second. Its initial speed is 19 m/s. No other horizontal force acts.",
+        "parts": [{"label":"(a)","prompt":"Find the speed after 6 seconds.","answer":5.72,"decimals":2,"unit":"m/s","expected":"5.72 m/s"},{"label":"(b)","prompt":"Find the total distance travelled before it comes to rest.","answer":95,"decimals":2,"unit":"m","expected":"95.00 m"},{"label":"(c)","prompt":"Find the time taken for the speed to fall to half its initial value.","answer":3.47,"decimals":2,"unit":"s","expected":"3.47 s"}],
+        "solution": ["6dv/dt = -6kv, so dv/dt = -0.2v. Separating: v = 19e^(-0.2t); at t = 6, v = 5.72 m/s.","Use a = v dv/dx = -0.2v, so dv/dx = -0.2 and v = 19 - 0.2x. It stops when x = 19/0.2 = 95 m.","Half speed: e^(-0.2t) = 1/2, so t = ln 2 / 0.2 = 3.47 s."]
+      }
+    ],
+    "am-work-energy": [
+      {
+        "statement": "An elastic string has natural length 0.5 m and modulus of elasticity 39 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 0.5 kg. The particle is pulled 0.3 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":23.4,"decimals":2,"unit":"N","expected":"23.40 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":3.51,"decimals":2,"unit":"J","expected":"3.51 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":3.75,"decimals":2,"unit":"m/s","expected":"3.75 m/s"}],
+        "solution": ["T = lambda x / l = 39 x 0.3 / 0.5 = 23.4 N.","Energy = lambda x^2 / (2l) = 39 x 0.3^2 / (2 x 0.5) = 3.51 J.","All of it becomes kinetic energy: 0.5 x 0.5 x v^2 = 3.51, so v = 3.75 m/s."]
+      },
+      {
+        "statement": "An elastic string has natural length 0.5 m and modulus of elasticity 59 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 1 kg. The particle is pulled 0.4 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":47.2,"decimals":2,"unit":"N","expected":"47.20 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":9.44,"decimals":2,"unit":"J","expected":"9.44 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":4.35,"decimals":2,"unit":"m/s","expected":"4.35 m/s"}],
+        "solution": ["T = lambda x / l = 59 x 0.4 / 0.5 = 47.2 N.","Energy = lambda x^2 / (2l) = 59 x 0.4^2 / (2 x 0.5) = 9.44 J.","All of it becomes kinetic energy: 0.5 x 1 x v^2 = 9.44, so v = 4.35 m/s."]
+      },
+      {
+        "statement": "An elastic string has natural length 1 m and modulus of elasticity 80 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 2 kg. The particle is pulled 0.3 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":24,"decimals":2,"unit":"N","expected":"24.00 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":3.6,"decimals":2,"unit":"J","expected":"3.60 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":1.9,"decimals":2,"unit":"m/s","expected":"1.90 m/s"}],
+        "solution": ["T = lambda x / l = 80 x 0.3 / 1 = 24 N.","Energy = lambda x^2 / (2l) = 80 x 0.3^2 / (2 x 1) = 3.6 J.","All of it becomes kinetic energy: 0.5 x 2 x v^2 = 3.6, so v = 1.9 m/s."]
+      },
+      {
+        "statement": "An elastic string has natural length 0.5 m and modulus of elasticity 64 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 0.5 kg. The particle is pulled 0.3 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":38.4,"decimals":2,"unit":"N","expected":"38.40 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":5.76,"decimals":2,"unit":"J","expected":"5.76 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":4.8,"decimals":2,"unit":"m/s","expected":"4.80 m/s"}],
+        "solution": ["T = lambda x / l = 64 x 0.3 / 0.5 = 38.4 N.","Energy = lambda x^2 / (2l) = 64 x 0.3^2 / (2 x 0.5) = 5.76 J.","All of it becomes kinetic energy: 0.5 x 0.5 x v^2 = 5.76, so v = 4.8 m/s."]
+      },
+      {
+        "statement": "An elastic string has natural length 1 m and modulus of elasticity 62 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 2 kg. The particle is pulled 0.3 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":18.6,"decimals":2,"unit":"N","expected":"18.60 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":2.79,"decimals":2,"unit":"J","expected":"2.79 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":1.67,"decimals":2,"unit":"m/s","expected":"1.67 m/s"}],
+        "solution": ["T = lambda x / l = 62 x 0.3 / 1 = 18.6 N.","Energy = lambda x^2 / (2l) = 62 x 0.3^2 / (2 x 1) = 2.79 J.","All of it becomes kinetic energy: 0.5 x 2 x v^2 = 2.79, so v = 1.67 m/s."]
+      },
+      {
+        "statement": "An elastic string has natural length 1.2 m and modulus of elasticity 56 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 1 kg. The particle is pulled 0.4 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":18.67,"decimals":2,"unit":"N","expected":"18.67 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":3.73,"decimals":2,"unit":"J","expected":"3.73 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":2.73,"decimals":2,"unit":"m/s","expected":"2.73 m/s"}],
+        "solution": ["T = lambda x / l = 56 x 0.4 / 1.2 = 18.67 N.","Energy = lambda x^2 / (2l) = 56 x 0.4^2 / (2 x 1.2) = 3.73 J.","All of it becomes kinetic energy: 0.5 x 1 x v^2 = 3.73, so v = 2.73 m/s."]
+      },
+      {
+        "statement": "An elastic string has natural length 1.2 m and modulus of elasticity 56 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 2 kg. The particle is pulled 0.1 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":4.67,"decimals":2,"unit":"N","expected":"4.67 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":0.23,"decimals":2,"unit":"J","expected":"0.23 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":0.48,"decimals":2,"unit":"m/s","expected":"0.48 m/s"}],
+        "solution": ["T = lambda x / l = 56 x 0.1 / 1.2 = 4.67 N.","Energy = lambda x^2 / (2l) = 56 x 0.1^2 / (2 x 1.2) = 0.23 J.","All of it becomes kinetic energy: 0.5 x 2 x v^2 = 0.23, so v = 0.48 m/s."]
+      },
+      {
+        "statement": "An elastic string has natural length 0.8 m and modulus of elasticity 41 N. One end is fixed to a point on a smooth horizontal table and the other end to a particle of mass 2 kg. The particle is pulled 0.1 m beyond the natural length and released.",
+        "parts": [{"label":"(a)","prompt":"Find the tension in the string at the start.","answer":5.13,"decimals":2,"unit":"N","expected":"5.13 N"},{"label":"(b)","prompt":"Find the elastic potential energy stored at the start.","answer":0.26,"decimals":2,"unit":"J","expected":"0.26 J"},{"label":"(c)","prompt":"Find the speed of the particle when the string becomes slack.","answer":0.51,"decimals":2,"unit":"m/s","expected":"0.51 m/s"}],
+        "solution": ["T = lambda x / l = 41 x 0.1 / 0.8 = 5.13 N.","Energy = lambda x^2 / (2l) = 41 x 0.1^2 / (2 x 0.8) = 0.26 J.","All of it becomes kinetic energy: 0.5 x 2 x v^2 = 0.26, so v = 0.51 m/s."]
+      }
+    ],
+    "am-circular-motion": [
+      {
+        "statement": "A particle of mass 2 kg is attached to a light string of length 0.4 m and moves in a horizontal circle on a smooth table at a constant speed of 3 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":7.5,"decimals":2,"unit":"rad/s","expected":"7.50 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":45,"decimals":2,"unit":"N","expected":"45.00 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":0.84,"decimals":2,"unit":"s","expected":"0.84 s"}],
+        "solution": ["omega = v/r = 3/0.4 = 7.5 rad/s.","T = m v^2 / r = 2 x 3^2 / 0.4 = 45 N.","Period = 2 pi r / v = 0.84 s."]
+      },
+      {
+        "statement": "A particle of mass 1 kg is attached to a light string of length 1.2 m and moves in a horizontal circle on a smooth table at a constant speed of 6 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":5,"decimals":2,"unit":"rad/s","expected":"5.00 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":30,"decimals":2,"unit":"N","expected":"30.00 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":1.26,"decimals":2,"unit":"s","expected":"1.26 s"}],
+        "solution": ["omega = v/r = 6/1.2 = 5 rad/s.","T = m v^2 / r = 1 x 6^2 / 1.2 = 30 N.","Period = 2 pi r / v = 1.26 s."]
+      },
+      {
+        "statement": "A particle of mass 0.5 kg is attached to a light string of length 0.8 m and moves in a horizontal circle on a smooth table at a constant speed of 8 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":10,"decimals":2,"unit":"rad/s","expected":"10.00 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":40,"decimals":2,"unit":"N","expected":"40.00 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":0.63,"decimals":2,"unit":"s","expected":"0.63 s"}],
+        "solution": ["omega = v/r = 8/0.8 = 10 rad/s.","T = m v^2 / r = 0.5 x 8^2 / 0.8 = 40 N.","Period = 2 pi r / v = 0.63 s."]
+      },
+      {
+        "statement": "A particle of mass 2 kg is attached to a light string of length 0.5 m and moves in a horizontal circle on a smooth table at a constant speed of 3 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":6,"decimals":2,"unit":"rad/s","expected":"6.00 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":36,"decimals":2,"unit":"N","expected":"36.00 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":1.05,"decimals":2,"unit":"s","expected":"1.05 s"}],
+        "solution": ["omega = v/r = 3/0.5 = 6 rad/s.","T = m v^2 / r = 2 x 3^2 / 0.5 = 36 N.","Period = 2 pi r / v = 1.05 s."]
+      },
+      {
+        "statement": "A particle of mass 0.5 kg is attached to a light string of length 0.5 m and moves in a horizontal circle on a smooth table at a constant speed of 6 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":12,"decimals":2,"unit":"rad/s","expected":"12.00 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":36,"decimals":2,"unit":"N","expected":"36.00 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":0.52,"decimals":2,"unit":"s","expected":"0.52 s"}],
+        "solution": ["omega = v/r = 6/0.5 = 12 rad/s.","T = m v^2 / r = 0.5 x 6^2 / 0.5 = 36 N.","Period = 2 pi r / v = 0.52 s."]
+      },
+      {
+        "statement": "A particle of mass 1.5 kg is attached to a light string of length 0.4 m and moves in a horizontal circle on a smooth table at a constant speed of 8 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":20,"decimals":2,"unit":"rad/s","expected":"20.00 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":240,"decimals":2,"unit":"N","expected":"240.00 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":0.31,"decimals":2,"unit":"s","expected":"0.31 s"}],
+        "solution": ["omega = v/r = 8/0.4 = 20 rad/s.","T = m v^2 / r = 1.5 x 8^2 / 0.4 = 240 N.","Period = 2 pi r / v = 0.31 s."]
+      },
+      {
+        "statement": "A particle of mass 2 kg is attached to a light string of length 0.8 m and moves in a horizontal circle on a smooth table at a constant speed of 3 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":3.75,"decimals":2,"unit":"rad/s","expected":"3.75 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":22.5,"decimals":2,"unit":"N","expected":"22.50 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":1.68,"decimals":2,"unit":"s","expected":"1.68 s"}],
+        "solution": ["omega = v/r = 3/0.8 = 3.75 rad/s.","T = m v^2 / r = 2 x 3^2 / 0.8 = 22.5 N.","Period = 2 pi r / v = 1.68 s."]
+      },
+      {
+        "statement": "A particle of mass 1.5 kg is attached to a light string of length 0.8 m and moves in a horizontal circle on a smooth table at a constant speed of 8 m/s. The other end of the string is fixed at the centre of the circle.",
+        "parts": [{"label":"(a)","prompt":"Find the angular velocity.","answer":10,"decimals":2,"unit":"rad/s","expected":"10.00 rad/s"},{"label":"(b)","prompt":"Find the tension in the string.","answer":120,"decimals":2,"unit":"N","expected":"120.00 N"},{"label":"(c)","prompt":"Find the time for one complete revolution.","answer":0.63,"decimals":2,"unit":"s","expected":"0.63 s"}],
+        "solution": ["omega = v/r = 8/0.8 = 10 rad/s.","T = m v^2 / r = 1.5 x 8^2 / 0.8 = 120 N.","Period = 2 pi r / v = 0.63 s."]
+      }
+    ],
+    "am-dimensional-analysis": [
+      {
+        "statement": "Write the dimensions of pressure (force per unit area) in the form M^a L^b T^c, where M is mass, L is length and T is time.",
+        "parts": [{"label":"(a)","prompt":"Find a, the power of M.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(b)","prompt":"Find b, the power of L.","answer":-1,"decimals":0,"unit":"","expected":"-1"},{"label":"(c)","prompt":"Find c, the power of T.","answer":-2,"decimals":0,"unit":"","expected":"-2"}],
+        "solution": ["The dimensions of pressure (force per unit area) are M^1 L^-1 T^-2.","Build them from [force] = M L T^-2, [velocity] = L T^-1, [area] = L^2 and [volume] = L^3."]
+      },
+      {
+        "statement": "Write the dimensions of spring constant (force per unit extension) in the form M^a L^b T^c, where M is mass, L is length and T is time.",
+        "parts": [{"label":"(a)","prompt":"Find a, the power of M.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(b)","prompt":"Find b, the power of L.","answer":0,"decimals":0,"unit":"","expected":"0"},{"label":"(c)","prompt":"Find c, the power of T.","answer":-2,"decimals":0,"unit":"","expected":"-2"}],
+        "solution": ["The dimensions of spring constant (force per unit extension) are M^1 L^0 T^-2.","Build them from [force] = M L T^-2, [velocity] = L T^-1, [area] = L^2 and [volume] = L^3."]
+      },
+      {
+        "statement": "Write the dimensions of momentum (mass times velocity) in the form M^a L^b T^c, where M is mass, L is length and T is time.",
+        "parts": [{"label":"(a)","prompt":"Find a, the power of M.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(b)","prompt":"Find b, the power of L.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(c)","prompt":"Find c, the power of T.","answer":-1,"decimals":0,"unit":"","expected":"-1"}],
+        "solution": ["The dimensions of momentum (mass times velocity) are M^1 L^1 T^-1.","Build them from [force] = M L T^-2, [velocity] = L T^-1, [area] = L^2 and [volume] = L^3."]
+      },
+      {
+        "statement": "Write the dimensions of power (work done per unit time) in the form M^a L^b T^c, where M is mass, L is length and T is time.",
+        "parts": [{"label":"(a)","prompt":"Find a, the power of M.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(b)","prompt":"Find b, the power of L.","answer":2,"decimals":0,"unit":"","expected":"2"},{"label":"(c)","prompt":"Find c, the power of T.","answer":-3,"decimals":0,"unit":"","expected":"-3"}],
+        "solution": ["The dimensions of power (work done per unit time) are M^1 L^2 T^-3.","Build them from [force] = M L T^-2, [velocity] = L T^-1, [area] = L^2 and [volume] = L^3."]
+      },
+      {
+        "statement": "Write the dimensions of density (mass per unit volume) in the form M^a L^b T^c, where M is mass, L is length and T is time.",
+        "parts": [{"label":"(a)","prompt":"Find a, the power of M.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(b)","prompt":"Find b, the power of L.","answer":-3,"decimals":0,"unit":"","expected":"-3"},{"label":"(c)","prompt":"Find c, the power of T.","answer":0,"decimals":0,"unit":"","expected":"0"}],
+        "solution": ["The dimensions of density (mass per unit volume) are M^1 L^-3 T^0.","Build them from [force] = M L T^-2, [velocity] = L T^-1, [area] = L^2 and [volume] = L^3."]
+      },
+      {
+        "statement": "Write the dimensions of kinetic energy (half mass times speed squared) in the form M^a L^b T^c, where M is mass, L is length and T is time.",
+        "parts": [{"label":"(a)","prompt":"Find a, the power of M.","answer":1,"decimals":0,"unit":"","expected":"1"},{"label":"(b)","prompt":"Find b, the power of L.","answer":2,"decimals":0,"unit":"","expected":"2"},{"label":"(c)","prompt":"Find c, the power of T.","answer":-2,"decimals":0,"unit":"","expected":"-2"}],
+        "solution": ["The dimensions of kinetic energy (half mass times speed squared) are M^1 L^2 T^-2.","Build them from [force] = M L T^-2, [velocity] = L T^-1, [area] = L^2 and [volume] = L^3."]
+      }
+    ]
+  }
+}

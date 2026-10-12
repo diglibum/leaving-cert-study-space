@@ -39,7 +39,8 @@ describe('question bank', () => {
     }
   })
 
-  it('references an official paper stored in the repository', () => {
+  // The papers are git-ignored (the repository is public), so this only runs where they are downloaded.
+  it.skipIf(repositoryPapers.length === 0)('references an official paper stored locally', () => {
     for (const question of questions) {
       expect(repositoryPapers).toContain(question.paper)
     }

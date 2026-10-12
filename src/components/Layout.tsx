@@ -59,7 +59,7 @@ function Layout() {
         </p>
         <p>
           Testing the app? Share ideas and problems in the{' '}
-          <a href="https://t.me/+X16369LOoZ1kOTli" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/+_Cf8xQ0d6rxjYzRi" target="_blank" rel="noopener noreferrer">
             feedback chat on Telegram
           </a>
           .

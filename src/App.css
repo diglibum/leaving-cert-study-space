@@ -215,6 +215,10 @@ main:focus {
   font-size: 0.875rem;
 }
 
+.site-footer p {
+  margin-block: 0 0.5rem;
+}
+
 @media (max-width: 40rem) {
   .app {
     width: calc(100% - 2rem);

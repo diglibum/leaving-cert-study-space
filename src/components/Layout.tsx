@@ -53,7 +53,17 @@ function Layout() {
       </main>
 
       <footer className="site-footer">
-        Your plan, progress and writing are saved only in this browser. Download a backup regularly from the Backup page.
+        <p>
+          Your plan, progress and writing are saved only in this browser. Download a backup regularly from the Backup
+          page.
+        </p>
+        <p>
+          Testing the app? Share ideas and problems in the{' '}
+          <a href="https://t.me/+X16369LOoZ1kOTli" target="_blank" rel="noopener noreferrer">
+            feedback chat on Telegram
+          </a>
+          .
+        </p>
       </footer>
     </div>
   )

@@ -16,6 +16,10 @@ documentation is in English (Russian exercises are the one exception). The
 repository and the storage keys still use the earlier name `personal-essay-trainer`
 so that existing saved data and backups keep working.
 
+**Try it:** https://diglibum.github.io/leaving-cert-study-space/. Testers can
+share ideas and problems in the
+[feedback chat on Telegram](https://t.me/+X16369LOoZ1kOTli), which is also linked in the app footer.
+
 ## Getting started
 
 Requires **Node.js 22.22.2+** (a current LTS release is recommended) and npm.

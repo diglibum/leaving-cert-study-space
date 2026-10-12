@@ -21,7 +21,8 @@ share ideas and problems in the
 [feedback chat on Telegram](https://t.me/+_Cf8xQ0d6rxjYzRi), which is also linked in the app footer.
 
 The revision topics, questions and practice problems were written with AI and have not been
-checked by a teacher. The app footer says so on every page.
+checked by a teacher. The app footer says so on every page, and that the app is unofficial and not
+affiliated with the SEC or NCCA.
 
 ## Getting started
 

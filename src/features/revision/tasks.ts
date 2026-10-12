@@ -15,16 +15,23 @@ export interface TaskContext {
 
 const DEFAULT_MINUTES_PER_QUESTION = 19
 
+function paperName({ year, paper, label }: { year: number; paper?: number; label?: string }): string {
+  if (label) return label
+  return paper === undefined ? String(year) : `${year} Paper ${paper}`
+}
+
 export function describePart(part: PaperPart): string {
-  return `${part.year} question ${part.question}${part.part ? ` part (${part.part})` : ''}: ${part.summary}`
+  return `${paperName(part)} question ${part.question}${part.part ? ` part (${part.part})` : ''}: ${part.summary}`
 }
 
 function questionKey(part: PaperPart): string {
-  return `${part.year}-${part.question}`
+  return `${part.year}-${part.paper ?? 0}-${part.question}`
 }
 
 interface PaperQuestion {
   year: number
+  paper?: number
+  label?: string
   question: number
   topics: string[]
   summary: string
@@ -34,7 +41,7 @@ function groupQuestions(parts: readonly PaperPart[]): PaperQuestion[] {
   const grouped = new Map<string, PaperQuestion>()
   for (const part of parts) {
     const key = questionKey(part)
-    const entry = grouped.get(key) ?? { year: part.year, question: part.question, topics: [], summary: '' }
+    const entry = grouped.get(key) ?? { year: part.year, paper: part.paper, label: part.label, question: part.question, topics: [], summary: '' }
     for (const topic of part.topics) if (!entry.topics.includes(topic)) entry.topics.push(topic)
     entry.summary = entry.summary ? `${entry.summary}; ${part.summary}` : part.summary
     grouped.set(key, entry)
@@ -43,11 +50,11 @@ function groupQuestions(parts: readonly PaperPart[]): PaperQuestion[] {
 }
 
 function describeQuestion(question: PaperQuestion): string {
-  return `${question.year} question ${question.question}: ${question.summary}`
+  return `${paperName(question)} question ${question.question}: ${question.summary}`
 }
 
-function byNewest<T extends { year: number; question: number }>(a: T, b: T): number {
-  return b.year - a.year || a.question - b.question
+function byNewest<T extends { year: number; paper?: number; question: number }>(a: T, b: T): number {
+  return b.year - a.year || (a.paper ?? 0) - (b.paper ?? 0) || a.question - b.question
 }
 
 /** How many earlier blocks in the plan have the same kind (and topic) as this one. */
@@ -75,6 +82,7 @@ function learnTasks(block: PlanBlock, topic: RevisionTopic | undefined, subject:
   const oldest = [...candidates].reverse()
   const pick = rotate(oldest, occurrence, 1)
   const name = topic?.title ?? 'this topic'
+  const booklet = subject?.formulaeBooklet !== false
   const prompts = topic?.recall ?? []
   const promptCount = Math.min(prompts.length, Math.max(2, Math.floor(recall / 2.5)))
   const tasks: BlockTask[] = [
@@ -82,8 +90,8 @@ function learnTasks(block: PlanBlock, topic: RevisionTopic | undefined, subject:
       minutes: read,
       text:
         occurrence === 0
-          ? `Read your notes or textbook on "${name}" and follow two worked examples line by line. Keep the Formulae and Tables booklet open and note which formulae it gives you.`
-          : `Carry on with "${name}": do textbook exercises on the part you found hardest, from easy to exam style. Keep the Formulae and Tables booklet open.`,
+          ? `Read your notes or textbook on "${name}" and follow two worked examples or diagrams line by line.${booklet ? ' Keep the Formulae and Tables booklet open and note which formulae it gives you.' : ''}`
+          : `Carry on with "${name}": do textbook exercises on the part you found hardest, from easy to exam style.${booklet ? ' Keep the Formulae and Tables booklet open.' : ''}`,
       items: [],
     },
     {
@@ -146,22 +154,25 @@ function questionsFor(subject: RevisionSubject | undefined): { all: PaperQuestio
 
 function chooseTasks(block: PlanBlock, subject: RevisionSubject | undefined, occurrence: number): BlockTask[] {
   const { all, perQuestion } = questionsFor(subject)
-  const years = [...new Set(all.map((entry) => entry.year))].sort((a, b) => b - a)
-  const year = years.length > 0 ? years[occurrence % years.length] : undefined
+  const papers = [...new Map(all.map((entry) => [`${entry.year}-${entry.paper ?? 0}`, entry])).values()].sort(
+    (a, b) => b.year - a.year || (a.paper ?? 0) - (b.paper ?? 0),
+  )
+  const chosen = papers.length > 0 ? papers[occurrence % papers.length] : undefined
+  const paper = chosen ? (chosen.paper === undefined && !chosen.label ? `${chosen.year} paper` : paperName(chosen)) : undefined
   const choose = Math.min(5, block.minutes)
   const solve = block.minutes - choose
   const count = Math.max(1, Math.floor(solve / perQuestion))
   return [
     {
       minutes: choose,
-      text: year
-        ? `Take the ${year} paper. Read every question and write down the numbers of the questions you would answer. In the real exam you choose 8 of 10.`
+      text: paper
+        ? `Take the ${paper}. Read every question and write down the numbers of the questions you would answer. ${subject?.choiceNote ?? 'In the real exam you choose 8 of 10.'}`
         : 'Take a past paper. Read every question and write down the numbers of the questions you would answer.',
       items: [],
     },
     {
       minutes: solve,
-      text: `Solve ${count === 1 ? 'one' : count} of the questions you chose under exam time, about ${perQuestion} minutes each, with the Formulae and Tables booklet only.`,
+      text: `Solve ${count === 1 ? 'one' : count} of the questions you chose under exam time, about ${perQuestion} minutes each, with ${subject?.formulaeBooklet === false ? 'no notes' : 'the Formulae and Tables booklet only'}.`,
       items: [],
     },
   ]

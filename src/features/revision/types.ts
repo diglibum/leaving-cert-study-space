@@ -29,6 +29,10 @@ export interface RevisionTopic {
 /** Points to one part of a past exam question; the question itself stays in the official paper. */
 export interface PaperPart {
   year: number
+  /** For subjects with two written papers, 1 or 2; the question numbers restart in each paper. */
+  paper?: number
+  /** Names the paper when it is not a year, for example "Sample paper 1" (use `paper` to order several). */
+  label?: string
   question: number
   /** Lettered part such as "a", or an empty string when the question has none. */
   part: string
@@ -73,6 +77,10 @@ export interface RevisionSubject {
   topics: readonly RevisionTopic[]
   /** Past paper parts mapped to topics, used to suggest concrete questions. */
   paperParts?: readonly PaperPart[]
+  /** One sentence on how the exam lets the learner choose questions; the default is the Applied Mathematics rule. */
+  choiceNote?: string
+  /** False when the exam has no Formulae and Tables booklet, so task wording does not mention it. Defaults to true. */
+  formulaeBooklet?: boolean
   /** Minutes an average question deserves in the exam, used to size timed work. */
   minutesPerQuestion?: number
 }

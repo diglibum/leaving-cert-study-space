@@ -2,7 +2,7 @@
 
 Leaving Cert Study Space (formerly Personal Essay Trainer): a local-only React +
 TypeScript + Vite app for one learner preparing for the Leaving Certificate: a
-revision planner (Applied Mathematics, Russian Higher) and practice for the
+revision planner (Applied Mathematics, Mathematics, Chemistry, Biology, Physics, Russian Higher) and practice for the
 English Higher Level Paper 1 personal essay. The package, IndexedDB database,
 backup `app` value and localStorage keys keep the old `personal-essay-trainer`
 name on purpose. See `README.md` for features and architecture, and

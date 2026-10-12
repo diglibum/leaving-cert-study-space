@@ -1,0 +1,166 @@
+/**
+ * Closed-book recall prompts for each Mathematics topic (Higher Level). They
+ * are written for this app and ask for the ideas and formulae a learner must
+ * be able to produce. The learner checks answers against their own notes and
+ * the Formulae and Tables booklet, which the exam provides.
+ */
+export const mathsRecall: Readonly<Record<string, readonly string[]>> = {
+  'mt-algebra': [
+    'Factorise x^2 + bx + c, ax^2 + bx + c and a difference of two squares. Which one do you try first?',
+    'Complete the square on x^2 + bx + c. What does it tell you about the turning point?',
+    'How do you add and subtract algebraic fractions? How do you check that a fraction is in simplest form?',
+    'Rearrange a formula to make a different letter the subject, and say what you must do when the letter appears twice.',
+  ],
+  'mt-equations': [
+    'Write the quadratic formula. What does the discriminant tell you about the roots?',
+    'Solve two simultaneous equations by elimination. How does the method change with three unknowns?',
+    'Solve a linear equation and a quadratic equation together. Why do you substitute and not eliminate?',
+    'How do you solve an inequality, and what changes when you multiply by a negative number? How do you write the answer on the number line?',
+    'How do you solve an equation with a modulus, such as |x - a| = b, and what are the two cases?',
+  ],
+  'mt-polynomials': [
+    'State the factor theorem and the remainder theorem in your own words.',
+    'How do you divide a cubic by (x - a) using long division or by comparing coefficients?',
+    'Given one root of a cubic, how do you find the other two?',
+    'How do you write the first terms of a binomial expansion, and how do the coefficients connect with nCr?',
+    'How do you sketch a cubic from its roots, and what does a repeated root look like on the graph?',
+  ],
+  'mt-indices-logs': [
+    'Write the laws of indices, including negative and fractional powers.',
+    'Write the three laws of logarithms and the change-of-base formula.',
+    'Solve a^x = b using logs. When do you use ln and when log base 10?',
+    'How do you simplify surds, and how do you rationalise a denominator with a conjugate?',
+    'How do you explain why a number such as sqrt(2) is irrational?',
+  ],
+  'mt-complex': [
+    'Add, subtract, multiply and divide complex numbers. What is the conjugate and why do you use it for division?',
+    'Define modulus and argument and explain how to find them from a + bi.',
+    'Write a complex number in polar form and state De Moivre\u2019s theorem. How do you use it to find nth roots?',
+    'If a polynomial with real coefficients has a complex root, what else must be a root?',
+    'Plot z, its conjugate, -z and iz on an Argand diagram. What do they do to the modulus and argument?',
+  ],
+  'mt-sequences': [
+    'Write T_n and S_n for an arithmetic sequence and for a geometric sequence.',
+    'When does a geometric series have a sum to infinity, and what is it?',
+    'How do you find simple limits such as n/(n + 1) and r^n when |r| < 1?',
+    'How do you prove a result by induction: base case, induction hypothesis and induction step?',
+    'Write a sum in sigma notation and expand it. How do you find the number of terms?',
+    'How do you recognise whether a pattern is arithmetic, geometric or neither from its first terms?',
+  ],
+  'mt-financial': [
+    'Write the compound interest formula and explain each letter. What does AER mean?',
+    'How do you find the monthly rate equivalent to an annual rate?',
+    'Write the formula for the repayment on a loan, and the one for a regular saving, and say when each is used.',
+    'Explain depreciation on a reducing balance, and present value.',
+    'How do you work with discounts, tax, mark-up and margin without mixing the percentages up?',
+  ],
+  'mt-functions': [
+    'Give the domain and range of a function. How can you tell from a graph?',
+    'Define a composite function f(g(x)) and an inverse function. How do you find an inverse algebraically?',
+    'Describe how the graph moves for f(x) + a, f(x + a), a f(x) and f(ax).',
+    'How do you find where two graphs meet, and what do the solutions mean in a real situation?',
+    'What do injective, surjective and bijective mean, and why does bijective matter for inverses?',
+  ],
+  'mt-exp-growth': [
+    'Write the general exponential growth and decay models, and say what each constant means.',
+    'How do you find k from two data points, and how do you find a doubling time or a half-life?',
+    'Describe the graphs of e^x and ln x and how they relate.',
+    'Compare exponential growth with linear growth in words and on a graph.',
+  ],
+  'mt-differentiation': [
+    'Write the definition of the derivative from first principles and use it on a simple function.',
+    'State the product, quotient and chain rules. Which one does each of x^2 e^x, x/(x + 1) and (3x + 1)^5 need?',
+    'Write the derivatives of sin x, cos x, tan x, e^x, ln x and a^x.',
+    'How do you find the second derivative and what does it tell you?',
+  ],
+  'mt-calc-applications': [
+    'How do you find and classify stationary points?',
+    'How do you find the equation of a tangent and a normal at a point?',
+    'Set up an optimisation problem: what are the steps from words to the maximum or minimum?',
+    'What does a rate of change problem need: the chain rule with dy/dt, dy/dx and dx/dt?',
+    'How do you find points of inflection, and what do they show on a graph?',
+  ],
+  'mt-integration': [
+    'Write the integrals of x^n, e^x, 1/x, sin x and cos x, and why you add a constant.',
+    'How do you find the area between a curve and the x-axis, and between two curves? What happens when part of the curve is below the axis?',
+    'Write the trapezoidal rule and the formula for the average value of a function.',
+    'How do you integrate functions such as e^(ax), sin(ax) and cos(ax) by bringing out the constant factor correctly?',
+  ],
+  'mt-trig-identities': [
+    'State sin^2 A + cos^2 A = 1, the formulae for sin(A + B), cos(A + B) and the double angle formulae. Which are in the Formulae and Tables?',
+    'Draw the unit circle with sin, cos and tan for 0, 30, 45, 60 and 90 degrees (exact values).',
+    'Solve sin x = k in a range. How many solutions are there and how do you find the second?',
+    'Describe the graphs of sin, cos and tan: period, amplitude and shifts.',
+  ],
+  'mt-counting': [
+    'When do you use permutations and when combinations? Give an example of each.',
+    'How do you count arrangements when some objects are the same, or when some must stay together?',
+    'State the fundamental principle of counting (multiply for and, add for or).',
+    'Write nCr in factorial form and explain why nCr = nC(n - r).',
+  ],
+  'mt-probability': [
+    'Write the addition rule and the multiplication rule, including for independent events.',
+    'Define conditional probability, and show how to use a tree diagram or a two-way table.',
+    'How do you recognise a Bernoulli trial and a binomial situation? Write the binomial probability formula.',
+    'How do you find an expected value, and when is a game fair?',
+  ],
+  'mt-stats-data': [
+    'Define mean, median, mode, range and standard deviation, and say what each one tells you.',
+    'How do you read a histogram, a stem and leaf plot and a scatter plot? How do you spot an outlier?',
+    'Describe correlation: what does the value of r tell you, and why is correlation not the same as causation?',
+    'How do you draw and use a line of best fit? What is the danger in predicting far outside the data?',
+    'Compare two data sets using a measure of centre and a measure of spread.',
+  ],
+  'mt-normal': [
+    'Write the shape and the rule of 68, 95 and 99.7 for a normal distribution.',
+    'How do you convert a value to a z-score and use the tables to find a probability?',
+    'How do you find a value of x when you are given a probability (the tables used backwards)?',
+    'Explain what a normal curve with a larger standard deviation looks like.',
+  ],
+  'mt-inference': [
+    'What is a margin of error and how do you estimate it from a sample size? What does a 95% confidence interval mean?',
+    'State the steps of a hypothesis test: null and alternative hypotheses, significance level, p-value and conclusion.',
+    'How do you use a p-value to decide whether to reject the null hypothesis, and how do you phrase the conclusion in context?',
+    'What makes a sample biased, and how do you choose a random sample?',
+  ],
+  'mt-coord-line': [
+    'Write the formulae for the distance between two points, the midpoint, and the slope.',
+    'Write the equations of a line through a point with a given slope, and through two points.',
+    'How do you recognise parallel and perpendicular lines from their slopes?',
+    'How do you divide a line segment internally in a given ratio m : n?',
+    'Write the formula for the distance from a point to a line and for the angle between two lines.',
+    'How do you find the point where two lines meet, and the angle between them?',
+  ],
+  'mt-coord-circle': [
+    'Write the equation of a circle with centre at the origin, with centre (h, k), and in general form.',
+    'How do you find the centre and radius from x^2 + y^2 + 2gx + 2fy + c = 0?',
+    'How do you find the equation of the tangent at a point on a circle? What is the angle between a tangent and a radius?',
+    'How do you decide whether a line is a tangent, a chord or misses the circle?',
+  ],
+  'mt-trig-triangles': [
+    'Write the sine rule, the cosine rule and the area formula. When do you use each one?',
+    'Which triangle information makes the sine rule ambiguous, and what do you do?',
+    'Draw and label an angle of elevation and a bearing problem.',
+    'Set out a 3D trigonometry problem: which right-angled triangles do you pick out?',
+  ],
+  'mt-radians-arcs': [
+    'How do you convert between degrees and radians, and what is one radian?',
+    'Write the arc length and sector area formulae, and say which angle unit they need.',
+    'How do you find the area of a segment?',
+    'Name the exact radian values for 30, 45, 60, 90 and 180 degrees.',
+  ],
+  'mt-geometry': [
+    'State the circle theorems you have learned (angle at the centre, angles in the same segment, semicircle, cyclic quadrilateral, tangent and radius).',
+    'State the conditions for two triangles to be congruent and for two triangles to be similar.',
+    'Explain how to prove a theorem in a few steps: what do you write at the start (given, to prove)?',
+    'List the constructions you must be able to do with a compass and straight edge.',
+    'How do areas and volumes change when lengths are multiplied by a scale factor?',
+  ],
+  'mt-measurement': [
+    'Write the area formulae for the plane figures you use most often, including a sector and a circle, and say which are in the Formulae and Tables.',
+    'Write the volume and surface area formulae for a cylinder, cone, sphere and prism (which are in the Formulae and Tables?).',
+    'How do you combine solids, such as a cylinder with a hemisphere, to find a volume or a surface area?',
+    'How do nets help you find a surface area, and how do you use a right triangle to find a missing slant height or edge?',
+    'How do you convert units such as cm^3 to litres and cm^2 to m^2?',
+  ],
+}

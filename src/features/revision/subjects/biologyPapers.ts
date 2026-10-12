@@ -1,0 +1,68 @@
+import type { PaperPart } from '../types'
+
+/**
+ * Parts of the two SEC sample papers for the new Leaving Certificate Biology
+ * specification (Higher Level, first examined in 2027), mapped to study topics.
+ * There are no past papers for this specification yet. Each entry only points
+ * to a question in the official sample paper; the summaries are written for
+ * this app and are not exam wording. The sample papers are marked 2027 so they
+ * sort first.
+ */
+export const biologyPaperParts: readonly PaperPart[] = [
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 1, part: 'a', topics: ['bi-digestion-gases'], summary: 'name two digestive organs and explain one digestive function of one organ' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 1, part: 'b', topics: ['bi-response'], summary: 'identify synapse parts and describe impulse direction and neurotransmitter fate' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 1, part: 'c', topics: ['bi-osmosis-urinary', 'bi-investigation'], summary: 'interpret cucumber mass changes in salt solutions and identify osmosis variables' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 1, part: 'd', topics: ['bi-response', 'bi-biomolecules'], summary: 'relate carbohydrate structure to insulin and glucagon control of blood glucose' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 1, part: 'e', topics: ['bi-osmosis-urinary'], summary: 'identify nephron parts and explain filtration, urine content, and water conservation' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 1, part: 'f', topics: ['bi-microorganisms', 'bi-life-classification'], summary: 'define decomposer and draw a labelled Rhizopus structure' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 2, part: 'a', topics: ['bi-enzymes', 'bi-biomolecules', 'bi-cells'], summary: 'define enzymes and explain pectinase action, enzyme factors, and active site' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 2, part: 'b', topics: ['bi-life-classification', 'bi-microorganisms', 'bi-photo-resp'], summary: 'state fermentation conditions and classify yeast and plant kingdom features' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 2, part: 'c', topics: ['bi-photo-resp', 'bi-biomolecules'], summary: 'interpret yeast fermentation steps, ATP role, products, and likely animal tissue' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 2, part: 'd', topics: ['bi-photo-resp', 'bi-investigation'], summary: 'use fermentation graph to compare sugars and predict temperature effects' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 3, part: 'a', topics: ['bi-digestion-gases'], summary: 'show gas movement in alveoli and explain diffusion and exchange adaptations' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 3, part: 'b', topics: ['bi-response'], summary: 'describe monocyte action and another innate immune defence' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 3, part: 'c', topics: ['bi-circulation', 'bi-digestion-gases', 'bi-investigation'], summary: 'explain blood transport of gases and interpret exercise pH data' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 3, part: 'd', topics: ['bi-digestion-gases', 'bi-investigation'], summary: 'identify breathing muscles and analyse spirometer changes during exercise' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 4, part: 'a', topics: ['bi-inheritance'], summary: 'use snail inheritance to explain alleles, gametes, crosses, and gene linkage' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 4, part: 'b', topics: ['bi-ecology', 'bi-evolution'], summary: 'model a food chain and biomass pyramid, then predict ecological effects of thrush decline' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 5, part: 'a', topics: ['bi-reproduction'], summary: 'identify female reproductive structures, locate labia, and note a puberty change' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 5, part: 'b', topics: ['bi-reproduction', 'bi-cell-division', 'bi-response'], summary: 'identify ovary structures, hormones, and timing across the menstrual cycle' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 5, part: 'c', topics: ['bi-reproduction', 'bi-response'], summary: 'describe early embryo development and match pregnancy hormones to effects' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 5, part: 'd', topics: ['bi-circulation', 'bi-inheritance'], summary: 'name major blood group systems and explain why blood typing matters' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 5, part: 'e', topics: ['bi-reproduction'], summary: 'outline one infertility treatment and two contraception methods' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 6, part: 'a', topics: ['bi-investigation', 'bi-microorganisms'], summary: 'analyse bacterial growth at different pH values and evaluate the method' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 6, part: 'b', topics: ['bi-microorganisms', 'bi-ecology', 'bi-investigation'], summary: 'explain the microbiome, beneficial bacteria, mutualism, and a testable treatment' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 6, part: 'c', topics: ['bi-microorganisms', 'bi-digestion-gases', 'bi-inheritance', 'bi-cell-division'], summary: 'link stomach acidity, epigenetics and mutation types to H. pylori infection' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 6, part: 'd', topics: ['bi-cell-division', 'bi-genetic-engineering'], summary: 'transcribe DNA, infer amino acids, and explain sequencing fragments' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 7, part: 'a', topics: ['bi-ecology', 'bi-investigation'], summary: 'interpret rhododendron impact on biodiversity and propose fair conservation sampling' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 7, part: 'b', topics: ['bi-microorganisms', 'bi-ecology', 'bi-photo-resp'], summary: 'graph soil carbon dioxide data and explain sources and differences' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 7, part: 'c', topics: ['bi-photo-resp', 'bi-investigation'], summary: 'use indicator colours to compare photosynthesis rates under different light' },
+  { year: 2027, paper: 1, label: 'Sample paper 1', question: 7, part: 'd', topics: ['bi-photo-resp'], summary: 'explain chloroplast light reactions, photolysis, electron acceptor, and ATP synthesis' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 1, part: 'a', topics: ['bi-cell-division', 'bi-cells'], summary: 'interpret root tip micrograph, identify stages, locate membrane, recall cancer risks' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 1, part: 'b', topics: ['bi-response', 'bi-investigation'], summary: 'evaluate vaccine trial design, control, sample size, and age-based conclusions' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 1, part: 'c', topics: ['bi-cells', 'bi-investigation', 'bi-response'], summary: 'identify membrane components and link structure, signalling, and microscopy evidence' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 1, part: 'd', topics: ['bi-plant-transport'], summary: 'name stem tissues and relate transport tissue structure to function' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 1, part: 'e', topics: ['bi-biomolecules', 'bi-life-classification', 'bi-response'], summary: 'explain prion disease, transmission, protein folding, and another non-cellular pathogen' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 2, part: 'a', topics: ['bi-ecology', 'bi-investigation'], summary: 'define species metrics, calculate diversity index, and interpret seasonal sampling limits' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 2, part: 'b', topics: ['bi-microorganisms', 'bi-ecology'], summary: 'explain clover-bacteria symbiosis, nitrogen fixation, nutrient cycling, and habitat effects' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 2, part: 'c', topics: ['bi-plant-transport', 'bi-reproduction', 'bi-osmosis-urinary'], summary: 'trace insecticide movement through plants and show bee-pollinated flower structure' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 3, part: 'a', topics: ['bi-genetic-engineering', 'bi-enzymes', 'bi-investigation'], summary: 'explain PCR denaturation and required conditions for DNA amplification' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 3, part: 'b', topics: ['bi-genetic-engineering', 'bi-investigation'], summary: 'identify gel electrophoresis and explain separation and contamination control' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 3, part: 'c', topics: ['bi-evolution', 'bi-genetic-engineering'], summary: 'interpret a phylogenetic tree and explain evidence and mechanisms of evolution' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 3, part: 'd', topics: ['bi-inheritance', 'bi-genetic-engineering'], summary: 'use genome database information to explain inheritance patterns, applications, and ethics' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 4, part: 'a', topics: ['bi-microorganisms', 'bi-cells', 'bi-life-classification'], summary: 'locate bacteria on a mushroom, draw a bacterial cell, and compare bacterial and fungal organisation and nutrition' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 4, part: 'b', topics: ['bi-microorganisms'], summary: 'name bacterial growth phases and the spore-forming survival stage' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 4, part: 'c', topics: ['bi-microorganisms'], summary: 'state bioreactor growth factors and uses of microorganisms in industry' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 4, part: 'd', topics: ['bi-investigation', 'bi-microorganisms'], summary: 'describe a practical investigation of one factor affecting microbial growth' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 5, part: 'a', topics: ['bi-circulation'], summary: 'identify heart structures and compare vessels and carbon dioxide levels' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 5, part: 'b', topics: ['bi-circulation'], summary: 'describe double circulation, coronary blockage effects, and blood pressure' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 5, part: 'c', topics: ['bi-circulation', 'bi-investigation'], summary: 'interpret a blood pressure graph to infer contraction timing and heart rate' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 5, part: 'd', topics: ['bi-response', 'bi-photo-resp'], summary: 'explain cardiac muscle energy demand and model antagonistic joint movement' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 6, part: 'a', topics: ['bi-ecology', 'bi-microorganisms'], summary: 'explain flytrap adaptations, habitat threats, carbon sinks, and the carbon cycle' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 6, part: 'b', topics: ['bi-photo-resp', 'bi-investigation'], summary: 'calculate, graph, and interpret how light intensity affects photosynthesis rate' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 6, part: 'c', topics: ['bi-photo-resp'], summary: 'describe the non-cyclic light-dependent pathway of photosynthesis' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 7, part: 'a', topics: ['bi-biomolecules', 'bi-enzymes'], summary: 'classify biomolecules from formulas and relate them to nutrition and metabolism' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 7, part: 'b', topics: ['bi-biomolecules', 'bi-investigation'], summary: 'interpret glucose test-strip results and assess measurement precision' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 7, part: 'c', topics: ['bi-digestion-gases'], summary: 'draw and label the human digestive system' },
+  { year: 2027, paper: 2, label: 'Sample paper 2', question: 7, part: 'd', topics: ['bi-enzymes', 'bi-biomolecules'], summary: 'explain enzyme specificity and the stages of enzyme action' },
+]

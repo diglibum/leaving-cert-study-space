@@ -2,7 +2,7 @@ import { useId, useMemo, useState } from 'react'
 import { CopyPrompt } from './CopyPrompt'
 import { DiagramView } from './DiagramView'
 import { buildCheckPrompt } from './problems/aiCheck'
-import { generateProblem } from './problems/appliedMathsProblems'
+import { generatePracticeProblem } from './problems/registry'
 import { checkAnswer, formatAnswer, type AnswerResult } from './problems/check'
 
 interface Props {
@@ -25,7 +25,7 @@ export function ProblemPanel({ topicId, seed }: Props) {
   const [showSolution, setShowSolution] = useState(false)
   const [working, setWorking] = useState('')
   const baseId = useId()
-  const problem = useMemo(() => generateProblem(topicId, `${seed}:${round}`), [topicId, seed, round])
+  const problem = useMemo(() => generatePracticeProblem(topicId, `${seed}:${round}`), [topicId, seed, round])
 
   if (!problem) return null
 

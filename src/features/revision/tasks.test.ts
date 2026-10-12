@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { buildRevisionPlan } from './planner'
 import { appliedMaths } from './subjects/appliedMaths'
+import { biology } from './subjects/biology'
+import { chemistry } from './subjects/chemistry'
+import { maths } from './subjects/maths'
+import { physics } from './subjects/physics'
 import { blockTasks, describePart, splitMinutes } from './tasks'
 import type { RevisionPlan, RevisionSetup } from './types'
 
@@ -115,5 +119,75 @@ describe('blockTasks', () => {
 
   it('returns nothing for an unknown block', () => {
     expect(tasksFor('2020-01-01', 0)).toEqual([])
+  })
+})
+
+describe('Mathematics content', () => {
+  const mathsSetup: RevisionSetup = {
+    ...setup,
+    subjects: [{ subjectId: 'maths', level: 'higher', confidence: 'okay' }],
+  }
+  const mathsPlan = buildRevisionPlan(mathsSetup, [maths])
+  const blocks = allBlocks(mathsPlan)
+
+  it('names the paper in past paper pointers', () => {
+    const found = blocks.find(({ block }) => block.kind === 'learn-topic')
+    if (!found) throw new Error('No learn block')
+    const [, , attempt] = blockTasks({ plan: mathsPlan, date: found.day.date, index: found.index, subject: maths, topicProgress: {} })
+    expect(attempt.items[0]).toMatch(/^20(23|24|25|26) Paper [12] question \d+/)
+  })
+
+  it('suggests a whole paper in exam mode with the Maths choice note', () => {
+    const found = blocks.find(({ block }) => block.kind === 'choose-questions')
+    if (!found) throw new Error('No choose block')
+    const tasks = blockTasks({ plan: mathsPlan, date: found.day.date, index: found.index, subject: maths, topicProgress: {} })
+    const text = tasks.flatMap((task) => [task.text, ...task.items]).join('\n')
+    expect(text).toMatch(/Paper [12]/)
+    expect(text).toContain('Section A')
+  })
+})
+
+describe('Chemistry content', () => {
+  const chemSetup: RevisionSetup = {
+    ...setup,
+    subjects: [{ subjectId: 'chemistry', level: 'higher', confidence: 'okay' }],
+  }
+  const chemPlan = buildRevisionPlan(chemSetup, [chemistry])
+
+  it('names the sample paper in past paper pointers', () => {
+    const found = allBlocks(chemPlan).find(({ block }) => block.kind === 'learn-topic')
+    if (!found) throw new Error('No learn block')
+    const [, , attempt] = blockTasks({ plan: chemPlan, date: found.day.date, index: found.index, subject: chemistry, topicProgress: {} })
+    expect(attempt.items[0]).toMatch(/^Sample paper [12] question \d+/)
+  })
+})
+
+describe('Biology content', () => {
+  const bioPlan = buildRevisionPlan({ ...setup, subjects: [{ subjectId: 'biology', level: 'higher', confidence: 'okay' }] }, [biology])
+
+  it('names the sample paper in past paper pointers', () => {
+    const found = allBlocks(bioPlan).find(({ block }) => block.kind === 'learn-topic')
+    if (!found) throw new Error('No learn block')
+    const [, , attempt] = blockTasks({ plan: bioPlan, date: found.day.date, index: found.index, subject: biology, topicProgress: {} })
+    expect(attempt.items[0]).toMatch(/^Sample paper [12] question \d+/)
+  })
+
+  it('does not mention the Formulae and Tables booklet', () => {
+    const texts = allBlocks(bioPlan).flatMap(({ day, index }) =>
+      blockTasks({ plan: bioPlan, date: day.date, index, subject: biology, topicProgress: {} }).flatMap((task) => [task.text, ...task.items]),
+    )
+    expect(texts.length).toBeGreaterThan(0)
+    expect(texts.join('\n')).not.toContain('Formulae and Tables')
+  })
+})
+
+describe('Physics content', () => {
+  const physPlan = buildRevisionPlan({ ...setup, subjects: [{ subjectId: 'physics', level: 'higher', confidence: 'okay' }] }, [physics])
+
+  it('names the sample paper in past paper pointers', () => {
+    const found = allBlocks(physPlan).find(({ block }) => block.kind === 'learn-topic')
+    if (!found) throw new Error('No learn block')
+    const [, , attempt] = blockTasks({ plan: physPlan, date: found.day.date, index: found.index, subject: physics, topicProgress: {} })
+    expect(attempt.items[0]).toMatch(/^Sample paper [12] question \d+/)
   })
 })

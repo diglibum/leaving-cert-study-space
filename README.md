@@ -3,8 +3,8 @@
 A local web app for one learner preparing for the **Leaving Certificate 2027**.
 It started as a personal essay trainer and now has two parts:
 
-- **Revision planner:** a daily study plan for Applied Mathematics and Russian
-  (Higher), with steps for every block, practice the app can check, pointers to
+- **Revision planner:** a daily study plan for Applied Mathematics, Mathematics,
+  Chemistry, Biology, Physics and Russian (Higher), with steps for every block, practice the app can check, pointers to
   real past papers, a calendar and progress tracking.
 - **English personal essay practice** (Paper 1): verified real SEC questions, a
   five-step guided flow with fading hints, autosave, version history with
@@ -180,6 +180,50 @@ Everything is computed on the device by `buildRevisionPlan()`; there is no AI.
   entry holds only the year, question and part number, topics, and a short
   description written for this app. It never contains paper text, which stays in
   the learner's own copy from `exam-papers/` or examinations.ie.
+
+- **Mathematics (Higher Level):** `subjects/maths.ts` has 24 topics from the
+  Leaving Certificate Mathematics syllabus, split into Paper 1 (algebra,
+  functions, calculus, complex numbers, sequences, financial maths) and Paper 2
+  (statistics, probability, geometry, trigonometry). Questions from 2023 to 2026
+  are mapped to topics in `subjects/mathsPapers.ts`, with the paper number,
+  question and part, and a short description written for this app. Every topic has
+  recall prompts (`mathsRecall.ts`) and a generator in
+  `problems/mathsProblems.ts`; `problems/registry.ts` finds the generator for any
+  topic id. Exam-mode blocks name a whole paper and remind the learner of the
+  2027 choice: five of six questions in Section A and three of four in Section B.
+
+- **Chemistry (Higher Level):** `subjects/chemistry.ts` has 18 topics that follow
+  the units of the new Chemistry specification, first examined in 2027. There are
+  no past papers for it yet, so `subjects/chemistryPapers.ts` maps the two SEC
+  sample papers (questions 1 to 7 each) and names them "Sample paper 1 question 3".
+  Every topic has recall prompts (`chemistryRecall.ts`), including the experiments
+  named in the specification, and a generator in `problems/chemistryProblems.ts`
+  with original problems that list the atomic masses and constants they need.
+  Exam-mode blocks remind the learner to answer Question 1 and any five others.
+  The Practice Investigation (40% of the marks) is done in school and is not in
+  the app. The old Chemistry papers (2023 to 2026) follow the old syllabus and are
+  not mapped.
+
+- **Biology (Higher Level):** `subjects/biology.ts` has 18 topics that follow the
+  three strands of the new Biology specification, first examined in 2027
+  (Organisation of Life, Structures and Processes of Life, Interactions of Life).
+  Like Chemistry it maps only the two SEC sample papers (`biologyPapers.ts`) and
+  leaves the Practice Investigation (40%) out. Every topic has recall prompts,
+  including the required investigations (`biologyRecall.ts`). Fourteen topics have
+  original numerical practice in `problems/biologyProblems.ts` (magnification,
+  genetic crosses, Simpson's Diversity Index, enzyme rates, osmosis, cardiac
+  output and similar). The subject sets `formulaeBooklet: false`, so task wording
+  does not mention the Formulae and Tables booklet.
+
+- **Physics (Higher Level):** `subjects/physics.ts` has 16 topics that follow the
+  four strands of the new Physics specification, first examined in 2027, plus
+  measurement skills. The two SEC sample papers are mapped in
+  `subjects/physicsPapers.ts`, every topic has recall prompts
+  (`physicsRecall.ts`) and a generator in `problems/physicsProblems.ts` that
+  gives the constants it needs. The topic list was checked against the NCCA
+  specification (units 1.1 to 4.6), so material that is not in it, such as
+  capacitors, simple harmonic motion, gas laws, relativity and cosmology, is
+  left out. The Practice Investigation (40%) is not in the app.
 
 - **Russian (Higher Level only):** `subjects/russian.ts` lists the topics that follow
   the Higher Level structure in the SEC Assessment Arrangements 2027, the syllabus

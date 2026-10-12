@@ -2,6 +2,10 @@ import type { RevisionSubject, RevisionTopic } from '../types'
 import { appliedMathsPaperParts } from './appliedMathsPapers'
 import { hasProblems } from '../problems/appliedMathsProblems'
 import { appliedMathsRecall } from './appliedMathsRecall'
+import { biology } from './biology'
+import { chemistry } from './chemistry'
+import { maths } from './maths'
+import { physics } from './physics'
 import { russian } from './russian'
 
 type TopicInput = Omit<RevisionTopic, 'higherOnly'> & { higherOnly?: boolean }
@@ -53,4 +57,4 @@ export const appliedMaths: RevisionSubject = {
   ],
 }
 
-export const revisionSubjects: readonly RevisionSubject[] = [appliedMaths, russian]
+export const revisionSubjects: readonly RevisionSubject[] = [appliedMaths, russian, maths, chemistry, biology, physics]
